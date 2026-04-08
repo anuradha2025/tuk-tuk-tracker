@@ -1,0 +1,36 @@
+# render.yaml – Render.com Deployment Configuration
+# Deploy: Connect your GitHub repo in Render → it detects this file automatically.
+#
+# Free-tier note: Render free web services spin down after 15 minutes of inactivity.
+# For a coursework demo, this is acceptable. Upgrade to "Starter" for always-on.
+
+services:
+  - type: web
+    name: tuk-tuk-tracker-api
+    env: node
+    region: singapore          # Closest region to Sri Lanka
+    plan: free
+
+    # Build & start
+    buildCommand: npm install
+    startCommand: npm start
+
+    # Health check – Render uses this to decide if the deploy succeeded
+    healthCheckPath: /health
+
+    # Environment variables – set these in the Render dashboard (do NOT commit .env)
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: MONGODB_URI
+        sync: false           # Must be set manually in Render dashboard
+      - key: JWT_SECRET
+        generateValue: true   # Render auto-generates a secure random value
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: API_URL
+        sync: false           # Set to your Render URL after first deploy

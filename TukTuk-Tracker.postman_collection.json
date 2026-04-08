@@ -1,0 +1,509 @@
+{
+  "info": {
+    "name": "Tuk-Tuk Tracker API",
+    "description": "NB6007CEM – Web API Development | Full API collection for Sri Lanka Police Tuk-Tuk Tracking System. Import this file into Postman, set the {{baseUrl}} variable to your deployed URL, then run the 'Auth' folder first to populate {{token}}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:3000", "type": "string" },
+    { "key": "token",   "value": "",                      "type": "string" },
+    { "key": "provinceId", "value": "", "type": "string" },
+    { "key": "districtId", "value": "", "type": "string" },
+    { "key": "tukTukId",   "value": "", "type": "string" }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/health"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login (HQ Admin)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json.data && json.data.token) {",
+                  "  pm.collectionVariables.set('token', json.data.token);",
+                  "  console.log('Token saved.');",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": "{{baseUrl}}/api/auth/login",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"admin@police.lk\",\n  \"password\": \"Password@123\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Get My Profile",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/auth/me"
+          }
+        },
+        {
+          "name": "Register New User",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/api/auth/register",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Southern Province Admin\",\n  \"email\": \"sp.admin@police.lk\",\n  \"password\": \"Password@123\",\n  \"role\": \"provincial_admin\"\n}"
+            }
+          }
+        },
+        {
+          "name": "List All Users (Admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/users?page=1&limit=10",
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Provinces",
+      "item": [
+        {
+          "name": "Get All Provinces",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json.data && json.data.length > 0) {",
+                  "  pm.collectionVariables.set('provinceId', json.data[0]._id);",
+                  "  console.log('provinceId set to:', json.data[0]._id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/provinces?sort=name&order=asc",
+              "query": [
+                { "key": "sort", "value": "name" },
+                { "key": "order", "value": "asc" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get All Provinces (Conditional GET – 304 test)",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "If-None-Match", "value": "W/\"paste-etag-from-previous-response-here\"" }
+            ],
+            "url": "{{baseUrl}}/api/provinces"
+          }
+        },
+        {
+          "name": "Get Province by ID",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/provinces/{{provinceId}}"
+          }
+        },
+        {
+          "name": "Create Province (Admin)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/api/provinces",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Demo Province\",\n  \"code\": \"DP\",\n  \"capital\": \"Demo City\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Districts",
+      "item": [
+        {
+          "name": "Get All Districts",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json.data && json.data.length > 0) {",
+                  "  pm.collectionVariables.set('districtId', json.data[0]._id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/districts"
+          }
+        },
+        {
+          "name": "Get Districts by Province",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/districts?province={{provinceId}}",
+              "query": [{ "key": "province", "value": "{{provinceId}}" }]
+            }
+          }
+        },
+        {
+          "name": "Get District by ID",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/districts/{{districtId}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Police Stations",
+      "item": [
+        {
+          "name": "Get All Stations",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/stations?page=1&limit=10",
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Stations by District",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/stations?district={{districtId}}",
+              "query": [{ "key": "district", "value": "{{districtId}}" }]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tuk-Tuks",
+      "item": [
+        {
+          "name": "List All Tuk-Tuks (Paginated)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json.data && json.data.length > 0) {",
+                  "  pm.collectionVariables.set('tukTukId', json.data[0]._id);",
+                  "  console.log('tukTukId set:', json.data[0]._id);",
+                  "}",
+                  "pm.test('Has X-Total-Count header', () => {",
+                  "  pm.response.to.have.header('X-Total-Count');",
+                  "});",
+                  "pm.test('Has Link header', () => {",
+                  "  pm.response.to.have.header('Link');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/tuktuks?page=1&limit=10&sort=registrationNumber&order=asc",
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "10" },
+                { "key": "sort", "value": "registrationNumber" },
+                { "key": "order", "value": "asc" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Filter Tuk-Tuks by Province",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/tuktuks?province={{provinceId}}&status=active",
+              "query": [
+                { "key": "province", "value": "{{provinceId}}" },
+                { "key": "status", "value": "active" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Search Tuk-Tuks",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/tuktuks?search=Perera",
+              "query": [{ "key": "search", "value": "Perera" }]
+            }
+          }
+        },
+        {
+          "name": "Get Tuk-Tuk by ID",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/tuktuks/{{tukTukId}}"
+          }
+        },
+        {
+          "name": "Register New Tuk-Tuk",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/api/tuktuks",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"registrationNumber\": \"WP XYZ-9999\",\n  \"driverName\": \"Nuwan Perera\",\n  \"driverNIC\": \"199912345678V\",\n  \"driverPhone\": \"0771234567\",\n  \"province\": \"{{provinceId}}\",\n  \"district\": \"{{districtId}}\",\n  \"deviceId\": \"DEV-DEMO-001\",\n  \"status\": \"active\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Tuk-Tuk",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/api/tuktuks/{{tukTukId}}",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"inactive\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Get Last Known Location",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/tuktuks/{{tukTukId}}/location"
+          }
+        },
+        {
+          "name": "Get Location History (1 week)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/tuktuks/{{tukTukId}}/history?limit=100",
+              "query": [{ "key": "limit", "value": "100" }]
+            }
+          }
+        },
+        {
+          "name": "Get Location History (Time Window)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/tuktuks/{{tukTukId}}/history?from=2025-01-01T00:00:00Z&to=2025-12-31T23:59:59Z",
+              "query": [
+                { "key": "from", "value": "2025-01-01T00:00:00Z" },
+                { "key": "to",   "value": "2025-12-31T23:59:59Z" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Locations",
+      "item": [
+        {
+          "name": "Submit GPS Ping",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/api/locations/ping",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tukTukId\": \"{{tukTukId}}\",\n  \"latitude\": 6.9271,\n  \"longitude\": 79.8612,\n  \"speed\": 25.5,\n  \"heading\": 180,\n  \"accuracy\": 8.5\n}"
+            }
+          }
+        },
+        {
+          "name": "Live View – All Active Vehicles",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/locations/live"
+          }
+        },
+        {
+          "name": "Live View – Filter by Province",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/locations/live?province={{provinceId}}",
+              "query": [{ "key": "province", "value": "{{provinceId}}" }]
+            }
+          }
+        },
+        {
+          "name": "Movement History (All Vehicles)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/locations/history?page=1&limit=20",
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "limit", "value": "20" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Movement History (Time Window + District)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/locations/history?district={{districtId}}&from=2025-01-01T00:00:00Z",
+              "query": [
+                { "key": "district", "value": "{{districtId}}" },
+                { "key": "from", "value": "2025-01-01T00:00:00Z" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "System Statistics (Admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/locations/stats"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Error Cases",
+      "item": [
+        {
+          "name": "401 – No Token",
+          "request": {
+            "method": "GET",
+            "url": "{{baseUrl}}/api/tuktuks"
+          }
+        },
+        {
+          "name": "401 – Invalid Token",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer invalid.token.here" }],
+            "url": "{{baseUrl}}/api/tuktuks"
+          }
+        },
+        {
+          "name": "403 – Wrong Role",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/provinces/000000000000000000000001"
+          }
+        },
+        {
+          "name": "404 – Unknown Route",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/does-not-exist"
+          }
+        },
+        {
+          "name": "400 – Invalid ObjectId",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{baseUrl}}/api/tuktuks/not-a-valid-id"
+          }
+        },
+        {
+          "name": "409 – Duplicate Registration",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": "{{baseUrl}}/api/provinces",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Western Province\",\n  \"code\": \"WP\",\n  \"capital\": \"Colombo\"\n}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
