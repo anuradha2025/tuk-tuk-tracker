@@ -23,7 +23,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ─── Connect to Database ─────────────────────────────────────────────────────
-connectDB();
+if (process.env.NODE_ENV !== "test") {
+  connectDB();
+}
 
 // ─── Security & Utility Middleware ───────────────────────────────────────────
 app.use(helmet());
@@ -73,10 +75,12 @@ app.use((req, res) => {
 app.use(errorHandler);
 
 // ─── Start Server ────────────────────────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`🚀 Tuk-Tuk Tracker API running on port ${PORT}`);
-  console.log(`📚 Swagger docs: http://localhost:${PORT}/api/docs`);
-  console.log(`🩺 Health check: http://localhost:${PORT}/health`);
-});
+if (process.env.NODE_ENV !== "test") {
+  app.listen(PORT, () => {
+    console.log(`🚀 Tuk-Tuk Tracker API running on port ${PORT}`);
+    console.log(`📚 Swagger docs: http://localhost:${PORT}/api/docs`);
+    console.log(`🩺 Health check: http://localhost:${PORT}/health`);
+  });
+}
 
 export default app;

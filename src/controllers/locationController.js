@@ -109,7 +109,11 @@ export const getHistory = async (req, res, next) => {
       if (Object.keys(vehicleFilter).length > 0) {
         const vehicles = await TukTuk.find(vehicleFilter).select("_id");
         const ids = vehicles.map((v) => v._id);
-        match.tukTuk = { $in: ids };
+        if (match.tukTuk) {
+          match.tukTuk = { $in: ids.filter((id) => id.equals(match.tukTuk)) };
+        } else {
+          match.tukTuk = { $in: ids };
+        }
       }
     }
 

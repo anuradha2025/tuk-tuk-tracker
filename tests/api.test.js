@@ -25,13 +25,19 @@ let adminToken;
 let officerToken;
 let testProvince;
 let testDistrict;
+let otherDistrict;
 let testTukTuk;
+let outOfScopeTukTuk;
 
 const adminCreds = { email: "test.admin@police.lk", password: "TestPass@123" };
 const officerCreds = { email: "test.officer@police.lk", password: "TestPass@123" };
 
 beforeAll(async () => {
-  const uri = process.env.MONGODB_URI_TEST || process.env.MONGODB_URI;
+  const uri =
+    process.env.MONGODB_URI_TEST_DIRECT ||
+    process.env.MONGODB_URI_TEST ||
+    process.env.MONGODB_URI_DIRECT ||
+    process.env.MONGODB_URI;
   await mongoose.connect(uri);
 
   // Clean test collections
@@ -43,6 +49,7 @@ beforeAll(async () => {
   // Create test province + district
   testProvince = await Province.create({ name: "Test Province", code: "TP", capital: "Testville" });
   testDistrict = await District.create({ name: "Test District", code: "TDT", province: testProvince._id });
+  otherDistrict = await District.create({ name: "Other District", code: "ODT", province: testProvince._id });
 
   // Create test users directly (bypasses any admin-only restriction in controller)
   await User.create({ ...adminCreds, name: "Test Admin", role: "hq_admin" });
@@ -59,7 +66,10 @@ beforeAll(async () => {
 afterAll(async () => {
   // Clean up test data
   await TukTuk.deleteMany({ registrationNumber: /^TP-TEST/ });
+  await TukTuk.deleteMany({ registrationNumber: /^TP-OUT/ });
   await LocationPing.deleteMany({ tukTuk: testTukTuk?._id });
+  await LocationPing.deleteMany({ tukTuk: outOfScopeTukTuk?._id });
+  await District.deleteMany({ code: "ODT" });
   await District.deleteMany({ code: "TDT" });
   await Province.deleteMany({ code: "TP" });
   await User.deleteMany({ email: { $in: [adminCreds.email, officerCreds.email] } });
@@ -231,6 +241,24 @@ describe("Tuk-Tuks – /api/tuktuks", () => {
     testTukTuk = res.body.data; // save for subsequent tests
   });
 
+  test("POST / creates a second tuk-tuk outside officer district", async () => {
+    const res = await request(app)
+      .post("/api/tuktuks")
+      .set("Authorization", `Bearer ${adminToken}`)
+      .send({
+        registrationNumber: "TP-OUT-0001",
+        driverName: "Out Scope Driver",
+        driverNIC: "200099900099V",
+        driverPhone: "0771111111",
+        district: otherDistrict._id,
+        province: testProvince._id,
+        deviceId: "DEV-OUT-001",
+        status: "active",
+      });
+    expect(res.status).toBe(201);
+    outOfScopeTukTuk = res.body.data;
+  });
+
   test("POST / with duplicate registrationNumber → 409", async () => {
     const res = await request(app)
       .post("/api/tuktuks")
@@ -365,6 +393,14 @@ describe("Locations – /api/locations", () => {
       .get(`/api/locations/history?from=${from}&to=${to}`)
       .set("Authorization", `Bearer ${adminToken}`);
     expect(res.status).toBe(200);
+  });
+
+  test("GET /history with out-of-scope tukTukId as station_officer → empty result", async () => {
+    const res = await request(app)
+      .get(`/api/locations/history?tukTukId=${outOfScopeTukTuk._id}`)
+      .set("Authorization", `Bearer ${officerToken}`);
+    expect(res.status).toBe(200);
+    expect(res.body.count).toBe(0);
   });
 
   test("GET /stats → 200 for hq_admin", async () => {
