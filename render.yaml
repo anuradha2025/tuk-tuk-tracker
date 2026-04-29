@@ -7,7 +7,7 @@
 services:
   - type: web
     name: tuk-tuk-tracker-api
-    env: node
+    runtime: node
     region: singapore          # Closest region to Sri Lanka
     plan: free
 
@@ -22,8 +22,7 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 3000
+      # Render injects the `PORT` env var automatically; don't hardcode it here.
       - key: MONGODB_URI
         sync: false           # Must be set manually in Render dashboard
       - key: JWT_SECRET
@@ -34,3 +33,5 @@ services:
         value: "*"
       - key: API_URL
         sync: false           # Set to your Render URL after first deploy
+      - key: MONGODB_URI_DIRECT
+        sync: false           # Optional: direct connection string if SRV DNS resolution fails
