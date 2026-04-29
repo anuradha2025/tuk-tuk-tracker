@@ -3,6 +3,7 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import dotenv from "dotenv";
+import mongoose from "mongoose";
 import { connectDB } from "./src/config/db.js";
 import { swaggerSpec, swaggerUi } from "./src/config/swagger.js";
 import { errorHandler } from "./src/middleware/errorHandler.js";
@@ -75,12 +76,35 @@ app.use((req, res) => {
 app.use(errorHandler);
 
 // ─── Start Server ────────────────────────────────────────────────────────────
+let server;
 if (process.env.NODE_ENV !== "test") {
-  app.listen(PORT, () => {
+  server = app.listen(PORT, () => {
     console.log(`🚀 Tuk-Tuk Tracker API running on port ${PORT}`);
     console.log(`📚 Swagger docs: http://localhost:${PORT}/api/docs`);
     console.log(`🩺 Health check: http://localhost:${PORT}/health`);
   });
+
+  // Graceful shutdown for Render and other PaaS platforms
+  const shutdown = (signal) => {
+    console.info(`${signal} received. Closing HTTP server and MongoDB connection...`);
+    server.close(async (err) => {
+      if (err) {
+        console.error("Error closing HTTP server:", err);
+        process.exit(1);
+      }
+      try {
+        await mongoose.connection.close(false);
+        console.log("MongoDB connection closed.");
+        process.exit(0);
+      } catch (closeErr) {
+        console.error("Error closing MongoDB connection:", closeErr);
+        process.exit(1);
+      }
+    });
+  };
+
+  process.on("SIGTERM", () => shutdown("SIGTERM"));
+  process.on("SIGINT", () => shutdown("SIGINT"));
 }
 
 export default app;
