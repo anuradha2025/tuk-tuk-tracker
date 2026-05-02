@@ -98,7 +98,6 @@ const tukTukSchema = new mongoose.Schema(
 // ─── Indexes for common query patterns ───────────────────────────────────────
 tukTukSchema.index({ province: 1, district: 1 });
 tukTukSchema.index({ status: 1 });
-tukTukSchema.index({ deviceId: 1 });
 tukTukSchema.index({ registrationNumber: "text", driverName: "text" });
 
 const TukTuk = mongoose.model("TukTuk", tukTukSchema);

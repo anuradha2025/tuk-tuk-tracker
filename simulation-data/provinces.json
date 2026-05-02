@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "69f357d23663da3351ee7f2a",
+    "name": "Western Province",
+    "code": "WP",
+    "capital": "Colombo",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.356Z",
+    "updatedAt": "2026-04-30T13:23:30.356Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f2d",
+    "name": "Northern Province",
+    "code": "NP",
+    "capital": "Jaffna",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f32",
+    "name": "Sabaragamuwa Province",
+    "code": "SGP",
+    "capital": "Ratnapura",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f2e",
+    "name": "Eastern Province",
+    "code": "EP",
+    "capital": "Trincomalee",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f2c",
+    "name": "Southern Province",
+    "code": "SP",
+    "capital": "Galle",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f2f",
+    "name": "North Western Province",
+    "code": "NWP",
+    "capital": "Kurunegala",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f30",
+    "name": "North Central Province",
+    "code": "NCP",
+    "capital": "Anuradhapura",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f31",
+    "name": "Uva Province",
+    "code": "UP",
+    "capital": "Badulla",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  },
+  {
+    "_id": "69f357d23663da3351ee7f2b",
+    "name": "Central Province",
+    "code": "CP",
+    "capital": "Kandy",
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:30.357Z",
+    "updatedAt": "2026-04-30T13:23:30.357Z"
+  }
+]

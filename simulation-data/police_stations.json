@@ -1,0 +1,623 @@
+[
+  {
+    "_id": "69f357d33663da3351ee7f60",
+    "name": "Jaffna Police Station",
+    "stationCode": "PS-JFN-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f41",
+      "name": "Jaffna",
+      "code": "JFN",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2d",
+        "name": "Northern Province",
+        "code": "NP"
+      }
+    },
+    "address": "Jaffna Police Station, Jaffna, Sri Lanka",
+    "phone": "021-2222222",
+    "latitude": 9.6615,
+    "longitude": 80.0255,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f63",
+    "name": "Vavuniya Police Station",
+    "stationCode": "PS-VVN-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f44",
+      "name": "Vavuniya",
+      "code": "VVN",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2d",
+        "name": "Northern Province",
+        "code": "NP"
+      }
+    },
+    "address": "Vavuniya Police Station, Vavuniya, Sri Lanka",
+    "phone": "024-2222222",
+    "latitude": 8.7514,
+    "longitude": 80.4997,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f6b",
+    "name": "Polonnaruwa Police Station",
+    "stationCode": "PS-PLN-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f4c",
+      "name": "Polonnaruwa",
+      "code": "PLN",
+      "province": {
+        "_id": "69f357d23663da3351ee7f30",
+        "name": "North Central Province",
+        "code": "NCP"
+      }
+    },
+    "address": "Polonnaruwa Police Station, Polonnaruwa, Sri Lanka",
+    "phone": "027-2222222",
+    "latitude": 7.9401,
+    "longitude": 81.0001,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f6d",
+    "name": "Monaragala Police Station",
+    "stationCode": "PS-MRG-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f4e",
+      "name": "Monaragala",
+      "code": "MRG",
+      "province": {
+        "_id": "69f357d23663da3351ee7f31",
+        "name": "Uva Province",
+        "code": "UP"
+      }
+    },
+    "address": "Monaragala Police Station, Monaragala, Sri Lanka",
+    "phone": "055-2276222",
+    "latitude": 6.8726,
+    "longitude": 81.3509,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f57",
+    "name": "Gampaha Police Station",
+    "stationCode": "PS-GAM-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f39",
+      "name": "Gampaha",
+      "code": "GAM",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2a",
+        "name": "Western Province",
+        "code": "WP"
+      }
+    },
+    "address": "Gampaha Police Station, Gampaha, Sri Lanka",
+    "phone": "033-2222222",
+    "latitude": 7.0873,
+    "longitude": 80.011,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f62",
+    "name": "Mannar Police Station",
+    "stationCode": "PS-MNR-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f43",
+      "name": "Mannar",
+      "code": "MNR",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2d",
+        "name": "Northern Province",
+        "code": "NP"
+      }
+    },
+    "address": "Mannar Police Station, Mannar, Sri Lanka",
+    "phone": "023-2222222",
+    "latitude": 8.981,
+    "longitude": 79.905,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f58",
+    "name": "Negombo Police Station",
+    "stationCode": "PS-GAM-002",
+    "district": {
+      "_id": "69f357d23663da3351ee7f39",
+      "name": "Gampaha",
+      "code": "GAM",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2a",
+        "name": "Western Province",
+        "code": "WP"
+      }
+    },
+    "address": "Negombo Police Station, Gampaha, Sri Lanka",
+    "phone": "031-2222222",
+    "latitude": 7.2094,
+    "longitude": 79.838,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f5a",
+    "name": "Kandy Central Police Station",
+    "stationCode": "PS-KDY-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f3b",
+      "name": "Kandy",
+      "code": "KDY",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2b",
+        "name": "Central Province",
+        "code": "CP"
+      }
+    },
+    "address": "Kandy Central Police Station, Kandy, Sri Lanka",
+    "phone": "081-2222222",
+    "latitude": 7.296,
+    "longitude": 80.6365,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f6e",
+    "name": "Ratnapura Police Station",
+    "stationCode": "PS-RTP-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f4f",
+      "name": "Ratnapura",
+      "code": "RTP",
+      "province": {
+        "_id": "69f357d23663da3351ee7f32",
+        "name": "Sabaragamuwa Province",
+        "code": "SGP"
+      }
+    },
+    "address": "Ratnapura Police Station, Ratnapura, Sri Lanka",
+    "phone": "045-2222222",
+    "latitude": 6.6827,
+    "longitude": 80.3992,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f59",
+    "name": "Kalutara Police Station",
+    "stationCode": "PS-KLT-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f3a",
+      "name": "Kalutara",
+      "code": "KLT",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2a",
+        "name": "Western Province",
+        "code": "WP"
+      }
+    },
+    "address": "Kalutara Police Station, Kalutara, Sri Lanka",
+    "phone": "034-2222222",
+    "latitude": 6.5851,
+    "longitude": 79.9607,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f55",
+    "name": "Colombo Fort Police Station",
+    "stationCode": "PS-CMB-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f38",
+      "name": "Colombo",
+      "code": "CMB",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2a",
+        "name": "Western Province",
+        "code": "WP"
+      }
+    },
+    "address": "Colombo Fort Police Station, Colombo, Sri Lanka",
+    "phone": "011-2421111",
+    "latitude": 6.9344,
+    "longitude": 79.8428,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f56",
+    "name": "Wellawatte Police Station",
+    "stationCode": "PS-CMB-002",
+    "district": {
+      "_id": "69f357d23663da3351ee7f38",
+      "name": "Colombo",
+      "code": "CMB",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2a",
+        "name": "Western Province",
+        "code": "WP"
+      }
+    },
+    "address": "Wellawatte Police Station, Colombo, Sri Lanka",
+    "phone": "011-2588888",
+    "latitude": 6.8742,
+    "longitude": 79.8617,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f65",
+    "name": "Trincomalee Police Station",
+    "stationCode": "PS-TRC-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f46",
+      "name": "Trincomalee",
+      "code": "TRC",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2e",
+        "name": "Eastern Province",
+        "code": "EP"
+      }
+    },
+    "address": "Trincomalee Police Station, Trincomalee, Sri Lanka",
+    "phone": "026-2222222",
+    "latitude": 8.5874,
+    "longitude": 81.2152,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f6f",
+    "name": "Kegalle Police Station",
+    "stationCode": "PS-KEG-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f50",
+      "name": "Kegalle",
+      "code": "KEG",
+      "province": {
+        "_id": "69f357d23663da3351ee7f32",
+        "name": "Sabaragamuwa Province",
+        "code": "SGP"
+      }
+    },
+    "address": "Kegalle Police Station, Kegalle, Sri Lanka",
+    "phone": "035-2222222",
+    "latitude": 7.2513,
+    "longitude": 80.3464,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f5b",
+    "name": "Matale Police Station",
+    "stationCode": "PS-MTL-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f3c",
+      "name": "Matale",
+      "code": "MTL",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2b",
+        "name": "Central Province",
+        "code": "CP"
+      }
+    },
+    "address": "Matale Police Station, Matale, Sri Lanka",
+    "phone": "066-2222222",
+    "latitude": 7.4667,
+    "longitude": 80.6244,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f69",
+    "name": "Puttalam Police Station",
+    "stationCode": "PS-PUT-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f4a",
+      "name": "Puttalam",
+      "code": "PUT",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2f",
+        "name": "North Western Province",
+        "code": "NWP"
+      }
+    },
+    "address": "Puttalam Police Station, Puttalam, Sri Lanka",
+    "phone": "032-2222222",
+    "latitude": 8.0362,
+    "longitude": 79.8283,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f5c",
+    "name": "Nuwara Eliya Police Station",
+    "stationCode": "PS-NWE-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f3d",
+      "name": "Nuwara Eliya",
+      "code": "NWE",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2b",
+        "name": "Central Province",
+        "code": "CP"
+      }
+    },
+    "address": "Nuwara Eliya Police Station, Nuwara Eliya, Sri Lanka",
+    "phone": "052-2222222",
+    "latitude": 6.9497,
+    "longitude": 80.7891,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f64",
+    "name": "Mullaitivu Police Station",
+    "stationCode": "PS-MLT-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f45",
+      "name": "Mullaitivu",
+      "code": "MLT",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2d",
+        "name": "Northern Province",
+        "code": "NP"
+      }
+    },
+    "address": "Mullaitivu Police Station, Mullaitivu, Sri Lanka",
+    "phone": "021-2290222",
+    "latitude": 9.2672,
+    "longitude": 80.8136,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f5e",
+    "name": "Matara Police Station",
+    "stationCode": "PS-MAT-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f3f",
+      "name": "Matara",
+      "code": "MAT",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2c",
+        "name": "Southern Province",
+        "code": "SP"
+      }
+    },
+    "address": "Matara Police Station, Matara, Sri Lanka",
+    "phone": "041-2222222",
+    "latitude": 5.9496,
+    "longitude": 80.535,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f67",
+    "name": "Ampara Police Station",
+    "stationCode": "PS-AMP-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f48",
+      "name": "Ampara",
+      "code": "AMP",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2e",
+        "name": "Eastern Province",
+        "code": "EP"
+      }
+    },
+    "address": "Ampara Police Station, Ampara, Sri Lanka",
+    "phone": "063-2222222",
+    "latitude": 7.2996,
+    "longitude": 81.6747,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f6c",
+    "name": "Badulla Police Station",
+    "stationCode": "PS-BDL-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f4d",
+      "name": "Badulla",
+      "code": "BDL",
+      "province": {
+        "_id": "69f357d23663da3351ee7f31",
+        "name": "Uva Province",
+        "code": "UP"
+      }
+    },
+    "address": "Badulla Police Station, Badulla, Sri Lanka",
+    "phone": "055-2222222",
+    "latitude": 6.9934,
+    "longitude": 81.055,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f5f",
+    "name": "Hambantota Police Station",
+    "stationCode": "PS-HBT-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f40",
+      "name": "Hambantota",
+      "code": "HBT",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2c",
+        "name": "Southern Province",
+        "code": "SP"
+      }
+    },
+    "address": "Hambantota Police Station, Hambantota, Sri Lanka",
+    "phone": "047-2222222",
+    "latitude": 6.1241,
+    "longitude": 81.1185,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f5d",
+    "name": "Galle Fort Police Station",
+    "stationCode": "PS-GAL-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f3e",
+      "name": "Galle",
+      "code": "GAL",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2c",
+        "name": "Southern Province",
+        "code": "SP"
+      }
+    },
+    "address": "Galle Fort Police Station, Galle, Sri Lanka",
+    "phone": "091-2222222",
+    "latitude": 6.0324,
+    "longitude": 80.217,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f68",
+    "name": "Kurunegala Police Station",
+    "stationCode": "PS-KRN-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f49",
+      "name": "Kurunegala",
+      "code": "KRN",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2f",
+        "name": "North Western Province",
+        "code": "NWP"
+      }
+    },
+    "address": "Kurunegala Police Station, Kurunegala, Sri Lanka",
+    "phone": "037-2222222",
+    "latitude": 7.4867,
+    "longitude": 80.3647,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f6a",
+    "name": "Anuradhapura Police Station",
+    "stationCode": "PS-AND-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f4b",
+      "name": "Anuradhapura",
+      "code": "AND",
+      "province": {
+        "_id": "69f357d23663da3351ee7f30",
+        "name": "North Central Province",
+        "code": "NCP"
+      }
+    },
+    "address": "Anuradhapura Police Station, Anuradhapura, Sri Lanka",
+    "phone": "025-2222222",
+    "latitude": 8.3114,
+    "longitude": 80.4037,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f61",
+    "name": "Kilinochchi Police Station",
+    "stationCode": "PS-KLN-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f42",
+      "name": "Kilinochchi",
+      "code": "KLN",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2d",
+        "name": "Northern Province",
+        "code": "NP"
+      }
+    },
+    "address": "Kilinochchi Police Station, Kilinochchi, Sri Lanka",
+    "phone": "021-2285222",
+    "latitude": 9.3803,
+    "longitude": 80.3947,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  },
+  {
+    "_id": "69f357d33663da3351ee7f66",
+    "name": "Batticaloa Police Station",
+    "stationCode": "PS-BTC-001",
+    "district": {
+      "_id": "69f357d23663da3351ee7f47",
+      "name": "Batticaloa",
+      "code": "BTC",
+      "province": {
+        "_id": "69f357d23663da3351ee7f2e",
+        "name": "Eastern Province",
+        "code": "EP"
+      }
+    },
+    "address": "Batticaloa Police Station, Batticaloa, Sri Lanka",
+    "phone": "065-2222222",
+    "latitude": 7.717,
+    "longitude": 81.6924,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-30T13:23:31.040Z",
+    "updatedAt": "2026-04-30T13:23:31.040Z"
+  }
+]
