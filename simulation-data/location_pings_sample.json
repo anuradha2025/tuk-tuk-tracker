@@ -1,0 +1,7002 @@
+[
+  {
+    "_id": "69f35cfd1664805ca68d03d5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8021",
+      "registrationNumber": "SP TDJ-6755"
+    },
+    "latitude": 6.163723,
+    "longitude": 81.427959,
+    "speed": 1.5,
+    "heading": 16,
+    "accuracy": 6.6,
+    "timestamp": "2026-04-30T13:45:33.522Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cfd1664805ca68d03d3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe4",
+      "registrationNumber": "SP QDI-9654"
+    },
+    "latitude": 9.102287,
+    "longitude": 80.699544,
+    "speed": 34.7,
+    "heading": 299,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:45:33.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cfd1664805ca68d03d1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa2",
+      "registrationNumber": "SP VGT-4863"
+    },
+    "latitude": 9.732319,
+    "longitude": 79.753261,
+    "speed": 2.4,
+    "heading": 283,
+    "accuracy": 3.9,
+    "timestamp": "2026-04-30T13:45:33.519Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cfd1664805ca68d03cf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8029",
+      "registrationNumber": "SP QJB-9233"
+    },
+    "latitude": 7.313314,
+    "longitude": 79.882299,
+    "speed": 28.2,
+    "heading": 11,
+    "accuracy": 4.3,
+    "timestamp": "2026-04-30T13:45:33.518Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cfd1664805ca68d03cd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9e",
+      "registrationNumber": "SP ZBA-3624"
+    },
+    "latitude": 6.404288,
+    "longitude": 80.343034,
+    "speed": 7.8,
+    "heading": 325,
+    "accuracy": 10.6,
+    "timestamp": "2026-04-30T13:45:33.516Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cfd1664805ca68d03cb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800a",
+      "registrationNumber": "SP YXD-8278"
+    },
+    "latitude": 7.151363,
+    "longitude": 81.031724,
+    "speed": 37.2,
+    "heading": 127,
+    "accuracy": 11.4,
+    "timestamp": "2026-04-30T13:45:33.514Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03bd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8007",
+      "registrationNumber": "RP UTA-9846"
+    },
+    "latitude": 7.973166,
+    "longitude": 81.641454,
+    "speed": 25.2,
+    "heading": 269,
+    "accuracy": 4.9,
+    "timestamp": "2026-04-30T13:45:28.571Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03bb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc2",
+      "registrationNumber": "SG LDK-9523"
+    },
+    "latitude": 9.467714,
+    "longitude": 80.48872,
+    "speed": 27.6,
+    "heading": 335,
+    "accuracy": 4.2,
+    "timestamp": "2026-04-30T13:45:28.570Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03b9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fec",
+      "registrationNumber": "SG OQV-1303"
+    },
+    "latitude": 7.069102,
+    "longitude": 80.078577,
+    "speed": 38.4,
+    "heading": 255,
+    "accuracy": 10.6,
+    "timestamp": "2026-04-30T13:45:28.568Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03b7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcf",
+      "registrationNumber": "SP BQG-1810"
+    },
+    "latitude": 6.172133,
+    "longitude": 80.082123,
+    "speed": 12,
+    "heading": 248,
+    "accuracy": 12,
+    "timestamp": "2026-04-30T13:45:28.566Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03b5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa6",
+      "registrationNumber": "SP CAB-9338"
+    },
+    "latitude": 6.789198,
+    "longitude": 80.111747,
+    "speed": 13.5,
+    "heading": 220,
+    "accuracy": 11.6,
+    "timestamp": "2026-04-30T13:45:28.562Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03b3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fbc",
+      "registrationNumber": "SP JLA-6466"
+    },
+    "latitude": 9.511185,
+    "longitude": 81.177236,
+    "speed": 19.1,
+    "heading": 233,
+    "accuracy": 8.3,
+    "timestamp": "2026-04-30T13:45:28.560Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03b1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff1",
+      "registrationNumber": "SP ERM-1382"
+    },
+    "latitude": 9.116477,
+    "longitude": 79.893472,
+    "speed": 22.2,
+    "heading": 229,
+    "accuracy": 12.3,
+    "timestamp": "2026-04-30T13:45:28.557Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03af",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f89",
+      "registrationNumber": "SP GXH-3528"
+    },
+    "latitude": 6.327088,
+    "longitude": 79.740269,
+    "speed": 0,
+    "heading": 214,
+    "accuracy": 8.9,
+    "timestamp": "2026-04-30T13:45:28.555Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03ad",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcc",
+      "registrationNumber": "SP KDJ-1692"
+    },
+    "latitude": 8.166531,
+    "longitude": 80.006799,
+    "speed": 2,
+    "heading": 213,
+    "accuracy": 3.6,
+    "timestamp": "2026-04-30T13:45:28.553Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf81664805ca68d03ab",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8049",
+      "registrationNumber": "SP LFY-3363"
+    },
+    "latitude": 7.302161,
+    "longitude": 80.144451,
+    "speed": 18.5,
+    "heading": 227,
+    "accuracy": 14,
+    "timestamp": "2026-04-30T13:45:28.551Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d0395",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd2",
+      "registrationNumber": "NP ZVO-4906"
+    },
+    "latitude": 8.91505,
+    "longitude": 80.564815,
+    "speed": 17.1,
+    "heading": 262,
+    "accuracy": 14.6,
+    "timestamp": "2026-04-30T13:45:23.486Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d0393",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd9",
+      "registrationNumber": "NW TPD-2897"
+    },
+    "latitude": 9.686751,
+    "longitude": 80.32288,
+    "speed": 28.7,
+    "heading": 194,
+    "accuracy": 8,
+    "timestamp": "2026-04-30T13:45:23.485Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d0391",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff6",
+      "registrationNumber": "NW VWL-8148"
+    },
+    "latitude": 7.713455,
+    "longitude": 81.342387,
+    "speed": 0,
+    "heading": 269,
+    "accuracy": 7.1,
+    "timestamp": "2026-04-30T13:45:23.483Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d038f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdf",
+      "registrationNumber": "NW VKX-9432"
+    },
+    "latitude": 8.475789,
+    "longitude": 80.788845,
+    "speed": 42.6,
+    "heading": 277,
+    "accuracy": 12.4,
+    "timestamp": "2026-04-30T13:45:23.482Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d038d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb1",
+      "registrationNumber": "NW XUK-9802"
+    },
+    "latitude": 6.142107,
+    "longitude": 80.798073,
+    "speed": 8.4,
+    "heading": 158,
+    "accuracy": 7,
+    "timestamp": "2026-04-30T13:45:23.480Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d038b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9d",
+      "registrationNumber": "RP GTR-3463"
+    },
+    "latitude": 6.71156,
+    "longitude": 81.618384,
+    "speed": 29.6,
+    "heading": 102,
+    "accuracy": 10,
+    "timestamp": "2026-04-30T13:45:23.478Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d0389",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee804a",
+      "registrationNumber": "RP HFA-6733"
+    },
+    "latitude": 9.059841,
+    "longitude": 79.741231,
+    "speed": 28.3,
+    "heading": 20,
+    "accuracy": 6,
+    "timestamp": "2026-04-30T13:45:23.456Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d0387",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7faa",
+      "registrationNumber": "RP MMP-9737"
+    },
+    "latitude": 7.275917,
+    "longitude": 79.974603,
+    "speed": 24.5,
+    "heading": 310,
+    "accuracy": 14.9,
+    "timestamp": "2026-04-30T13:45:23.455Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d0385",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd8",
+      "registrationNumber": "RP UAX-7667"
+    },
+    "latitude": 7.206121,
+    "longitude": 80.022888,
+    "speed": 36,
+    "heading": 18,
+    "accuracy": 7.6,
+    "timestamp": "2026-04-30T13:45:23.453Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cf31664805ca68d0383",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801f",
+      "registrationNumber": "RP UGE-6840"
+    },
+    "latitude": 7.960823,
+    "longitude": 79.830753,
+    "speed": 7,
+    "heading": 175,
+    "accuracy": 13.4,
+    "timestamp": "2026-04-30T13:45:23.451Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d036d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8036",
+      "registrationNumber": "NC TXF-6475"
+    },
+    "latitude": 7.125424,
+    "longitude": 80.229396,
+    "speed": 15.4,
+    "heading": 69,
+    "accuracy": 6.9,
+    "timestamp": "2026-04-30T13:45:18.568Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d036b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fff",
+      "registrationNumber": "NC XEA-2367"
+    },
+    "latitude": 5.982913,
+    "longitude": 80.760188,
+    "speed": 25.3,
+    "heading": 83,
+    "accuracy": 13,
+    "timestamp": "2026-04-30T13:45:18.567Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d0369",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8000",
+      "registrationNumber": "NP DMG-6334"
+    },
+    "latitude": 7.960477,
+    "longitude": 79.799227,
+    "speed": 4.1,
+    "heading": 354,
+    "accuracy": 11.7,
+    "timestamp": "2026-04-30T13:45:18.566Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d0367",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd1",
+      "registrationNumber": "NP ICL-7552"
+    },
+    "latitude": 6.632489,
+    "longitude": 80.27621,
+    "speed": 25.9,
+    "heading": 303,
+    "accuracy": 7.2,
+    "timestamp": "2026-04-30T13:45:18.564Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d0365",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800c",
+      "registrationNumber": "NP GML-8222"
+    },
+    "latitude": 8.670283,
+    "longitude": 80.958079,
+    "speed": 7.6,
+    "heading": 304,
+    "accuracy": 13.3,
+    "timestamp": "2026-04-30T13:45:18.562Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d0363",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8a",
+      "registrationNumber": "NP OVX-8741"
+    },
+    "latitude": 7.677853,
+    "longitude": 80.82244,
+    "speed": 15.5,
+    "heading": 318,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:45:18.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d0361",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8028",
+      "registrationNumber": "NP QTZ-6441"
+    },
+    "latitude": 9.813896,
+    "longitude": 81.033587,
+    "speed": 24.5,
+    "heading": 33,
+    "accuracy": 12.2,
+    "timestamp": "2026-04-30T13:45:18.558Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d035f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8009",
+      "registrationNumber": "NP XAI-5841"
+    },
+    "latitude": 7.66023,
+    "longitude": 81.523169,
+    "speed": 5.6,
+    "heading": 208,
+    "accuracy": 14.9,
+    "timestamp": "2026-04-30T13:45:18.555Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d035d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc4",
+      "registrationNumber": "NP SUZ-1273"
+    },
+    "latitude": 9.800394,
+    "longitude": 80.485643,
+    "speed": 45.1,
+    "heading": 343,
+    "accuracy": 7.5,
+    "timestamp": "2026-04-30T13:45:18.553Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cee1664805ca68d035b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802a",
+      "registrationNumber": "NP ZIF-1221"
+    },
+    "latitude": 6.233356,
+    "longitude": 79.734281,
+    "speed": 18.1,
+    "heading": 217,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:45:18.552Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d0345",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8046",
+      "registrationNumber": "KY EUC-7096"
+    },
+    "latitude": 9.57521,
+    "longitude": 81.14768,
+    "speed": 35,
+    "heading": 7,
+    "accuracy": 5.5,
+    "timestamp": "2026-04-30T13:45:13.525Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d0343",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8018",
+      "registrationNumber": "KY AHQ-7359"
+    },
+    "latitude": 6.938838,
+    "longitude": 80.399728,
+    "speed": 37.4,
+    "heading": 283,
+    "accuracy": 6.6,
+    "timestamp": "2026-04-30T13:45:13.524Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d0341",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdc",
+      "registrationNumber": "KY YFV-5701"
+    },
+    "latitude": 9.196758,
+    "longitude": 79.738872,
+    "speed": 8.4,
+    "heading": 284,
+    "accuracy": 4.6,
+    "timestamp": "2026-04-30T13:45:13.524Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d033f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb2",
+      "registrationNumber": "KY GEO-7937"
+    },
+    "latitude": 6.555632,
+    "longitude": 80.269232,
+    "speed": 42.2,
+    "heading": 12,
+    "accuracy": 13.2,
+    "timestamp": "2026-04-30T13:45:13.523Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d033d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa3",
+      "registrationNumber": "KY HCQ-7931"
+    },
+    "latitude": 6.224739,
+    "longitude": 79.974122,
+    "speed": 28.6,
+    "heading": 205,
+    "accuracy": 14.6,
+    "timestamp": "2026-04-30T13:45:13.523Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d033b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8027",
+      "registrationNumber": "KY VYB-6172"
+    },
+    "latitude": 6.025069,
+    "longitude": 81.751832,
+    "speed": 7.5,
+    "heading": 242,
+    "accuracy": 3.9,
+    "timestamp": "2026-04-30T13:45:13.522Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d0339",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcb",
+      "registrationNumber": "NC FHK-6244"
+    },
+    "latitude": 7.451655,
+    "longitude": 79.745684,
+    "speed": 6,
+    "heading": 191,
+    "accuracy": 4,
+    "timestamp": "2026-04-30T13:45:13.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d0337",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8005",
+      "registrationNumber": "NC KKV-3667"
+    },
+    "latitude": 8.7424,
+    "longitude": 81.354654,
+    "speed": 33.6,
+    "heading": 300,
+    "accuracy": 5.8,
+    "timestamp": "2026-04-30T13:45:13.520Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d0335",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffb",
+      "registrationNumber": "NC RJJ-7993"
+    },
+    "latitude": 8.134732,
+    "longitude": 81.137719,
+    "speed": 46.1,
+    "heading": 216,
+    "accuracy": 7.9,
+    "timestamp": "2026-04-30T13:45:13.518Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce91664805ca68d0333",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8035",
+      "registrationNumber": "NC NNB-9788"
+    },
+    "latitude": 8.062763,
+    "longitude": 81.736038,
+    "speed": 10.3,
+    "heading": 202,
+    "accuracy": 3.7,
+    "timestamp": "2026-04-30T13:45:13.516Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d031d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa0",
+      "registrationNumber": "JF UZZ-4631"
+    },
+    "latitude": 6.257764,
+    "longitude": 80.239602,
+    "speed": 23.6,
+    "heading": 136,
+    "accuracy": 10.5,
+    "timestamp": "2026-04-30T13:45:08.512Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d031b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcd",
+      "registrationNumber": "JF XQC-1440"
+    },
+    "latitude": 8.032014,
+    "longitude": 80.734461,
+    "speed": 21.7,
+    "heading": 27,
+    "accuracy": 4.5,
+    "timestamp": "2026-04-30T13:45:08.511Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d0319",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8030",
+      "registrationNumber": "JF YMV-3111"
+    },
+    "latitude": 8.321725,
+    "longitude": 80.124461,
+    "speed": 10,
+    "heading": 251,
+    "accuracy": 10.4,
+    "timestamp": "2026-04-30T13:45:08.502Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d0317",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff9",
+      "registrationNumber": "JF YZS-4243"
+    },
+    "latitude": 8.282456,
+    "longitude": 80.115382,
+    "speed": 17.3,
+    "heading": 317,
+    "accuracy": 13.6,
+    "timestamp": "2026-04-30T13:45:08.500Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d0313",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc7",
+      "registrationNumber": "JF ZMP-2760"
+    },
+    "latitude": 6.847956,
+    "longitude": 80.787333,
+    "speed": 18.2,
+    "heading": 21,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:45:08.497Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d0315",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fae",
+      "registrationNumber": "JF XRR-6788"
+    },
+    "latitude": 8.511037,
+    "longitude": 80.250619,
+    "speed": 16.9,
+    "heading": 106,
+    "accuracy": 12.2,
+    "timestamp": "2026-04-30T13:45:08.497Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d0311",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803a",
+      "registrationNumber": "KU RLF-2755"
+    },
+    "latitude": 8.616503,
+    "longitude": 80.582816,
+    "speed": 17.6,
+    "heading": 199,
+    "accuracy": 9.1,
+    "timestamp": "2026-04-30T13:45:08.496Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d030f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f96",
+      "registrationNumber": "JF ZTA-5746"
+    },
+    "latitude": 7.687778,
+    "longitude": 81.594017,
+    "speed": 34.6,
+    "heading": 309,
+    "accuracy": 6.3,
+    "timestamp": "2026-04-30T13:45:08.495Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d030d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8013",
+      "registrationNumber": "KU YPF-5125"
+    },
+    "latitude": 8.279486,
+    "longitude": 79.67006,
+    "speed": 48.2,
+    "heading": 317,
+    "accuracy": 14.1,
+    "timestamp": "2026-04-30T13:45:08.493Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ce41664805ca68d030b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8026",
+      "registrationNumber": "KY ACF-3137"
+    },
+    "latitude": 8.242102,
+    "longitude": 81.317852,
+    "speed": 44.3,
+    "heading": 123,
+    "accuracy": 4.8,
+    "timestamp": "2026-04-30T13:45:08.491Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02f5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb4",
+      "registrationNumber": "GL WNM-7898"
+    },
+    "latitude": 9.734816,
+    "longitude": 80.9435,
+    "speed": 36.2,
+    "heading": 88,
+    "accuracy": 8.6,
+    "timestamp": "2026-04-30T13:45:03.531Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02f3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f85",
+      "registrationNumber": "GL SHI-8552"
+    },
+    "latitude": 8.910248,
+    "longitude": 80.618887,
+    "speed": 10.1,
+    "heading": 197,
+    "accuracy": 15,
+    "timestamp": "2026-04-30T13:45:03.529Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02f1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8c",
+      "registrationNumber": "JF IHA-4850"
+    },
+    "latitude": 6.040569,
+    "longitude": 81.522519,
+    "speed": 23,
+    "heading": 330,
+    "accuracy": 11.5,
+    "timestamp": "2026-04-30T13:45:03.527Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02ef",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff3",
+      "registrationNumber": "JF JLO-4178"
+    },
+    "latitude": 6.535949,
+    "longitude": 80.538907,
+    "speed": 32.2,
+    "heading": 228,
+    "accuracy": 9.5,
+    "timestamp": "2026-04-30T13:45:03.524Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02ed",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f90",
+      "registrationNumber": "JF LRS-6413"
+    },
+    "latitude": 9.326791,
+    "longitude": 81.30613,
+    "speed": 27.9,
+    "heading": 285,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:45:03.522Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02eb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f84",
+      "registrationNumber": "JF QIT-9520"
+    },
+    "latitude": 8.644016,
+    "longitude": 80.278116,
+    "speed": 34.2,
+    "heading": 284,
+    "accuracy": 9.9,
+    "timestamp": "2026-04-30T13:45:03.520Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02e9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8040",
+      "registrationNumber": "JF NCC-2259"
+    },
+    "latitude": 6.447049,
+    "longitude": 80.423004,
+    "speed": 39.7,
+    "heading": 254,
+    "accuracy": 9.4,
+    "timestamp": "2026-04-30T13:45:03.518Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02e7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fca",
+      "registrationNumber": "JF BWK-1771"
+    },
+    "latitude": 7.01963,
+    "longitude": 81.268755,
+    "speed": 39.5,
+    "heading": 329,
+    "accuracy": 7.8,
+    "timestamp": "2026-04-30T13:45:03.517Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02e5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8003",
+      "registrationNumber": "JF RKH-1972"
+    },
+    "latitude": 8.053093,
+    "longitude": 79.703158,
+    "speed": 39.1,
+    "heading": 295,
+    "accuracy": 6,
+    "timestamp": "2026-04-30T13:45:03.515Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cdf1664805ca68d02e3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc8",
+      "registrationNumber": "JF UEY-5682"
+    },
+    "latitude": 8.101061,
+    "longitude": 80.607432,
+    "speed": 18.5,
+    "heading": 31,
+    "accuracy": 9.5,
+    "timestamp": "2026-04-30T13:45:03.513Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02cd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801d",
+      "registrationNumber": "EP QAV-5235"
+    },
+    "latitude": 6.392823,
+    "longitude": 81.808996,
+    "speed": 6.5,
+    "heading": 4,
+    "accuracy": 14.6,
+    "timestamp": "2026-04-30T13:44:58.471Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02cb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f98",
+      "registrationNumber": "EP OUF-8898"
+    },
+    "latitude": 6.952891,
+    "longitude": 79.903403,
+    "speed": 30,
+    "heading": 171,
+    "accuracy": 3.6,
+    "timestamp": "2026-04-30T13:44:58.469Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02c9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f97",
+      "registrationNumber": "CP XEI-1328"
+    },
+    "latitude": 9.410701,
+    "longitude": 80.571441,
+    "speed": 17.7,
+    "heading": 147,
+    "accuracy": 13.6,
+    "timestamp": "2026-04-30T13:44:58.467Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02c7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9b",
+      "registrationNumber": "EP HKB-4498"
+    },
+    "latitude": 9.816069,
+    "longitude": 81.702576,
+    "speed": 12.9,
+    "heading": 360,
+    "accuracy": 11.8,
+    "timestamp": "2026-04-30T13:44:58.462Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02c5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803c",
+      "registrationNumber": "GL IQC-6430"
+    },
+    "latitude": 8.078058,
+    "longitude": 81.85018,
+    "speed": 18,
+    "heading": 259,
+    "accuracy": 9.1,
+    "timestamp": "2026-04-30T13:44:58.461Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02c3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800d",
+      "registrationNumber": "GL NOE-8439"
+    },
+    "latitude": 7.652397,
+    "longitude": 79.783612,
+    "speed": 45.1,
+    "heading": 91,
+    "accuracy": 9.9,
+    "timestamp": "2026-04-30T13:44:58.459Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02c1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8b",
+      "registrationNumber": "EP LXK-3501"
+    },
+    "latitude": 8.421624,
+    "longitude": 80.96018,
+    "speed": 0,
+    "heading": 1,
+    "accuracy": 12.6,
+    "timestamp": "2026-04-30T13:44:58.458Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02bf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc5",
+      "registrationNumber": "EP MPT-3538"
+    },
+    "latitude": 6.871236,
+    "longitude": 81.641896,
+    "speed": 22.7,
+    "heading": 298,
+    "accuracy": 9.5,
+    "timestamp": "2026-04-30T13:44:58.456Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02bd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb0",
+      "registrationNumber": "GL FGA-2203"
+    },
+    "latitude": 9.217681,
+    "longitude": 81.475522,
+    "speed": 18.7,
+    "heading": 52,
+    "accuracy": 7.8,
+    "timestamp": "2026-04-30T13:44:58.454Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cda1664805ca68d02bb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe9",
+      "registrationNumber": "EP PFC-3974"
+    },
+    "latitude": 7.548512,
+    "longitude": 80.469756,
+    "speed": 16.4,
+    "heading": 292,
+    "accuracy": 3.4,
+    "timestamp": "2026-04-30T13:44:58.452Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d02a5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8041",
+      "registrationNumber": "BD UPO-7763"
+    },
+    "latitude": 8.797976,
+    "longitude": 80.319163,
+    "speed": 1.3,
+    "heading": 155,
+    "accuracy": 8.2,
+    "timestamp": "2026-04-30T13:44:53.419Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d02a3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe2",
+      "registrationNumber": "CP DFK-6852"
+    },
+    "latitude": 9.812581,
+    "longitude": 80.8707,
+    "speed": 22.2,
+    "heading": 237,
+    "accuracy": 9.5,
+    "timestamp": "2026-04-30T13:44:53.418Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d02a1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8042",
+      "registrationNumber": "BD ZJO-2903"
+    },
+    "latitude": 7.756999,
+    "longitude": 81.664837,
+    "speed": 49.1,
+    "heading": 154,
+    "accuracy": 9.2,
+    "timestamp": "2026-04-30T13:44:53.416Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d029f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7feb",
+      "registrationNumber": "CP ENS-8400"
+    },
+    "latitude": 8.732733,
+    "longitude": 81.613302,
+    "speed": 33.8,
+    "heading": 150,
+    "accuracy": 13.5,
+    "timestamp": "2026-04-30T13:44:53.415Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d029d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8047",
+      "registrationNumber": "CP DHP-1647"
+    },
+    "latitude": 7.77917,
+    "longitude": 80.690426,
+    "speed": 41.2,
+    "heading": 245,
+    "accuracy": 5.6,
+    "timestamp": "2026-04-30T13:44:53.413Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d029b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fed",
+      "registrationNumber": "CP IOE-9234"
+    },
+    "latitude": 8.320282,
+    "longitude": 79.905438,
+    "speed": 38.2,
+    "heading": 342,
+    "accuracy": 13.7,
+    "timestamp": "2026-04-30T13:44:53.412Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d0299",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffd",
+      "registrationNumber": "CP PVG-1273"
+    },
+    "latitude": 6.112716,
+    "longitude": 81.301721,
+    "speed": 16.2,
+    "heading": 265,
+    "accuracy": 6.4,
+    "timestamp": "2026-04-30T13:44:53.410Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d0297",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8006",
+      "registrationNumber": "CP QMC-8465"
+    },
+    "latitude": 6.451582,
+    "longitude": 80.134843,
+    "speed": 37.1,
+    "heading": 237,
+    "accuracy": 14.8,
+    "timestamp": "2026-04-30T13:44:53.402Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d0295",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb7",
+      "registrationNumber": "CP WYT-9223"
+    },
+    "latitude": 7.500248,
+    "longitude": 79.776738,
+    "speed": 12.1,
+    "heading": 312,
+    "accuracy": 6.9,
+    "timestamp": "2026-04-30T13:44:53.401Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd51664805ca68d0293",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffa",
+      "registrationNumber": "CP VSI-3529"
+    },
+    "latitude": 6.04799,
+    "longitude": 80.097863,
+    "speed": 35.3,
+    "heading": 288,
+    "accuracy": 8.6,
+    "timestamp": "2026-04-30T13:44:53.399Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd01664805ca68d027d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe0",
+      "registrationNumber": "WP XCF-4681"
+    },
+    "latitude": 8.997746,
+    "longitude": 80.457403,
+    "speed": 11.1,
+    "heading": 52,
+    "accuracy": 8.4,
+    "timestamp": "2026-04-30T13:44:48.411Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd01664805ca68d027b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803e",
+      "registrationNumber": "WP VYQ-4339"
+    },
+    "latitude": 8.763979,
+    "longitude": 79.754891,
+    "speed": 21.1,
+    "heading": 75,
+    "accuracy": 7.7,
+    "timestamp": "2026-04-30T13:44:48.409Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd01664805ca68d0279",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f99",
+      "registrationNumber": "WP XQD-7244"
+    },
+    "latitude": 8.737963,
+    "longitude": 80.553714,
+    "speed": 30.2,
+    "heading": 282,
+    "accuracy": 9.1,
+    "timestamp": "2026-04-30T13:44:48.406Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cd01664805ca68d0277",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8014",
+      "registrationNumber": "WP XKB-7702"
+    },
+    "latitude": 9.55613,
+    "longitude": 81.827387,
+    "speed": 50,
+    "heading": 146,
+    "accuracy": 6.6,
+    "timestamp": "2026-04-30T13:44:48.402Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d026d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff4",
+      "registrationNumber": "WP CRW-3803"
+    },
+    "latitude": 9.657442,
+    "longitude": 80.830794,
+    "speed": 2.6,
+    "heading": 192,
+    "accuracy": 14.6,
+    "timestamp": "2026-04-30T13:44:43.450Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d026b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa4",
+      "registrationNumber": "WP CIV-9833"
+    },
+    "latitude": 8.158579,
+    "longitude": 81.79416,
+    "speed": 37.5,
+    "heading": 37,
+    "accuracy": 11.2,
+    "timestamp": "2026-04-30T13:44:43.449Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d0269",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8044",
+      "registrationNumber": "WP DUJ-8155"
+    },
+    "latitude": 7.433316,
+    "longitude": 80.372866,
+    "speed": 22,
+    "heading": 201,
+    "accuracy": 7.3,
+    "timestamp": "2026-04-30T13:44:43.447Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d0267",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802e",
+      "registrationNumber": "WP ILA-3139"
+    },
+    "latitude": 9.018388,
+    "longitude": 81.540822,
+    "speed": 32,
+    "heading": 264,
+    "accuracy": 3.5,
+    "timestamp": "2026-04-30T13:44:43.446Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d0265",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe3",
+      "registrationNumber": "WP DFS-6165"
+    },
+    "latitude": 8.553775,
+    "longitude": 80.234393,
+    "speed": 29.1,
+    "heading": 304,
+    "accuracy": 10.2,
+    "timestamp": "2026-04-30T13:44:43.444Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d0263",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f83",
+      "registrationNumber": "WP JEY-6245"
+    },
+    "latitude": 9.446524,
+    "longitude": 80.77185,
+    "speed": 30.8,
+    "heading": 67,
+    "accuracy": 10.8,
+    "timestamp": "2026-04-30T13:44:43.440Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d0261",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8010",
+      "registrationNumber": "WP NXM-2002"
+    },
+    "latitude": 6.507998,
+    "longitude": 79.817253,
+    "speed": 22,
+    "heading": 23,
+    "accuracy": 3.9,
+    "timestamp": "2026-04-30T13:44:43.438Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d025f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff8",
+      "registrationNumber": "WP VRA-3248"
+    },
+    "latitude": 7.232038,
+    "longitude": 80.301224,
+    "speed": 33.3,
+    "heading": 165,
+    "accuracy": 11.4,
+    "timestamp": "2026-04-30T13:44:43.437Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d025d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8016",
+      "registrationNumber": "WP VUX-6050"
+    },
+    "latitude": 9.402844,
+    "longitude": 81.5207,
+    "speed": 25.6,
+    "heading": 208,
+    "accuracy": 8.7,
+    "timestamp": "2026-04-30T13:44:43.435Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ccb1664805ca68d025b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff2",
+      "registrationNumber": "WP VBO-8952"
+    },
+    "latitude": 7.973446,
+    "longitude": 79.943367,
+    "speed": 14.7,
+    "heading": 35,
+    "accuracy": 4.9,
+    "timestamp": "2026-04-30T13:44:43.433Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d0245",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb6",
+      "registrationNumber": "TC FXI-2857"
+    },
+    "latitude": 6.924447,
+    "longitude": 81.716181,
+    "speed": 32.9,
+    "heading": 28,
+    "accuracy": 14.3,
+    "timestamp": "2026-04-30T13:44:38.413Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d0243",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe6",
+      "registrationNumber": "WP BOJ-1750"
+    },
+    "latitude": 7.551386,
+    "longitude": 80.439701,
+    "speed": 27.2,
+    "heading": 171,
+    "accuracy": 6.5,
+    "timestamp": "2026-04-30T13:44:38.411Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d0241",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800b",
+      "registrationNumber": "TC EFN-3372"
+    },
+    "latitude": 6.229382,
+    "longitude": 81.278004,
+    "speed": 41.6,
+    "heading": 190,
+    "accuracy": 13,
+    "timestamp": "2026-04-30T13:44:38.410Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d023f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8037",
+      "registrationNumber": "TC TCW-2565"
+    },
+    "latitude": 7.393292,
+    "longitude": 81.163949,
+    "speed": 9.4,
+    "heading": 295,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:44:38.409Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d023d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802f",
+      "registrationNumber": "TC HBU-8276"
+    },
+    "latitude": 7.04474,
+    "longitude": 79.772776,
+    "speed": 32.6,
+    "heading": 18,
+    "accuracy": 8.8,
+    "timestamp": "2026-04-30T13:44:38.407Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d023b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803d",
+      "registrationNumber": "UV JSZ-2177"
+    },
+    "latitude": 6.225493,
+    "longitude": 81.068552,
+    "speed": 33.1,
+    "heading": 329,
+    "accuracy": 5.9,
+    "timestamp": "2026-04-30T13:44:38.405Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d0239",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd5",
+      "registrationNumber": "WP CCR-2554"
+    },
+    "latitude": 9.245029,
+    "longitude": 80.273906,
+    "speed": 42,
+    "heading": 208,
+    "accuracy": 8.8,
+    "timestamp": "2026-04-30T13:44:38.404Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d0237",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8f",
+      "registrationNumber": "UV WNU-7442"
+    },
+    "latitude": 7.315151,
+    "longitude": 80.434234,
+    "speed": 26,
+    "heading": 15,
+    "accuracy": 7.4,
+    "timestamp": "2026-04-30T13:44:38.402Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d0235",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7faf",
+      "registrationNumber": "UV LYD-5528"
+    },
+    "latitude": 7.310505,
+    "longitude": 81.730695,
+    "speed": 14.9,
+    "heading": 310,
+    "accuracy": 11.4,
+    "timestamp": "2026-04-30T13:44:38.400Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc61664805ca68d0233",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9c",
+      "registrationNumber": "UV QFH-6566"
+    },
+    "latitude": 6.875243,
+    "longitude": 81.311399,
+    "speed": 19.3,
+    "heading": 43,
+    "accuracy": 7.7,
+    "timestamp": "2026-04-30T13:44:38.397Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d021d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8049",
+      "registrationNumber": "SP LFY-3363"
+    },
+    "latitude": 7.302161,
+    "longitude": 80.144451,
+    "speed": 13.9,
+    "heading": 222,
+    "accuracy": 8.8,
+    "timestamp": "2026-04-30T13:44:33.522Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d021b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe4",
+      "registrationNumber": "SP QDI-9654"
+    },
+    "latitude": 9.102287,
+    "longitude": 80.699544,
+    "speed": 36.4,
+    "heading": 293,
+    "accuracy": 12.2,
+    "timestamp": "2026-04-30T13:44:33.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d0219",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8021",
+      "registrationNumber": "SP TDJ-6755"
+    },
+    "latitude": 6.163723,
+    "longitude": 81.427959,
+    "speed": 3.4,
+    "heading": 6,
+    "accuracy": 9.3,
+    "timestamp": "2026-04-30T13:44:33.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d0217",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa2",
+      "registrationNumber": "SP VGT-4863"
+    },
+    "latitude": 9.732319,
+    "longitude": 79.753261,
+    "speed": 2.6,
+    "heading": 273,
+    "accuracy": 11.3,
+    "timestamp": "2026-04-30T13:44:33.520Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d0215",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8029",
+      "registrationNumber": "SP QJB-9233"
+    },
+    "latitude": 7.313313,
+    "longitude": 79.882299,
+    "speed": 26.8,
+    "heading": 15,
+    "accuracy": 6.8,
+    "timestamp": "2026-04-30T13:44:33.519Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d0213",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800a",
+      "registrationNumber": "SP YXD-8278"
+    },
+    "latitude": 7.151364,
+    "longitude": 81.031724,
+    "speed": 40.8,
+    "heading": 118,
+    "accuracy": 5.1,
+    "timestamp": "2026-04-30T13:44:33.518Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d0211",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9e",
+      "registrationNumber": "SP ZBA-3624"
+    },
+    "latitude": 6.404288,
+    "longitude": 80.343034,
+    "speed": 10.3,
+    "heading": 318,
+    "accuracy": 5.9,
+    "timestamp": "2026-04-30T13:44:33.515Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d020f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fab",
+      "registrationNumber": "TC AOP-1453"
+    },
+    "latitude": 7.717135,
+    "longitude": 80.791039,
+    "speed": 40.9,
+    "heading": 293,
+    "accuracy": 12.2,
+    "timestamp": "2026-04-30T13:44:33.513Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d020d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff5",
+      "registrationNumber": "TC BPJ-3942"
+    },
+    "latitude": 7.439031,
+    "longitude": 80.458471,
+    "speed": 50,
+    "heading": 213,
+    "accuracy": 11.6,
+    "timestamp": "2026-04-30T13:44:33.494Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cc11664805ca68d020b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb8",
+      "registrationNumber": "TC BWA-9631"
+    },
+    "latitude": 9.838919,
+    "longitude": 81.516934,
+    "speed": 19.5,
+    "heading": 310,
+    "accuracy": 13.6,
+    "timestamp": "2026-04-30T13:44:33.492Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01f5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801f",
+      "registrationNumber": "RP UGE-6840"
+    },
+    "latitude": 7.960823,
+    "longitude": 79.830753,
+    "speed": 9,
+    "heading": 163,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:44:28.448Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01f3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8007",
+      "registrationNumber": "RP UTA-9846"
+    },
+    "latitude": 7.973166,
+    "longitude": 81.641455,
+    "speed": 28.6,
+    "heading": 278,
+    "accuracy": 6.5,
+    "timestamp": "2026-04-30T13:44:28.446Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01f1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fbc",
+      "registrationNumber": "SP JLA-6466"
+    },
+    "latitude": 9.511185,
+    "longitude": 81.177236,
+    "speed": 14.9,
+    "heading": 222,
+    "accuracy": 4,
+    "timestamp": "2026-04-30T13:44:28.445Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01ef",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcc",
+      "registrationNumber": "SP KDJ-1692"
+    },
+    "latitude": 8.166531,
+    "longitude": 80.006799,
+    "speed": 4.7,
+    "heading": 200,
+    "accuracy": 10.7,
+    "timestamp": "2026-04-30T13:44:28.443Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01ed",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f89",
+      "registrationNumber": "SP GXH-3528"
+    },
+    "latitude": 6.327088,
+    "longitude": 79.740269,
+    "speed": 0.1,
+    "heading": 221,
+    "accuracy": 11.5,
+    "timestamp": "2026-04-30T13:44:28.441Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01eb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc2",
+      "registrationNumber": "SG LDK-9523"
+    },
+    "latitude": 9.467713,
+    "longitude": 80.48872,
+    "speed": 27.5,
+    "heading": 350,
+    "accuracy": 4.7,
+    "timestamp": "2026-04-30T13:44:28.430Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01e9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fec",
+      "registrationNumber": "SG OQV-1303"
+    },
+    "latitude": 7.069102,
+    "longitude": 80.078577,
+    "speed": 35.9,
+    "heading": 245,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:44:28.428Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01e7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcf",
+      "registrationNumber": "SP BQG-1810"
+    },
+    "latitude": 6.172133,
+    "longitude": 80.082123,
+    "speed": 15.4,
+    "heading": 239,
+    "accuracy": 6,
+    "timestamp": "2026-04-30T13:44:28.426Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01e5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff1",
+      "registrationNumber": "SP ERM-1382"
+    },
+    "latitude": 9.116477,
+    "longitude": 79.893472,
+    "speed": 19.8,
+    "heading": 222,
+    "accuracy": 6.5,
+    "timestamp": "2026-04-30T13:44:28.424Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cbc1664805ca68d01e3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa6",
+      "registrationNumber": "SP CAB-9338"
+    },
+    "latitude": 6.789198,
+    "longitude": 80.111747,
+    "speed": 16.1,
+    "heading": 226,
+    "accuracy": 10.8,
+    "timestamp": "2026-04-30T13:44:28.422Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01cd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802a",
+      "registrationNumber": "NP ZIF-1221"
+    },
+    "latitude": 6.233356,
+    "longitude": 79.734281,
+    "speed": 20.1,
+    "heading": 209,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:44:23.399Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01cb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdf",
+      "registrationNumber": "NW VKX-9432"
+    },
+    "latitude": 8.475788,
+    "longitude": 80.788846,
+    "speed": 43,
+    "heading": 287,
+    "accuracy": 3.6,
+    "timestamp": "2026-04-30T13:44:23.397Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01c9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd2",
+      "registrationNumber": "NP ZVO-4906"
+    },
+    "latitude": 8.91505,
+    "longitude": 80.564815,
+    "speed": 21.6,
+    "heading": 276,
+    "accuracy": 5.7,
+    "timestamp": "2026-04-30T13:44:23.396Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01c7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd9",
+      "registrationNumber": "NW TPD-2897"
+    },
+    "latitude": 9.686751,
+    "longitude": 80.32288,
+    "speed": 27.4,
+    "heading": 207,
+    "accuracy": 11.5,
+    "timestamp": "2026-04-30T13:44:23.390Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01c5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff6",
+      "registrationNumber": "NW VWL-8148"
+    },
+    "latitude": 7.713455,
+    "longitude": 81.342387,
+    "speed": 0,
+    "heading": 262,
+    "accuracy": 6.6,
+    "timestamp": "2026-04-30T13:44:23.389Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01c3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb1",
+      "registrationNumber": "NW XUK-9802"
+    },
+    "latitude": 6.142107,
+    "longitude": 80.798073,
+    "speed": 4.3,
+    "heading": 149,
+    "accuracy": 3.4,
+    "timestamp": "2026-04-30T13:44:23.387Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01c1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9d",
+      "registrationNumber": "RP GTR-3463"
+    },
+    "latitude": 6.71156,
+    "longitude": 81.618384,
+    "speed": 25.2,
+    "heading": 95,
+    "accuracy": 9.1,
+    "timestamp": "2026-04-30T13:44:23.386Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01bf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee804a",
+      "registrationNumber": "RP HFA-6733"
+    },
+    "latitude": 9.059841,
+    "longitude": 79.741231,
+    "speed": 24.4,
+    "heading": 13,
+    "accuracy": 11.7,
+    "timestamp": "2026-04-30T13:44:23.381Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01bd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7faa",
+      "registrationNumber": "RP MMP-9737"
+    },
+    "latitude": 7.275916,
+    "longitude": 79.974603,
+    "speed": 20.6,
+    "heading": 299,
+    "accuracy": 14.7,
+    "timestamp": "2026-04-30T13:44:23.380Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb71664805ca68d01bb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd8",
+      "registrationNumber": "RP UAX-7667"
+    },
+    "latitude": 7.206121,
+    "longitude": 80.022888,
+    "speed": 38.5,
+    "heading": 6,
+    "accuracy": 9.3,
+    "timestamp": "2026-04-30T13:44:23.378Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d01a5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8000",
+      "registrationNumber": "NP DMG-6334"
+    },
+    "latitude": 7.960477,
+    "longitude": 79.799227,
+    "speed": 9,
+    "heading": 352,
+    "accuracy": 7.6,
+    "timestamp": "2026-04-30T13:44:18.443Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d01a3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8036",
+      "registrationNumber": "NC TXF-6475"
+    },
+    "latitude": 7.125424,
+    "longitude": 80.229396,
+    "speed": 13.9,
+    "heading": 73,
+    "accuracy": 12,
+    "timestamp": "2026-04-30T13:44:18.432Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d01a1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fff",
+      "registrationNumber": "NC XEA-2367"
+    },
+    "latitude": 5.982913,
+    "longitude": 80.760188,
+    "speed": 23.9,
+    "heading": 77,
+    "accuracy": 8,
+    "timestamp": "2026-04-30T13:44:18.430Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d019f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffb",
+      "registrationNumber": "NC RJJ-7993"
+    },
+    "latitude": 8.134733,
+    "longitude": 81.137719,
+    "speed": 49.3,
+    "heading": 214,
+    "accuracy": 3.4,
+    "timestamp": "2026-04-30T13:44:18.428Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d019d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800c",
+      "registrationNumber": "NP GML-8222"
+    },
+    "latitude": 8.670283,
+    "longitude": 80.958079,
+    "speed": 9.5,
+    "heading": 312,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:44:18.427Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d019b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd1",
+      "registrationNumber": "NP ICL-7552"
+    },
+    "latitude": 6.632488,
+    "longitude": 80.27621,
+    "speed": 21.4,
+    "heading": 305,
+    "accuracy": 8.9,
+    "timestamp": "2026-04-30T13:44:18.425Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d0199",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8a",
+      "registrationNumber": "NP OVX-8741"
+    },
+    "latitude": 7.677853,
+    "longitude": 80.82244,
+    "speed": 12.2,
+    "heading": 313,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:44:18.423Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d0197",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8028",
+      "registrationNumber": "NP QTZ-6441"
+    },
+    "latitude": 9.813896,
+    "longitude": 81.033586,
+    "speed": 22.7,
+    "heading": 38,
+    "accuracy": 7.9,
+    "timestamp": "2026-04-30T13:44:18.414Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d0195",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8009",
+      "registrationNumber": "NP XAI-5841"
+    },
+    "latitude": 7.66023,
+    "longitude": 81.523169,
+    "speed": 2.5,
+    "heading": 208,
+    "accuracy": 7.7,
+    "timestamp": "2026-04-30T13:44:18.412Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cb21664805ca68d0193",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc4",
+      "registrationNumber": "NP SUZ-1273"
+    },
+    "latitude": 9.800394,
+    "longitude": 80.485643,
+    "speed": 40.3,
+    "heading": 353,
+    "accuracy": 5.6,
+    "timestamp": "2026-04-30T13:44:18.408Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d017d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8018",
+      "registrationNumber": "KY AHQ-7359"
+    },
+    "latitude": 6.938837,
+    "longitude": 80.399729,
+    "speed": 35.1,
+    "heading": 290,
+    "accuracy": 12.2,
+    "timestamp": "2026-04-30T13:44:13.522Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d017b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8026",
+      "registrationNumber": "KY ACF-3137"
+    },
+    "latitude": 8.242103,
+    "longitude": 81.317851,
+    "speed": 47.3,
+    "heading": 123,
+    "accuracy": 7.8,
+    "timestamp": "2026-04-30T13:44:13.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d0179",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8046",
+      "registrationNumber": "KY EUC-7096"
+    },
+    "latitude": 9.57521,
+    "longitude": 81.14768,
+    "speed": 31.7,
+    "heading": 357,
+    "accuracy": 7.6,
+    "timestamp": "2026-04-30T13:44:13.520Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d0177",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb2",
+      "registrationNumber": "KY GEO-7937"
+    },
+    "latitude": 6.555632,
+    "longitude": 80.269231,
+    "speed": 46,
+    "heading": 26,
+    "accuracy": 12.9,
+    "timestamp": "2026-04-30T13:44:13.519Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d0175",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdc",
+      "registrationNumber": "KY YFV-5701"
+    },
+    "latitude": 9.196758,
+    "longitude": 79.738872,
+    "speed": 11.2,
+    "heading": 296,
+    "accuracy": 12.9,
+    "timestamp": "2026-04-30T13:44:13.519Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d0173",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa3",
+      "registrationNumber": "KY HCQ-7931"
+    },
+    "latitude": 6.224739,
+    "longitude": 79.974122,
+    "speed": 26.1,
+    "heading": 194,
+    "accuracy": 9,
+    "timestamp": "2026-04-30T13:44:13.518Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d0171",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8027",
+      "registrationNumber": "KY VYB-6172"
+    },
+    "latitude": 6.025069,
+    "longitude": 81.751832,
+    "speed": 7.8,
+    "heading": 227,
+    "accuracy": 12.4,
+    "timestamp": "2026-04-30T13:44:13.517Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d016f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8005",
+      "registrationNumber": "NC KKV-3667"
+    },
+    "latitude": 8.7424,
+    "longitude": 81.354655,
+    "speed": 35.1,
+    "heading": 309,
+    "accuracy": 14.5,
+    "timestamp": "2026-04-30T13:44:13.516Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d016d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcb",
+      "registrationNumber": "NC FHK-6244"
+    },
+    "latitude": 7.451655,
+    "longitude": 79.745684,
+    "speed": 4.1,
+    "heading": 189,
+    "accuracy": 4.6,
+    "timestamp": "2026-04-30T13:44:13.516Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35cad1664805ca68d016b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8035",
+      "registrationNumber": "NC NNB-9788"
+    },
+    "latitude": 8.062763,
+    "longitude": 81.736038,
+    "speed": 12.8,
+    "heading": 204,
+    "accuracy": 5.6,
+    "timestamp": "2026-04-30T13:44:13.514Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d0155",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc8",
+      "registrationNumber": "JF UEY-5682"
+    },
+    "latitude": 8.101061,
+    "longitude": 80.607431,
+    "speed": 20.8,
+    "heading": 31,
+    "accuracy": 4.5,
+    "timestamp": "2026-04-30T13:44:08.350Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d0153",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa0",
+      "registrationNumber": "JF UZZ-4631"
+    },
+    "latitude": 6.257764,
+    "longitude": 80.239601,
+    "speed": 24.3,
+    "heading": 144,
+    "accuracy": 10,
+    "timestamp": "2026-04-30T13:44:08.348Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d0151",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fae",
+      "registrationNumber": "JF XRR-6788"
+    },
+    "latitude": 8.511037,
+    "longitude": 80.250619,
+    "speed": 15.1,
+    "heading": 112,
+    "accuracy": 8.6,
+    "timestamp": "2026-04-30T13:44:08.346Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d014f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcd",
+      "registrationNumber": "JF XQC-1440"
+    },
+    "latitude": 8.032014,
+    "longitude": 80.734461,
+    "speed": 25.9,
+    "heading": 33,
+    "accuracy": 6.3,
+    "timestamp": "2026-04-30T13:44:08.340Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d014d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8030",
+      "registrationNumber": "JF YMV-3111"
+    },
+    "latitude": 8.321726,
+    "longitude": 80.124461,
+    "speed": 13.7,
+    "heading": 253,
+    "accuracy": 11.6,
+    "timestamp": "2026-04-30T13:44:08.339Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d014b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc7",
+      "registrationNumber": "JF ZMP-2760"
+    },
+    "latitude": 6.847956,
+    "longitude": 80.787333,
+    "speed": 16.4,
+    "heading": 26,
+    "accuracy": 14.4,
+    "timestamp": "2026-04-30T13:44:08.337Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d0149",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff9",
+      "registrationNumber": "JF YZS-4243"
+    },
+    "latitude": 8.282456,
+    "longitude": 80.115383,
+    "speed": 20.7,
+    "heading": 316,
+    "accuracy": 13.4,
+    "timestamp": "2026-04-30T13:44:08.327Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d0147",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f96",
+      "registrationNumber": "JF ZTA-5746"
+    },
+    "latitude": 7.687778,
+    "longitude": 81.594017,
+    "speed": 31.5,
+    "heading": 319,
+    "accuracy": 13.9,
+    "timestamp": "2026-04-30T13:44:08.325Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d0145",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803a",
+      "registrationNumber": "KU RLF-2755"
+    },
+    "latitude": 8.616503,
+    "longitude": 80.582816,
+    "speed": 20.9,
+    "heading": 199,
+    "accuracy": 6.5,
+    "timestamp": "2026-04-30T13:44:08.323Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca81664805ca68d0143",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8013",
+      "registrationNumber": "KU YPF-5125"
+    },
+    "latitude": 8.279485,
+    "longitude": 79.670061,
+    "speed": 44.7,
+    "heading": 316,
+    "accuracy": 10.2,
+    "timestamp": "2026-04-30T13:44:08.321Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d012d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8003",
+      "registrationNumber": "JF RKH-1972"
+    },
+    "latitude": 8.053093,
+    "longitude": 79.703158,
+    "speed": 40.4,
+    "heading": 286,
+    "accuracy": 10.6,
+    "timestamp": "2026-04-30T13:44:03.379Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d012b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f85",
+      "registrationNumber": "GL SHI-8552"
+    },
+    "latitude": 8.910248,
+    "longitude": 80.618887,
+    "speed": 14.8,
+    "heading": 208,
+    "accuracy": 13.6,
+    "timestamp": "2026-04-30T13:44:03.357Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d0129",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800d",
+      "registrationNumber": "GL NOE-8439"
+    },
+    "latitude": 7.652397,
+    "longitude": 79.783612,
+    "speed": 46.4,
+    "heading": 81,
+    "accuracy": 9,
+    "timestamp": "2026-04-30T13:44:03.355Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d0127",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f84",
+      "registrationNumber": "JF QIT-9520"
+    },
+    "latitude": 8.644016,
+    "longitude": 80.278116,
+    "speed": 30.7,
+    "heading": 292,
+    "accuracy": 10.9,
+    "timestamp": "2026-04-30T13:44:03.353Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d0125",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb4",
+      "registrationNumber": "GL WNM-7898"
+    },
+    "latitude": 9.734816,
+    "longitude": 80.9435,
+    "speed": 36.9,
+    "heading": 75,
+    "accuracy": 11.1,
+    "timestamp": "2026-04-30T13:44:03.342Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d0123",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fca",
+      "registrationNumber": "JF BWK-1771"
+    },
+    "latitude": 7.01963,
+    "longitude": 81.268755,
+    "speed": 41.5,
+    "heading": 320,
+    "accuracy": 7.4,
+    "timestamp": "2026-04-30T13:44:03.341Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d0121",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8c",
+      "registrationNumber": "JF IHA-4850"
+    },
+    "latitude": 6.040569,
+    "longitude": 81.522519,
+    "speed": 23.5,
+    "heading": 319,
+    "accuracy": 4.6,
+    "timestamp": "2026-04-30T13:44:03.339Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d011f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff3",
+      "registrationNumber": "JF JLO-4178"
+    },
+    "latitude": 6.535949,
+    "longitude": 80.538907,
+    "speed": 30.7,
+    "heading": 217,
+    "accuracy": 4.5,
+    "timestamp": "2026-04-30T13:44:03.336Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d011d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8040",
+      "registrationNumber": "JF NCC-2259"
+    },
+    "latitude": 6.44705,
+    "longitude": 80.423005,
+    "speed": 38.2,
+    "heading": 257,
+    "accuracy": 12.5,
+    "timestamp": "2026-04-30T13:44:03.334Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35ca31664805ca68d011b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f90",
+      "registrationNumber": "JF LRS-6413"
+    },
+    "latitude": 9.326791,
+    "longitude": 81.30613,
+    "speed": 25.7,
+    "heading": 271,
+    "accuracy": 6.8,
+    "timestamp": "2026-04-30T13:44:03.332Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d0105",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb7",
+      "registrationNumber": "CP WYT-9223"
+    },
+    "latitude": 7.500248,
+    "longitude": 79.776738,
+    "speed": 14.8,
+    "heading": 318,
+    "accuracy": 8.2,
+    "timestamp": "2026-04-30T13:43:58.411Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d0103",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801d",
+      "registrationNumber": "EP QAV-5235"
+    },
+    "latitude": 6.392823,
+    "longitude": 81.808996,
+    "speed": 5.5,
+    "heading": 356,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:43:58.409Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d0101",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f98",
+      "registrationNumber": "EP OUF-8898"
+    },
+    "latitude": 6.952891,
+    "longitude": 79.903403,
+    "speed": 29.5,
+    "heading": 160,
+    "accuracy": 6,
+    "timestamp": "2026-04-30T13:43:58.408Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d00ff",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f97",
+      "registrationNumber": "CP XEI-1328"
+    },
+    "latitude": 9.410701,
+    "longitude": 80.571441,
+    "speed": 22.3,
+    "heading": 133,
+    "accuracy": 5.3,
+    "timestamp": "2026-04-30T13:43:58.406Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d00fd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8b",
+      "registrationNumber": "EP LXK-3501"
+    },
+    "latitude": 8.421624,
+    "longitude": 80.96018,
+    "speed": 0,
+    "heading": 5,
+    "accuracy": 5.2,
+    "timestamp": "2026-04-30T13:43:58.404Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d00fb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb0",
+      "registrationNumber": "GL FGA-2203"
+    },
+    "latitude": 9.217681,
+    "longitude": 81.475522,
+    "speed": 20.8,
+    "heading": 39,
+    "accuracy": 14.6,
+    "timestamp": "2026-04-30T13:43:58.402Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d00f9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9b",
+      "registrationNumber": "EP HKB-4498"
+    },
+    "latitude": 9.816069,
+    "longitude": 81.702576,
+    "speed": 11.9,
+    "heading": 0,
+    "accuracy": 7.7,
+    "timestamp": "2026-04-30T13:43:58.399Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d00f7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc5",
+      "registrationNumber": "EP MPT-3538"
+    },
+    "latitude": 6.871236,
+    "longitude": 81.641897,
+    "speed": 24.1,
+    "heading": 287,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:43:58.398Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d00f5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe9",
+      "registrationNumber": "EP PFC-3974"
+    },
+    "latitude": 7.548512,
+    "longitude": 80.469757,
+    "speed": 15.9,
+    "heading": 301,
+    "accuracy": 9.1,
+    "timestamp": "2026-04-30T13:43:58.396Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c9e1664805ca68d00f3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803c",
+      "registrationNumber": "GL IQC-6430"
+    },
+    "latitude": 8.078058,
+    "longitude": 81.850181,
+    "speed": 20.3,
+    "heading": 252,
+    "accuracy": 6.5,
+    "timestamp": "2026-04-30T13:43:58.394Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00dd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb9",
+      "registrationNumber": "BD TJI-9116"
+    },
+    "latitude": 7.596386,
+    "longitude": 80.599375,
+    "speed": 0,
+    "heading": 217,
+    "accuracy": 9.4,
+    "timestamp": "2026-04-30T13:43:53.360Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00db",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8041",
+      "registrationNumber": "BD UPO-7763"
+    },
+    "latitude": 8.797976,
+    "longitude": 80.319163,
+    "speed": 0,
+    "heading": 160,
+    "accuracy": 10,
+    "timestamp": "2026-04-30T13:43:53.357Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00d9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe2",
+      "registrationNumber": "CP DFK-6852"
+    },
+    "latitude": 9.812581,
+    "longitude": 80.8707,
+    "speed": 26.9,
+    "heading": 237,
+    "accuracy": 3.4,
+    "timestamp": "2026-04-30T13:43:53.355Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00d7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8047",
+      "registrationNumber": "CP DHP-1647"
+    },
+    "latitude": 7.77917,
+    "longitude": 80.690426,
+    "speed": 38.3,
+    "heading": 259,
+    "accuracy": 11.5,
+    "timestamp": "2026-04-30T13:43:53.353Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00d5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8042",
+      "registrationNumber": "BD ZJO-2903"
+    },
+    "latitude": 7.756999,
+    "longitude": 81.664836,
+    "speed": 45.7,
+    "heading": 154,
+    "accuracy": 14.7,
+    "timestamp": "2026-04-30T13:43:53.351Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00d3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7feb",
+      "registrationNumber": "CP ENS-8400"
+    },
+    "latitude": 8.732733,
+    "longitude": 81.613301,
+    "speed": 33.1,
+    "heading": 149,
+    "accuracy": 5.7,
+    "timestamp": "2026-04-30T13:43:53.350Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00d1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fed",
+      "registrationNumber": "CP IOE-9234"
+    },
+    "latitude": 8.320281,
+    "longitude": 79.905438,
+    "speed": 35.9,
+    "heading": 346,
+    "accuracy": 7.6,
+    "timestamp": "2026-04-30T13:43:53.348Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00cf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffa",
+      "registrationNumber": "CP VSI-3529"
+    },
+    "latitude": 6.04799,
+    "longitude": 80.097864,
+    "speed": 37.7,
+    "heading": 274,
+    "accuracy": 5.8,
+    "timestamp": "2026-04-30T13:43:53.344Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00cd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffd",
+      "registrationNumber": "CP PVG-1273"
+    },
+    "latitude": 6.112716,
+    "longitude": 81.301721,
+    "speed": 17.6,
+    "heading": 278,
+    "accuracy": 7.5,
+    "timestamp": "2026-04-30T13:43:53.342Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f35c991664805ca68d00cb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8006",
+      "registrationNumber": "CP QMC-8465"
+    },
+    "latitude": 6.451582,
+    "longitude": 80.134844,
+    "speed": 38.7,
+    "heading": 250,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:43:53.339Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00b5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9d",
+      "registrationNumber": "RP GTR-3463"
+    },
+    "latitude": 6.711559,
+    "longitude": 81.618379,
+    "speed": 22.1,
+    "heading": 76,
+    "accuracy": 3.1,
+    "timestamp": "2026-04-30T13:30:34.889Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00b3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7faa",
+      "registrationNumber": "RP MMP-9737"
+    },
+    "latitude": 7.275918,
+    "longitude": 79.974607,
+    "speed": 24.6,
+    "heading": 231,
+    "accuracy": 6.9,
+    "timestamp": "2026-04-30T13:30:34.888Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00b1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee804a",
+      "registrationNumber": "RP HFA-6733"
+    },
+    "latitude": 9.059836,
+    "longitude": 79.74123,
+    "speed": 28.5,
+    "heading": 23,
+    "accuracy": 11.2,
+    "timestamp": "2026-04-30T13:30:34.887Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00af",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8007",
+      "registrationNumber": "RP UTA-9846"
+    },
+    "latitude": 7.973165,
+    "longitude": 81.641461,
+    "speed": 34,
+    "heading": 271,
+    "accuracy": 10.4,
+    "timestamp": "2026-04-30T13:30:34.882Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00ad",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801f",
+      "registrationNumber": "RP UGE-6840"
+    },
+    "latitude": 7.960825,
+    "longitude": 79.830752,
+    "speed": 18.1,
+    "heading": 171,
+    "accuracy": 7.1,
+    "timestamp": "2026-04-30T13:30:34.881Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00ab",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd8",
+      "registrationNumber": "RP UAX-7667"
+    },
+    "latitude": 7.206116,
+    "longitude": 80.022884,
+    "speed": 37.7,
+    "heading": 74,
+    "accuracy": 13.7,
+    "timestamp": "2026-04-30T13:30:34.879Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00a9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fec",
+      "registrationNumber": "SG OQV-1303"
+    },
+    "latitude": 7.069103,
+    "longitude": 80.078582,
+    "speed": 29.1,
+    "heading": 252,
+    "accuracy": 9.7,
+    "timestamp": "2026-04-30T13:30:34.876Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00a7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc2",
+      "registrationNumber": "SG LDK-9523"
+    },
+    "latitude": 9.467708,
+    "longitude": 80.488721,
+    "speed": 36.5,
+    "heading": 15,
+    "accuracy": 12.7,
+    "timestamp": "2026-04-30T13:30:34.873Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3597a1664805ca68d00a5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcf",
+      "registrationNumber": "SP BQG-1810"
+    },
+    "latitude": 6.172134,
+    "longitude": 80.082124,
+    "speed": 10.3,
+    "heading": 251,
+    "accuracy": 6.4,
+    "timestamp": "2026-04-30T13:30:34.870Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d0091",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8028",
+      "registrationNumber": "NP QTZ-6441"
+    },
+    "latitude": 9.813892,
+    "longitude": 81.033585,
+    "speed": 34.8,
+    "heading": 2,
+    "accuracy": 10.6,
+    "timestamp": "2026-04-30T13:30:27.226Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d008f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8a",
+      "registrationNumber": "NP OVX-8741"
+    },
+    "latitude": 7.677851,
+    "longitude": 80.822442,
+    "speed": 20.6,
+    "heading": 308,
+    "accuracy": 3.2,
+    "timestamp": "2026-04-30T13:30:27.223Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d008d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8009",
+      "registrationNumber": "NP XAI-5841"
+    },
+    "latitude": 7.66023,
+    "longitude": 81.523169,
+    "speed": 7.6,
+    "heading": 241,
+    "accuracy": 5.4,
+    "timestamp": "2026-04-30T13:30:27.221Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d008b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802a",
+      "registrationNumber": "NP ZIF-1221"
+    },
+    "latitude": 6.23336,
+    "longitude": 79.734282,
+    "speed": 23.6,
+    "heading": 188,
+    "accuracy": 5.6,
+    "timestamp": "2026-04-30T13:30:27.220Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d0089",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd2",
+      "registrationNumber": "NP ZVO-4906"
+    },
+    "latitude": 8.91505,
+    "longitude": 80.564818,
+    "speed": 5.7,
+    "heading": 260,
+    "accuracy": 3.2,
+    "timestamp": "2026-04-30T13:30:27.218Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d0087",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc4",
+      "registrationNumber": "NP SUZ-1273"
+    },
+    "latitude": 9.800388,
+    "longitude": 80.485643,
+    "speed": 24.3,
+    "heading": 345,
+    "accuracy": 14.3,
+    "timestamp": "2026-04-30T13:30:27.216Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d0085",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd9",
+      "registrationNumber": "NW TPD-2897"
+    },
+    "latitude": 9.686754,
+    "longitude": 80.322879,
+    "speed": 18.8,
+    "heading": 153,
+    "accuracy": 7.1,
+    "timestamp": "2026-04-30T13:30:27.214Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d0083",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff6",
+      "registrationNumber": "NW VWL-8148"
+    },
+    "latitude": 7.713454,
+    "longitude": 81.342388,
+    "speed": 14.2,
+    "heading": 281,
+    "accuracy": 9.5,
+    "timestamp": "2026-04-30T13:30:27.212Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d0081",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdf",
+      "registrationNumber": "NW VKX-9432"
+    },
+    "latitude": 8.475791,
+    "longitude": 80.788851,
+    "speed": 36.4,
+    "heading": 228,
+    "accuracy": 4.1,
+    "timestamp": "2026-04-30T13:30:27.211Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359731664805ca68d007f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb1",
+      "registrationNumber": "NW XUK-9802"
+    },
+    "latitude": 6.142108,
+    "longitude": 80.798072,
+    "speed": 11.1,
+    "heading": 151,
+    "accuracy": 5.8,
+    "timestamp": "2026-04-30T13:30:27.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d0069",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcb",
+      "registrationNumber": "NC FHK-6244"
+    },
+    "latitude": 7.451655,
+    "longitude": 79.745685,
+    "speed": 7.6,
+    "heading": 183,
+    "accuracy": 9.9,
+    "timestamp": "2026-04-30T13:30:22.213Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d0067",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8035",
+      "registrationNumber": "NC NNB-9788"
+    },
+    "latitude": 8.062766,
+    "longitude": 81.736039,
+    "speed": 19.8,
+    "heading": 225,
+    "accuracy": 12.5,
+    "timestamp": "2026-04-30T13:30:22.212Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d0065",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8036",
+      "registrationNumber": "NC TXF-6475"
+    },
+    "latitude": 7.125421,
+    "longitude": 80.229393,
+    "speed": 28.1,
+    "heading": 14,
+    "accuracy": 11.5,
+    "timestamp": "2026-04-30T13:30:22.210Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d0063",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdc",
+      "registrationNumber": "KY YFV-5701"
+    },
+    "latitude": 9.196756,
+    "longitude": 79.738875,
+    "speed": 31.3,
+    "heading": 307,
+    "accuracy": 5.4,
+    "timestamp": "2026-04-30T13:30:22.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d0061",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8005",
+      "registrationNumber": "NC KKV-3667"
+    },
+    "latitude": 8.7424,
+    "longitude": 81.354659,
+    "speed": 29,
+    "heading": 257,
+    "accuracy": 10.3,
+    "timestamp": "2026-04-30T13:30:22.208Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d005f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffb",
+      "registrationNumber": "NC RJJ-7993"
+    },
+    "latitude": 8.13474,
+    "longitude": 81.137724,
+    "speed": 32.2,
+    "heading": 216,
+    "accuracy": 11.9,
+    "timestamp": "2026-04-30T13:30:22.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d005d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fff",
+      "registrationNumber": "NC XEA-2367"
+    },
+    "latitude": 5.982915,
+    "longitude": 80.760185,
+    "speed": 20,
+    "heading": 112,
+    "accuracy": 9.7,
+    "timestamp": "2026-04-30T13:30:22.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d005b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800c",
+      "registrationNumber": "NP GML-8222"
+    },
+    "latitude": 8.670282,
+    "longitude": 80.958081,
+    "speed": 22,
+    "heading": 308,
+    "accuracy": 4.4,
+    "timestamp": "2026-04-30T13:30:22.203Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d0059",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8000",
+      "registrationNumber": "NP DMG-6334"
+    },
+    "latitude": 7.960474,
+    "longitude": 79.799228,
+    "speed": 20,
+    "heading": 14,
+    "accuracy": 12.9,
+    "timestamp": "2026-04-30T13:30:22.191Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3596e1664805ca68d0057",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd1",
+      "registrationNumber": "NP ICL-7552"
+    },
+    "latitude": 6.632487,
+    "longitude": 80.276212,
+    "speed": 10.8,
+    "heading": 307,
+    "accuracy": 9,
+    "timestamp": "2026-04-30T13:30:22.190Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d0041",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc7",
+      "registrationNumber": "JF ZMP-2760"
+    },
+    "latitude": 6.847954,
+    "longitude": 80.78733,
+    "speed": 20.9,
+    "heading": 60,
+    "accuracy": 5.2,
+    "timestamp": "2026-04-30T13:30:17.238Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d003f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803a",
+      "registrationNumber": "KU RLF-2755"
+    },
+    "latitude": 8.616507,
+    "longitude": 80.582817,
+    "speed": 20.3,
+    "heading": 195,
+    "accuracy": 11.2,
+    "timestamp": "2026-04-30T13:30:17.237Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d003d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f96",
+      "registrationNumber": "JF ZTA-5746"
+    },
+    "latitude": 7.687774,
+    "longitude": 81.594022,
+    "speed": 42.3,
+    "heading": 298,
+    "accuracy": 10.8,
+    "timestamp": "2026-04-30T13:30:17.235Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d003b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8013",
+      "registrationNumber": "KU YPF-5125"
+    },
+    "latitude": 8.279482,
+    "longitude": 79.670066,
+    "speed": 29.8,
+    "heading": 271,
+    "accuracy": 9.4,
+    "timestamp": "2026-04-30T13:30:17.233Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d0039",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8026",
+      "registrationNumber": "KY ACF-3137"
+    },
+    "latitude": 8.242108,
+    "longitude": 81.317848,
+    "speed": 35.7,
+    "heading": 137,
+    "accuracy": 7.7,
+    "timestamp": "2026-04-30T13:30:17.231Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d0037",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8018",
+      "registrationNumber": "KY AHQ-7359"
+    },
+    "latitude": 6.938835,
+    "longitude": 80.399733,
+    "speed": 22.7,
+    "heading": 341,
+    "accuracy": 9.2,
+    "timestamp": "2026-04-30T13:30:17.231Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d0035",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8046",
+      "registrationNumber": "KY EUC-7096"
+    },
+    "latitude": 9.575204,
+    "longitude": 81.14768,
+    "speed": 20.5,
+    "heading": 339,
+    "accuracy": 6.3,
+    "timestamp": "2026-04-30T13:30:17.230Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d0033",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa3",
+      "registrationNumber": "KY HCQ-7931"
+    },
+    "latitude": 6.224743,
+    "longitude": 79.974125,
+    "speed": 36.7,
+    "heading": 231,
+    "accuracy": 12.1,
+    "timestamp": "2026-04-30T13:30:17.226Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d0031",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb2",
+      "registrationNumber": "KY GEO-7937"
+    },
+    "latitude": 6.555625,
+    "longitude": 80.26923,
+    "speed": 32.1,
+    "heading": 18,
+    "accuracy": 7.3,
+    "timestamp": "2026-04-30T13:30:17.224Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359691664805ca68d002f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8027",
+      "registrationNumber": "KY VYB-6172"
+    },
+    "latitude": 6.02507,
+    "longitude": 81.751833,
+    "speed": 16.9,
+    "heading": 190,
+    "accuracy": 8.6,
+    "timestamp": "2026-04-30T13:30:17.222Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d0019",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f90",
+      "registrationNumber": "JF LRS-6413"
+    },
+    "latitude": 9.326791,
+    "longitude": 81.306134,
+    "speed": 14.7,
+    "heading": 261,
+    "accuracy": 12.2,
+    "timestamp": "2026-04-30T13:30:12.337Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d0017",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8040",
+      "registrationNumber": "JF NCC-2259"
+    },
+    "latitude": 6.447051,
+    "longitude": 80.42301,
+    "speed": 28.2,
+    "heading": 225,
+    "accuracy": 9.4,
+    "timestamp": "2026-04-30T13:30:12.336Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d0013",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8003",
+      "registrationNumber": "JF RKH-1972"
+    },
+    "latitude": 8.053092,
+    "longitude": 79.703164,
+    "speed": 25.4,
+    "heading": 281,
+    "accuracy": 4.6,
+    "timestamp": "2026-04-30T13:30:12.335Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d0015",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f84",
+      "registrationNumber": "JF QIT-9520"
+    },
+    "latitude": 8.644013,
+    "longitude": 80.27812,
+    "speed": 27.8,
+    "heading": 305,
+    "accuracy": 9.6,
+    "timestamp": "2026-04-30T13:30:12.335Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d0011",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc8",
+      "registrationNumber": "JF UEY-5682"
+    },
+    "latitude": 8.101058,
+    "longitude": 80.60743,
+    "speed": 28.8,
+    "heading": 20,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:30:12.333Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d000f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcd",
+      "registrationNumber": "JF XQC-1440"
+    },
+    "latitude": 8.03201,
+    "longitude": 80.734459,
+    "speed": 17.8,
+    "heading": 13,
+    "accuracy": 12.1,
+    "timestamp": "2026-04-30T13:30:12.330Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d000d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff9",
+      "registrationNumber": "JF YZS-4243"
+    },
+    "latitude": 8.282452,
+    "longitude": 80.115383,
+    "speed": 17.9,
+    "heading": 1,
+    "accuracy": 8,
+    "timestamp": "2026-04-30T13:30:12.328Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d000b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fae",
+      "registrationNumber": "JF XRR-6788"
+    },
+    "latitude": 8.511039,
+    "longitude": 80.250616,
+    "speed": 17.5,
+    "heading": 148,
+    "accuracy": 12.4,
+    "timestamp": "2026-04-30T13:30:12.327Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d0009",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa0",
+      "registrationNumber": "JF UZZ-4631"
+    },
+    "latitude": 6.257767,
+    "longitude": 80.239599,
+    "speed": 16,
+    "heading": 143,
+    "accuracy": 3.1,
+    "timestamp": "2026-04-30T13:30:12.325Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359641664805ca68d0007",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8030",
+      "registrationNumber": "JF YMV-3111"
+    },
+    "latitude": 8.321727,
+    "longitude": 80.124466,
+    "speed": 27,
+    "heading": 251,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:30:12.324Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cfff1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb4",
+      "registrationNumber": "GL WNM-7898"
+    },
+    "latitude": 9.734814,
+    "longitude": 80.943493,
+    "speed": 36.6,
+    "heading": 86,
+    "accuracy": 9.6,
+    "timestamp": "2026-04-30T13:30:07.175Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffef",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800d",
+      "registrationNumber": "GL NOE-8439"
+    },
+    "latitude": 7.652396,
+    "longitude": 79.783604,
+    "speed": 39.6,
+    "heading": 114,
+    "accuracy": 6.7,
+    "timestamp": "2026-04-30T13:30:07.173Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffed",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe9",
+      "registrationNumber": "EP PFC-3974"
+    },
+    "latitude": 7.54851,
+    "longitude": 80.469759,
+    "speed": 13.1,
+    "heading": 296,
+    "accuracy": 5.4,
+    "timestamp": "2026-04-30T13:30:07.171Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffeb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801d",
+      "registrationNumber": "EP QAV-5235"
+    },
+    "latitude": 6.392822,
+    "longitude": 81.808996,
+    "speed": 19.8,
+    "heading": 16,
+    "accuracy": 7.4,
+    "timestamp": "2026-04-30T13:30:07.169Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffe9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb0",
+      "registrationNumber": "GL FGA-2203"
+    },
+    "latitude": 9.217679,
+    "longitude": 81.475519,
+    "speed": 14.3,
+    "heading": 60,
+    "accuracy": 14.4,
+    "timestamp": "2026-04-30T13:30:07.167Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffe7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff3",
+      "registrationNumber": "JF JLO-4178"
+    },
+    "latitude": 6.535952,
+    "longitude": 80.538912,
+    "speed": 18.2,
+    "heading": 259,
+    "accuracy": 7.2,
+    "timestamp": "2026-04-30T13:30:07.165Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffe5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fca",
+      "registrationNumber": "JF BWK-1771"
+    },
+    "latitude": 7.019624,
+    "longitude": 81.26876,
+    "speed": 45,
+    "heading": 329,
+    "accuracy": 4.7,
+    "timestamp": "2026-04-30T13:30:07.162Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffe3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f85",
+      "registrationNumber": "GL SHI-8552"
+    },
+    "latitude": 8.910251,
+    "longitude": 80.618887,
+    "speed": 8.8,
+    "heading": 180,
+    "accuracy": 7.3,
+    "timestamp": "2026-04-30T13:30:07.158Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffe1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803c",
+      "registrationNumber": "GL IQC-6430"
+    },
+    "latitude": 8.078059,
+    "longitude": 81.850184,
+    "speed": 17.9,
+    "heading": 246,
+    "accuracy": 11.9,
+    "timestamp": "2026-04-30T13:30:07.156Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595f1664805ca68cffdf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8c",
+      "registrationNumber": "JF IHA-4850"
+    },
+    "latitude": 6.040566,
+    "longitude": 81.522522,
+    "speed": 26,
+    "heading": 314,
+    "accuracy": 8.5,
+    "timestamp": "2026-04-30T13:30:07.153Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffc9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffd",
+      "registrationNumber": "CP PVG-1273"
+    },
+    "latitude": 6.112717,
+    "longitude": 81.301724,
+    "speed": 11.3,
+    "heading": 213,
+    "accuracy": 14.9,
+    "timestamp": "2026-04-30T13:30:02.225Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffc7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8006",
+      "registrationNumber": "CP QMC-8465"
+    },
+    "latitude": 6.451581,
+    "longitude": 80.13485,
+    "speed": 30.3,
+    "heading": 267,
+    "accuracy": 5.4,
+    "timestamp": "2026-04-30T13:30:02.223Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffc5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f97",
+      "registrationNumber": "CP XEI-1328"
+    },
+    "latitude": 9.410703,
+    "longitude": 80.571438,
+    "speed": 12.4,
+    "heading": 144,
+    "accuracy": 12.1,
+    "timestamp": "2026-04-30T13:30:02.220Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffc3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9b",
+      "registrationNumber": "EP HKB-4498"
+    },
+    "latitude": 9.816067,
+    "longitude": 81.702577,
+    "speed": 20.2,
+    "heading": 346,
+    "accuracy": 11.9,
+    "timestamp": "2026-04-30T13:30:02.214Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffc1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8b",
+      "registrationNumber": "EP LXK-3501"
+    },
+    "latitude": 8.421623,
+    "longitude": 80.96018,
+    "speed": 17.4,
+    "heading": 337,
+    "accuracy": 8.3,
+    "timestamp": "2026-04-30T13:30:02.212Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffbf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb7",
+      "registrationNumber": "CP WYT-9223"
+    },
+    "latitude": 7.500247,
+    "longitude": 79.77674,
+    "speed": 19.7,
+    "heading": 317,
+    "accuracy": 3.3,
+    "timestamp": "2026-04-30T13:30:02.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffbd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffa",
+      "registrationNumber": "CP VSI-3529"
+    },
+    "latitude": 6.047993,
+    "longitude": 80.097868,
+    "speed": 28.9,
+    "heading": 230,
+    "accuracy": 8.1,
+    "timestamp": "2026-04-30T13:30:02.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffbb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f98",
+      "registrationNumber": "EP OUF-8898"
+    },
+    "latitude": 6.952896,
+    "longitude": 79.903404,
+    "speed": 27.1,
+    "heading": 210,
+    "accuracy": 14.9,
+    "timestamp": "2026-04-30T13:30:02.205Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffb9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc5",
+      "registrationNumber": "EP MPT-3538"
+    },
+    "latitude": 6.871233,
+    "longitude": 81.6419,
+    "speed": 25.6,
+    "heading": 325,
+    "accuracy": 12.7,
+    "timestamp": "2026-04-30T13:30:02.198Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3595a1664805ca68cffb7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fed",
+      "registrationNumber": "CP IOE-9234"
+    },
+    "latitude": 8.320276,
+    "longitude": 79.905441,
+    "speed": 27.5,
+    "heading": 1,
+    "accuracy": 5.1,
+    "timestamp": "2026-04-30T13:30:02.194Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cffa1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7feb",
+      "registrationNumber": "CP ENS-8400"
+    },
+    "latitude": 8.732738,
+    "longitude": 81.613299,
+    "speed": 34,
+    "heading": 157,
+    "accuracy": 6,
+    "timestamp": "2026-04-30T13:29:57.168Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff9f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f92",
+      "registrationNumber": "AN PVC-2324"
+    },
+    "latitude": 7.996147,
+    "longitude": 80.554085,
+    "speed": 9.3,
+    "heading": 78,
+    "accuracy": 4,
+    "timestamp": "2026-04-30T13:29:57.154Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff9d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801b",
+      "registrationNumber": "BD PHT-1910"
+    },
+    "latitude": 7.960989,
+    "longitude": 81.193782,
+    "speed": 29.9,
+    "heading": 236,
+    "accuracy": 12.7,
+    "timestamp": "2026-04-30T13:29:57.153Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff9b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8042",
+      "registrationNumber": "BD ZJO-2903"
+    },
+    "latitude": 7.757003,
+    "longitude": 81.664832,
+    "speed": 30.8,
+    "heading": 113,
+    "accuracy": 10.4,
+    "timestamp": "2026-04-30T13:29:57.152Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff99",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd4",
+      "registrationNumber": "BD SMV-3701"
+    },
+    "latitude": 6.818322,
+    "longitude": 80.60337,
+    "speed": 30.6,
+    "heading": 232,
+    "accuracy": 5.5,
+    "timestamp": "2026-04-30T13:29:57.151Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff97",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb9",
+      "registrationNumber": "BD TJI-9116"
+    },
+    "latitude": 7.596386,
+    "longitude": 80.599375,
+    "speed": 11.8,
+    "heading": 208,
+    "accuracy": 13.8,
+    "timestamp": "2026-04-30T13:29:57.149Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff95",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9f",
+      "registrationNumber": "BD TBQ-9590"
+    },
+    "latitude": 6.329787,
+    "longitude": 81.756479,
+    "speed": 40.8,
+    "heading": 8,
+    "accuracy": 14.7,
+    "timestamp": "2026-04-30T13:29:57.147Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff93",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8041",
+      "registrationNumber": "BD UPO-7763"
+    },
+    "latitude": 8.797977,
+    "longitude": 80.319163,
+    "speed": 8.9,
+    "heading": 205,
+    "accuracy": 3.2,
+    "timestamp": "2026-04-30T13:29:57.146Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff91",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe2",
+      "registrationNumber": "CP DFK-6852"
+    },
+    "latitude": 9.812585,
+    "longitude": 80.870703,
+    "speed": 26.4,
+    "heading": 260,
+    "accuracy": 10.1,
+    "timestamp": "2026-04-30T13:29:57.145Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359551664805ca68cff8f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8047",
+      "registrationNumber": "CP DHP-1647"
+    },
+    "latitude": 7.779172,
+    "longitude": 80.690433,
+    "speed": 35.9,
+    "heading": 272,
+    "accuracy": 3.6,
+    "timestamp": "2026-04-30T13:29:57.142Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff79",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f83",
+      "registrationNumber": "WP JEY-6245"
+    },
+    "latitude": 9.446522,
+    "longitude": 80.771842,
+    "speed": 39,
+    "heading": 82,
+    "accuracy": 8.5,
+    "timestamp": "2026-04-30T13:29:52.215Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff77",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803e",
+      "registrationNumber": "WP VYQ-4339"
+    },
+    "latitude": 8.763977,
+    "longitude": 79.754888,
+    "speed": 21,
+    "heading": 53,
+    "accuracy": 12.6,
+    "timestamp": "2026-04-30T13:29:52.212Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff75",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8010",
+      "registrationNumber": "WP NXM-2002"
+    },
+    "latitude": 6.507997,
+    "longitude": 79.81725,
+    "speed": 17.9,
+    "heading": 103,
+    "accuracy": 11.7,
+    "timestamp": "2026-04-30T13:29:52.210Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff73",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff2",
+      "registrationNumber": "WP VBO-8952"
+    },
+    "latitude": 7.973444,
+    "longitude": 79.943366,
+    "speed": 13,
+    "heading": 57,
+    "accuracy": 6.9,
+    "timestamp": "2026-04-30T13:29:52.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff71",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe0",
+      "registrationNumber": "WP XCF-4681"
+    },
+    "latitude": 8.997745,
+    "longitude": 80.457401,
+    "speed": 13.1,
+    "heading": 62,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:29:52.205Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff6f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8014",
+      "registrationNumber": "WP XKB-7702"
+    },
+    "latitude": 9.556138,
+    "longitude": 81.827385,
+    "speed": 37.1,
+    "heading": 173,
+    "accuracy": 5.4,
+    "timestamp": "2026-04-30T13:29:52.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff6d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff8",
+      "registrationNumber": "WP VRA-3248"
+    },
+    "latitude": 7.232042,
+    "longitude": 80.301227,
+    "speed": 20.7,
+    "heading": 234,
+    "accuracy": 9.7,
+    "timestamp": "2026-04-30T13:29:52.180Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff6b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f99",
+      "registrationNumber": "WP XQD-7244"
+    },
+    "latitude": 8.737963,
+    "longitude": 80.553719,
+    "speed": 29,
+    "heading": 273,
+    "accuracy": 11.3,
+    "timestamp": "2026-04-30T13:29:52.176Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359501664805ca68cff69",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8016",
+      "registrationNumber": "WP VUX-6050"
+    },
+    "latitude": 9.402846,
+    "longitude": 81.520703,
+    "speed": 14.2,
+    "heading": 226,
+    "accuracy": 9.4,
+    "timestamp": "2026-04-30T13:29:52.173Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff55",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7faf",
+      "registrationNumber": "UV LYD-5528"
+    },
+    "latitude": 7.310505,
+    "longitude": 81.730697,
+    "speed": 17.7,
+    "heading": 249,
+    "accuracy": 3.6,
+    "timestamp": "2026-04-30T13:29:47.206Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff53",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9c",
+      "registrationNumber": "UV QFH-6566"
+    },
+    "latitude": 6.87524,
+    "longitude": 81.311393,
+    "speed": 30.3,
+    "heading": 42,
+    "accuracy": 7.5,
+    "timestamp": "2026-04-30T13:29:47.205Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff51",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8f",
+      "registrationNumber": "UV WNU-7442"
+    },
+    "latitude": 7.315147,
+    "longitude": 80.434233,
+    "speed": 18.4,
+    "heading": 349,
+    "accuracy": 3.4,
+    "timestamp": "2026-04-30T13:29:47.205Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff4f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa4",
+      "registrationNumber": "WP CIV-9833"
+    },
+    "latitude": 8.158579,
+    "longitude": 81.794155,
+    "speed": 31.7,
+    "heading": 112,
+    "accuracy": 11.2,
+    "timestamp": "2026-04-30T13:29:47.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff4d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd5",
+      "registrationNumber": "WP CCR-2554"
+    },
+    "latitude": 9.245034,
+    "longitude": 80.273911,
+    "speed": 38.7,
+    "heading": 224,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:29:47.203Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff49",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff4",
+      "registrationNumber": "WP CRW-3803"
+    },
+    "latitude": 9.657445,
+    "longitude": 80.830794,
+    "speed": 23.5,
+    "heading": 138,
+    "accuracy": 3.6,
+    "timestamp": "2026-04-30T13:29:47.202Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff4b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe6",
+      "registrationNumber": "WP BOJ-1750"
+    },
+    "latitude": 7.551392,
+    "longitude": 80.439703,
+    "speed": 39.2,
+    "heading": 186,
+    "accuracy": 12.9,
+    "timestamp": "2026-04-30T13:29:47.202Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff47",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe3",
+      "registrationNumber": "WP DFS-6165"
+    },
+    "latitude": 8.553769,
+    "longitude": 80.234396,
+    "speed": 30.2,
+    "heading": 345,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:29:47.201Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff45",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8044",
+      "registrationNumber": "WP DUJ-8155"
+    },
+    "latitude": 7.433319,
+    "longitude": 80.372869,
+    "speed": 10.5,
+    "heading": 230,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:29:47.199Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3594b1664805ca68cff43",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802e",
+      "registrationNumber": "WP ILA-3139"
+    },
+    "latitude": 9.018387,
+    "longitude": 81.540827,
+    "speed": 35.8,
+    "heading": 298,
+    "accuracy": 9.7,
+    "timestamp": "2026-04-30T13:29:47.196Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff2d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800a",
+      "registrationNumber": "SP YXD-8278"
+    },
+    "latitude": 7.151365,
+    "longitude": 81.031719,
+    "speed": 12.8,
+    "heading": 88,
+    "accuracy": 14,
+    "timestamp": "2026-04-30T13:29:42.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff2b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9e",
+      "registrationNumber": "SP ZBA-3624"
+    },
+    "latitude": 6.404287,
+    "longitude": 80.343035,
+    "speed": 10.2,
+    "heading": 254,
+    "accuracy": 9.1,
+    "timestamp": "2026-04-30T13:29:42.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff29",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fab",
+      "registrationNumber": "TC AOP-1453"
+    },
+    "latitude": 7.717133,
+    "longitude": 80.791046,
+    "speed": 28,
+    "heading": 264,
+    "accuracy": 14.4,
+    "timestamp": "2026-04-30T13:29:42.201Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff27",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff5",
+      "registrationNumber": "TC BPJ-3942"
+    },
+    "latitude": 7.439039,
+    "longitude": 80.458472,
+    "speed": 35.4,
+    "heading": 207,
+    "accuracy": 6.6,
+    "timestamp": "2026-04-30T13:29:42.198Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff25",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb8",
+      "registrationNumber": "TC BWA-9631"
+    },
+    "latitude": 9.838917,
+    "longitude": 81.516936,
+    "speed": 17,
+    "heading": 311,
+    "accuracy": 9.9,
+    "timestamp": "2026-04-30T13:29:42.196Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff23",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800b",
+      "registrationNumber": "TC EFN-3372"
+    },
+    "latitude": 6.229389,
+    "longitude": 81.278004,
+    "speed": 36,
+    "heading": 166,
+    "accuracy": 11.7,
+    "timestamp": "2026-04-30T13:29:42.194Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff21",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb6",
+      "registrationNumber": "TC FXI-2857"
+    },
+    "latitude": 6.924442,
+    "longitude": 81.71618,
+    "speed": 34.9,
+    "heading": 355,
+    "accuracy": 3.1,
+    "timestamp": "2026-04-30T13:29:42.189Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff1f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802f",
+      "registrationNumber": "TC HBU-8276"
+    },
+    "latitude": 7.044737,
+    "longitude": 79.772775,
+    "speed": 11.1,
+    "heading": 28,
+    "accuracy": 8.8,
+    "timestamp": "2026-04-30T13:29:42.187Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff1d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8037",
+      "registrationNumber": "TC TCW-2565"
+    },
+    "latitude": 7.393292,
+    "longitude": 81.16395,
+    "speed": 17.3,
+    "heading": 269,
+    "accuracy": 11.5,
+    "timestamp": "2026-04-30T13:29:42.185Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359461664805ca68cff1b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803d",
+      "registrationNumber": "UV JSZ-2177"
+    },
+    "latitude": 6.225489,
+    "longitude": 81.068554,
+    "speed": 22,
+    "heading": 336,
+    "accuracy": 8.4,
+    "timestamp": "2026-04-30T13:29:42.183Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cff05",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcc",
+      "registrationNumber": "SP KDJ-1692"
+    },
+    "latitude": 8.166533,
+    "longitude": 80.0068,
+    "speed": 17.6,
+    "heading": 194,
+    "accuracy": 14.7,
+    "timestamp": "2026-04-30T13:29:37.238Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cff03",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8049",
+      "registrationNumber": "SP LFY-3363"
+    },
+    "latitude": 7.302164,
+    "longitude": 80.144452,
+    "speed": 19.6,
+    "heading": 200,
+    "accuracy": 6.8,
+    "timestamp": "2026-04-30T13:29:37.236Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cff01",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff1",
+      "registrationNumber": "SP ERM-1382"
+    },
+    "latitude": 9.116481,
+    "longitude": 79.893476,
+    "speed": 31.2,
+    "heading": 221,
+    "accuracy": 9,
+    "timestamp": "2026-04-30T13:29:37.234Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cfeff",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f89",
+      "registrationNumber": "SP GXH-3528"
+    },
+    "latitude": 6.32709,
+    "longitude": 79.740268,
+    "speed": 18,
+    "heading": 134,
+    "accuracy": 6,
+    "timestamp": "2026-04-30T13:29:37.223Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cfefd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa6",
+      "registrationNumber": "SP CAB-9338"
+    },
+    "latitude": 6.789199,
+    "longitude": 80.11175,
+    "speed": 17.7,
+    "heading": 244,
+    "accuracy": 9.8,
+    "timestamp": "2026-04-30T13:29:37.222Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cfefb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fbc",
+      "registrationNumber": "SP JLA-6466"
+    },
+    "latitude": 9.511189,
+    "longitude": 81.177239,
+    "speed": 30.2,
+    "heading": 215,
+    "accuracy": 3.5,
+    "timestamp": "2026-04-30T13:29:37.222Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cfef9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe4",
+      "registrationNumber": "SP QDI-9654"
+    },
+    "latitude": 9.102285,
+    "longitude": 80.69955,
+    "speed": 24.8,
+    "heading": 281,
+    "accuracy": 5.1,
+    "timestamp": "2026-04-30T13:29:37.220Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cfef7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8021",
+      "registrationNumber": "SP TDJ-6755"
+    },
+    "latitude": 6.163722,
+    "longitude": 81.42796,
+    "speed": 18.6,
+    "heading": 359,
+    "accuracy": 10.6,
+    "timestamp": "2026-04-30T13:29:37.218Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cfef5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8029",
+      "registrationNumber": "SP QJB-9233"
+    },
+    "latitude": 7.313311,
+    "longitude": 79.882296,
+    "speed": 22.8,
+    "heading": 69,
+    "accuracy": 3.3,
+    "timestamp": "2026-04-30T13:29:37.216Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359411664805ca68cfef3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa2",
+      "registrationNumber": "SP VGT-4863"
+    },
+    "latitude": 9.732318,
+    "longitude": 79.753263,
+    "speed": 17.5,
+    "heading": 320,
+    "accuracy": 3.1,
+    "timestamp": "2026-04-30T13:29:37.214Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfedd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801f",
+      "registrationNumber": "RP UGE-6840"
+    },
+    "latitude": 7.960825,
+    "longitude": 79.830752,
+    "speed": 16.8,
+    "heading": 160,
+    "accuracy": 8.1,
+    "timestamp": "2026-04-30T13:29:32.157Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfedb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8007",
+      "registrationNumber": "RP UTA-9846"
+    },
+    "latitude": 7.973165,
+    "longitude": 81.641461,
+    "speed": 37.7,
+    "heading": 274,
+    "accuracy": 13.8,
+    "timestamp": "2026-04-30T13:29:32.155Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfed9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc2",
+      "registrationNumber": "SG LDK-9523"
+    },
+    "latitude": 9.467708,
+    "longitude": 80.488721,
+    "speed": 36.7,
+    "heading": 18,
+    "accuracy": 4.7,
+    "timestamp": "2026-04-30T13:29:32.153Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfed7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fec",
+      "registrationNumber": "SG OQV-1303"
+    },
+    "latitude": 7.069103,
+    "longitude": 80.078583,
+    "speed": 28.4,
+    "heading": 259,
+    "accuracy": 5.9,
+    "timestamp": "2026-04-30T13:29:32.151Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfed5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9d",
+      "registrationNumber": "RP GTR-3463"
+    },
+    "latitude": 6.711559,
+    "longitude": 81.618379,
+    "speed": 26.7,
+    "heading": 75,
+    "accuracy": 11.8,
+    "timestamp": "2026-04-30T13:29:32.134Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfed3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee804a",
+      "registrationNumber": "RP HFA-6733"
+    },
+    "latitude": 9.059836,
+    "longitude": 79.74123,
+    "speed": 24,
+    "heading": 9,
+    "accuracy": 12.5,
+    "timestamp": "2026-04-30T13:29:32.132Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfed1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcf",
+      "registrationNumber": "SP BQG-1810"
+    },
+    "latitude": 6.172134,
+    "longitude": 80.082124,
+    "speed": 14.9,
+    "heading": 248,
+    "accuracy": 5,
+    "timestamp": "2026-04-30T13:29:32.129Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfecf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7faa",
+      "registrationNumber": "RP MMP-9737"
+    },
+    "latitude": 7.275918,
+    "longitude": 79.974607,
+    "speed": 24.2,
+    "heading": 236,
+    "accuracy": 11.9,
+    "timestamp": "2026-04-30T13:29:32.126Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfecd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd8",
+      "registrationNumber": "RP UAX-7667"
+    },
+    "latitude": 7.206116,
+    "longitude": 80.022883,
+    "speed": 41.9,
+    "heading": 79,
+    "accuracy": 14.7,
+    "timestamp": "2026-04-30T13:29:32.122Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3593c1664805ca68cfecb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb1",
+      "registrationNumber": "NW XUK-9802"
+    },
+    "latitude": 6.142108,
+    "longitude": 80.798072,
+    "speed": 10,
+    "heading": 162,
+    "accuracy": 10.1,
+    "timestamp": "2026-04-30T13:29:32.119Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfeb5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd9",
+      "registrationNumber": "NW TPD-2897"
+    },
+    "latitude": 9.686754,
+    "longitude": 80.322879,
+    "speed": 20.7,
+    "heading": 166,
+    "accuracy": 5.7,
+    "timestamp": "2026-04-30T13:29:27.149Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfeb3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdf",
+      "registrationNumber": "NW VKX-9432"
+    },
+    "latitude": 8.475792,
+    "longitude": 80.788852,
+    "speed": 31.6,
+    "heading": 230,
+    "accuracy": 6.8,
+    "timestamp": "2026-04-30T13:29:27.147Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfeb1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff6",
+      "registrationNumber": "NW VWL-8148"
+    },
+    "latitude": 7.713454,
+    "longitude": 81.342388,
+    "speed": 17.5,
+    "heading": 291,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:29:27.145Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfeaf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8028",
+      "registrationNumber": "NP QTZ-6441"
+    },
+    "latitude": 9.813891,
+    "longitude": 81.033585,
+    "speed": 35.7,
+    "heading": 357,
+    "accuracy": 10.2,
+    "timestamp": "2026-04-30T13:29:27.142Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfead",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd1",
+      "registrationNumber": "NP ICL-7552"
+    },
+    "latitude": 6.632487,
+    "longitude": 80.276212,
+    "speed": 7.8,
+    "heading": 300,
+    "accuracy": 7.5,
+    "timestamp": "2026-04-30T13:29:27.137Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfeab",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8a",
+      "registrationNumber": "NP OVX-8741"
+    },
+    "latitude": 7.677851,
+    "longitude": 80.822443,
+    "speed": 24.9,
+    "heading": 307,
+    "accuracy": 10.2,
+    "timestamp": "2026-04-30T13:29:27.134Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfea9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc4",
+      "registrationNumber": "NP SUZ-1273"
+    },
+    "latitude": 9.800388,
+    "longitude": 80.485643,
+    "speed": 20.1,
+    "heading": 339,
+    "accuracy": 11.1,
+    "timestamp": "2026-04-30T13:29:27.131Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfea7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8009",
+      "registrationNumber": "NP XAI-5841"
+    },
+    "latitude": 7.66023,
+    "longitude": 81.523169,
+    "speed": 10.8,
+    "heading": 249,
+    "accuracy": 6,
+    "timestamp": "2026-04-30T13:29:27.128Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfea5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802a",
+      "registrationNumber": "NP ZIF-1221"
+    },
+    "latitude": 6.23336,
+    "longitude": 79.734282,
+    "speed": 27.2,
+    "heading": 194,
+    "accuracy": 11.9,
+    "timestamp": "2026-04-30T13:29:27.125Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359371664805ca68cfea3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd2",
+      "registrationNumber": "NP ZVO-4906"
+    },
+    "latitude": 8.91505,
+    "longitude": 80.564818,
+    "speed": 8.8,
+    "heading": 256,
+    "accuracy": 8.6,
+    "timestamp": "2026-04-30T13:29:27.121Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe8d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8027",
+      "registrationNumber": "KY VYB-6172"
+    },
+    "latitude": 6.025071,
+    "longitude": 81.751833,
+    "speed": 15.9,
+    "heading": 179,
+    "accuracy": 8.9,
+    "timestamp": "2026-04-30T13:29:22.210Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe8b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdc",
+      "registrationNumber": "KY YFV-5701"
+    },
+    "latitude": 9.196756,
+    "longitude": 79.738875,
+    "speed": 31.1,
+    "heading": 303,
+    "accuracy": 10.8,
+    "timestamp": "2026-04-30T13:29:22.208Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe89",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8036",
+      "registrationNumber": "NC TXF-6475"
+    },
+    "latitude": 7.125421,
+    "longitude": 80.229393,
+    "speed": 30.2,
+    "heading": 1,
+    "accuracy": 11.1,
+    "timestamp": "2026-04-30T13:29:22.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe87",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fff",
+      "registrationNumber": "NC XEA-2367"
+    },
+    "latitude": 5.982915,
+    "longitude": 80.760184,
+    "speed": 15.6,
+    "heading": 118,
+    "accuracy": 5.6,
+    "timestamp": "2026-04-30T13:29:22.198Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe85",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8000",
+      "registrationNumber": "NP DMG-6334"
+    },
+    "latitude": 7.960474,
+    "longitude": 79.799228,
+    "speed": 22.4,
+    "heading": 14,
+    "accuracy": 8,
+    "timestamp": "2026-04-30T13:29:22.196Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe83",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcb",
+      "registrationNumber": "NC FHK-6244"
+    },
+    "latitude": 7.451656,
+    "longitude": 79.745685,
+    "speed": 11.5,
+    "heading": 197,
+    "accuracy": 13,
+    "timestamp": "2026-04-30T13:29:22.194Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe81",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8005",
+      "registrationNumber": "NC KKV-3667"
+    },
+    "latitude": 8.7424,
+    "longitude": 81.35466,
+    "speed": 29.6,
+    "heading": 260,
+    "accuracy": 5.9,
+    "timestamp": "2026-04-30T13:29:22.191Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe7f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800c",
+      "registrationNumber": "NP GML-8222"
+    },
+    "latitude": 8.670282,
+    "longitude": 80.958081,
+    "speed": 21.8,
+    "heading": 299,
+    "accuracy": 4.1,
+    "timestamp": "2026-04-30T13:29:22.181Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe7d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8035",
+      "registrationNumber": "NC NNB-9788"
+    },
+    "latitude": 8.062766,
+    "longitude": 81.736039,
+    "speed": 24,
+    "heading": 228,
+    "accuracy": 13.1,
+    "timestamp": "2026-04-30T13:29:22.178Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359321664805ca68cfe7b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffb",
+      "registrationNumber": "NC RJJ-7993"
+    },
+    "latitude": 8.13474,
+    "longitude": 81.137724,
+    "speed": 32.4,
+    "heading": 229,
+    "accuracy": 5.7,
+    "timestamp": "2026-04-30T13:29:22.171Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe65",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803a",
+      "registrationNumber": "KU RLF-2755"
+    },
+    "latitude": 8.616507,
+    "longitude": 80.582817,
+    "speed": 17.7,
+    "heading": 200,
+    "accuracy": 12.8,
+    "timestamp": "2026-04-30T13:29:17.167Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe63",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8026",
+      "registrationNumber": "KY ACF-3137"
+    },
+    "latitude": 8.242108,
+    "longitude": 81.317848,
+    "speed": 32.5,
+    "heading": 132,
+    "accuracy": 8.2,
+    "timestamp": "2026-04-30T13:29:17.165Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe61",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8046",
+      "registrationNumber": "KY EUC-7096"
+    },
+    "latitude": 9.575204,
+    "longitude": 81.14768,
+    "speed": 24.6,
+    "heading": 331,
+    "accuracy": 4.9,
+    "timestamp": "2026-04-30T13:29:17.164Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe5f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb2",
+      "registrationNumber": "KY GEO-7937"
+    },
+    "latitude": 6.555625,
+    "longitude": 80.26923,
+    "speed": 36.1,
+    "heading": 12,
+    "accuracy": 5.7,
+    "timestamp": "2026-04-30T13:29:17.161Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe5d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa3",
+      "registrationNumber": "KY HCQ-7931"
+    },
+    "latitude": 6.224744,
+    "longitude": 79.974125,
+    "speed": 33.5,
+    "heading": 225,
+    "accuracy": 12.2,
+    "timestamp": "2026-04-30T13:29:17.158Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe5b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8013",
+      "registrationNumber": "KU YPF-5125"
+    },
+    "latitude": 8.279482,
+    "longitude": 79.670066,
+    "speed": 25.3,
+    "heading": 274,
+    "accuracy": 10.5,
+    "timestamp": "2026-04-30T13:29:17.151Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe59",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f96",
+      "registrationNumber": "JF ZTA-5746"
+    },
+    "latitude": 7.687773,
+    "longitude": 81.594023,
+    "speed": 42.9,
+    "heading": 304,
+    "accuracy": 11.3,
+    "timestamp": "2026-04-30T13:29:17.149Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe57",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc7",
+      "registrationNumber": "JF ZMP-2760"
+    },
+    "latitude": 6.847954,
+    "longitude": 80.78733,
+    "speed": 16,
+    "heading": 74,
+    "accuracy": 6.9,
+    "timestamp": "2026-04-30T13:29:17.147Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe55",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff9",
+      "registrationNumber": "JF YZS-4243"
+    },
+    "latitude": 8.282452,
+    "longitude": 80.115383,
+    "speed": 17.5,
+    "heading": 14,
+    "accuracy": 12.3,
+    "timestamp": "2026-04-30T13:29:17.145Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3592d1664805ca68cfe53",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8018",
+      "registrationNumber": "KY AHQ-7359"
+    },
+    "latitude": 6.938835,
+    "longitude": 80.399733,
+    "speed": 24.6,
+    "heading": 330,
+    "accuracy": 13.3,
+    "timestamp": "2026-04-30T13:29:17.141Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe3d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8003",
+      "registrationNumber": "JF RKH-1972"
+    },
+    "latitude": 8.053092,
+    "longitude": 79.703164,
+    "speed": 30.3,
+    "heading": 266,
+    "accuracy": 3.3,
+    "timestamp": "2026-04-30T13:29:12.181Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe3b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc8",
+      "registrationNumber": "JF UEY-5682"
+    },
+    "latitude": 8.101057,
+    "longitude": 80.60743,
+    "speed": 33.5,
+    "heading": 32,
+    "accuracy": 14,
+    "timestamp": "2026-04-30T13:29:12.179Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe39",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f90",
+      "registrationNumber": "JF LRS-6413"
+    },
+    "latitude": 9.326791,
+    "longitude": 81.306134,
+    "speed": 18.9,
+    "heading": 256,
+    "accuracy": 10.9,
+    "timestamp": "2026-04-30T13:29:12.177Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe37",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff3",
+      "registrationNumber": "JF JLO-4178"
+    },
+    "latitude": 6.535952,
+    "longitude": 80.538912,
+    "speed": 21.5,
+    "heading": 265,
+    "accuracy": 3.1,
+    "timestamp": "2026-04-30T13:29:12.176Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe35",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8040",
+      "registrationNumber": "JF NCC-2259"
+    },
+    "latitude": 6.447051,
+    "longitude": 80.42301,
+    "speed": 23.8,
+    "heading": 216,
+    "accuracy": 11.1,
+    "timestamp": "2026-04-30T13:29:12.174Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe33",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f84",
+      "registrationNumber": "JF QIT-9520"
+    },
+    "latitude": 8.644013,
+    "longitude": 80.27812,
+    "speed": 31.3,
+    "heading": 319,
+    "accuracy": 3.3,
+    "timestamp": "2026-04-30T13:29:12.171Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe31",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa0",
+      "registrationNumber": "JF UZZ-4631"
+    },
+    "latitude": 6.257767,
+    "longitude": 80.239599,
+    "speed": 11.4,
+    "heading": 146,
+    "accuracy": 9.2,
+    "timestamp": "2026-04-30T13:29:12.169Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe2f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcd",
+      "registrationNumber": "JF XQC-1440"
+    },
+    "latitude": 8.03201,
+    "longitude": 80.734459,
+    "speed": 14.8,
+    "heading": 27,
+    "accuracy": 12.5,
+    "timestamp": "2026-04-30T13:29:12.168Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe2d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8030",
+      "registrationNumber": "JF YMV-3111"
+    },
+    "latitude": 8.321727,
+    "longitude": 80.124466,
+    "speed": 23.2,
+    "heading": 255,
+    "accuracy": 8,
+    "timestamp": "2026-04-30T13:29:12.165Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359281664805ca68cfe2b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fae",
+      "registrationNumber": "JF XRR-6788"
+    },
+    "latitude": 8.511039,
+    "longitude": 80.250616,
+    "speed": 20.3,
+    "heading": 161,
+    "accuracy": 10.3,
+    "timestamp": "2026-04-30T13:29:12.161Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359241664805ca68cfe15",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8c",
+      "registrationNumber": "JF IHA-4850"
+    },
+    "latitude": 6.040566,
+    "longitude": 81.522522,
+    "speed": 22.6,
+    "heading": 310,
+    "accuracy": 10.5,
+    "timestamp": "2026-04-30T13:29:08.059Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe12",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800d",
+      "registrationNumber": "GL NOE-8439"
+    },
+    "latitude": 7.652396,
+    "longitude": 79.783604,
+    "speed": 35,
+    "heading": 109,
+    "accuracy": 12.9,
+    "timestamp": "2026-04-30T13:29:07.118Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe10",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f98",
+      "registrationNumber": "EP OUF-8898"
+    },
+    "latitude": 6.952896,
+    "longitude": 79.903404,
+    "speed": 29.4,
+    "heading": 218,
+    "accuracy": 10.1,
+    "timestamp": "2026-04-30T13:29:07.115Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe0e",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb4",
+      "registrationNumber": "GL WNM-7898"
+    },
+    "latitude": 9.734814,
+    "longitude": 80.943492,
+    "speed": 32.7,
+    "heading": 92,
+    "accuracy": 9.4,
+    "timestamp": "2026-04-30T13:29:07.112Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe0c",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fca",
+      "registrationNumber": "JF BWK-1771"
+    },
+    "latitude": 7.019624,
+    "longitude": 81.26876,
+    "speed": 40.7,
+    "heading": 334,
+    "accuracy": 10.5,
+    "timestamp": "2026-04-30T13:29:07.109Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe0a",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f85",
+      "registrationNumber": "GL SHI-8552"
+    },
+    "latitude": 8.910251,
+    "longitude": 80.618887,
+    "speed": 13.5,
+    "heading": 185,
+    "accuracy": 10.2,
+    "timestamp": "2026-04-30T13:29:07.106Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe08",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe9",
+      "registrationNumber": "EP PFC-3974"
+    },
+    "latitude": 7.54851,
+    "longitude": 80.469759,
+    "speed": 15.9,
+    "heading": 294,
+    "accuracy": 8.1,
+    "timestamp": "2026-04-30T13:29:07.104Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe06",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb0",
+      "registrationNumber": "GL FGA-2203"
+    },
+    "latitude": 9.217679,
+    "longitude": 81.475519,
+    "speed": 11.6,
+    "heading": 46,
+    "accuracy": 5.5,
+    "timestamp": "2026-04-30T13:29:07.081Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe04",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803c",
+      "registrationNumber": "GL IQC-6430"
+    },
+    "latitude": 8.078059,
+    "longitude": 81.850184,
+    "speed": 13.2,
+    "heading": 252,
+    "accuracy": 8.4,
+    "timestamp": "2026-04-30T13:29:07.079Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359231664805ca68cfe02",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801d",
+      "registrationNumber": "EP QAV-5235"
+    },
+    "latitude": 6.392821,
+    "longitude": 81.808996,
+    "speed": 17.3,
+    "heading": 3,
+    "accuracy": 3.3,
+    "timestamp": "2026-04-30T13:29:07.065Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591f1664805ca68cfded",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9b",
+      "registrationNumber": "EP HKB-4498"
+    },
+    "latitude": 9.816066,
+    "longitude": 81.702577,
+    "speed": 15.8,
+    "heading": 354,
+    "accuracy": 4.5,
+    "timestamp": "2026-04-30T13:29:03.157Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591f1664805ca68cfdeb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f97",
+      "registrationNumber": "CP XEI-1328"
+    },
+    "latitude": 9.410703,
+    "longitude": 80.571438,
+    "speed": 17.2,
+    "heading": 130,
+    "accuracy": 7.8,
+    "timestamp": "2026-04-30T13:29:03.144Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfde7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f8b",
+      "registrationNumber": "EP LXK-3501"
+    },
+    "latitude": 8.421622,
+    "longitude": 80.96018,
+    "speed": 14.7,
+    "heading": 323,
+    "accuracy": 10.1,
+    "timestamp": "2026-04-30T13:29:02.416Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfde5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb7",
+      "registrationNumber": "CP WYT-9223"
+    },
+    "latitude": 7.500247,
+    "longitude": 79.77674,
+    "speed": 24,
+    "heading": 303,
+    "accuracy": 11.2,
+    "timestamp": "2026-04-30T13:29:02.414Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfde3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffd",
+      "registrationNumber": "CP PVG-1273"
+    },
+    "latitude": 6.112717,
+    "longitude": 81.301724,
+    "speed": 11.8,
+    "heading": 211,
+    "accuracy": 6.2,
+    "timestamp": "2026-04-30T13:29:02.186Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfde1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8006",
+      "registrationNumber": "CP QMC-8465"
+    },
+    "latitude": 6.451582,
+    "longitude": 80.13485,
+    "speed": 28.8,
+    "heading": 260,
+    "accuracy": 9.9,
+    "timestamp": "2026-04-30T13:29:02.185Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfddf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc5",
+      "registrationNumber": "EP MPT-3538"
+    },
+    "latitude": 6.871233,
+    "longitude": 81.6419,
+    "speed": 23.5,
+    "heading": 313,
+    "accuracy": 7,
+    "timestamp": "2026-04-30T13:29:02.184Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfddd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffa",
+      "registrationNumber": "CP VSI-3529"
+    },
+    "latitude": 6.047993,
+    "longitude": 80.097868,
+    "speed": 32.4,
+    "heading": 233,
+    "accuracy": 6.2,
+    "timestamp": "2026-04-30T13:29:02.183Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfddb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7feb",
+      "registrationNumber": "CP ENS-8400"
+    },
+    "latitude": 8.732738,
+    "longitude": 81.613299,
+    "speed": 30.8,
+    "heading": 159,
+    "accuracy": 8.3,
+    "timestamp": "2026-04-30T13:29:02.182Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591e1664805ca68cfdd9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fed",
+      "registrationNumber": "CP IOE-9234"
+    },
+    "latitude": 8.320276,
+    "longitude": 79.905441,
+    "speed": 22.8,
+    "heading": 347,
+    "accuracy": 13.8,
+    "timestamp": "2026-04-30T13:29:02.181Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591a1664805ca68cfdc5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8041",
+      "registrationNumber": "BD UPO-7763"
+    },
+    "latitude": 8.797978,
+    "longitude": 80.319163,
+    "speed": 10.7,
+    "heading": 211,
+    "accuracy": 8.7,
+    "timestamp": "2026-04-30T13:28:58.176Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3591a1664805ca68cfdc3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb9",
+      "registrationNumber": "BD TJI-9116"
+    },
+    "latitude": 7.596386,
+    "longitude": 80.599375,
+    "speed": 12.4,
+    "heading": 208,
+    "accuracy": 7.3,
+    "timestamp": "2026-04-30T13:28:58.173Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdbf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8047",
+      "registrationNumber": "CP DHP-1647"
+    },
+    "latitude": 7.779172,
+    "longitude": 80.690433,
+    "speed": 36.7,
+    "heading": 261,
+    "accuracy": 13,
+    "timestamp": "2026-04-30T13:28:57.461Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdbd",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe2",
+      "registrationNumber": "CP DFK-6852"
+    },
+    "latitude": 9.812585,
+    "longitude": 80.870704,
+    "speed": 23.9,
+    "heading": 267,
+    "accuracy": 11.2,
+    "timestamp": "2026-04-30T13:28:57.301Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdbb",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801b",
+      "registrationNumber": "BD PHT-1910"
+    },
+    "latitude": 7.960989,
+    "longitude": 81.193782,
+    "speed": 25.8,
+    "heading": 234,
+    "accuracy": 3.9,
+    "timestamp": "2026-04-30T13:28:57.286Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdb9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8042",
+      "registrationNumber": "BD ZJO-2903"
+    },
+    "latitude": 7.757004,
+    "longitude": 81.664832,
+    "speed": 34.9,
+    "heading": 112,
+    "accuracy": 7.1,
+    "timestamp": "2026-04-30T13:28:57.285Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdb7",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9f",
+      "registrationNumber": "BD TBQ-9590"
+    },
+    "latitude": 6.329787,
+    "longitude": 81.756479,
+    "speed": 39.2,
+    "heading": 1,
+    "accuracy": 14.9,
+    "timestamp": "2026-04-30T13:28:57.284Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdb5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f95",
+      "registrationNumber": "AN ISB-4615"
+    },
+    "latitude": 9.226048,
+    "longitude": 80.423366,
+    "speed": 29.4,
+    "heading": 52,
+    "accuracy": 14.3,
+    "timestamp": "2026-04-30T13:28:57.278Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdb3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f92",
+      "registrationNumber": "AN PVC-2324"
+    },
+    "latitude": 7.996147,
+    "longitude": 80.554085,
+    "speed": 8.2,
+    "heading": 65,
+    "accuracy": 6.8,
+    "timestamp": "2026-04-30T13:28:57.116Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f359191664805ca68cfdb1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd4",
+      "registrationNumber": "BD SMV-3701"
+    },
+    "latitude": 6.818322,
+    "longitude": 80.60337,
+    "speed": 33.6,
+    "heading": 236,
+    "accuracy": 8.3,
+    "timestamp": "2026-04-30T13:28:57.100Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f3a8f0",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8049",
+      "registrationNumber": "SP LFY-3363"
+    },
+    "latitude": 6.086476,
+    "longitude": 80.622709,
+    "speed": 34.7,
+    "heading": 238,
+    "accuracy": 18.26205176753242,
+    "timestamp": "2026-04-30T13:26:36.249Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f39f71",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8048",
+      "registrationNumber": "SP QXJ-9218"
+    },
+    "latitude": 6.025999,
+    "longitude": 80.629953,
+    "speed": 37.4,
+    "heading": 286,
+    "accuracy": 12.157040572773674,
+    "timestamp": "2026-04-30T13:26:36.248Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f36676",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8040",
+      "registrationNumber": "JF NCC-2259"
+    },
+    "latitude": 9.337719,
+    "longitude": 80.435399,
+    "speed": 21.7,
+    "heading": 150,
+    "accuracy": 4.5123273720312795,
+    "timestamp": "2026-04-30T13:26:36.231Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588c3663da3351f32d58",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8037",
+      "registrationNumber": "TC TCW-2565"
+    },
+    "latitude": 7.813553,
+    "longitude": 81.553636,
+    "speed": 42.9,
+    "heading": 347,
+    "accuracy": 14.957771304091183,
+    "timestamp": "2026-04-30T13:26:36.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f31a28",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8035",
+      "registrationNumber": "NC NNB-9788"
+    },
+    "latitude": 8.279644,
+    "longitude": 80.418768,
+    "speed": 13.7,
+    "heading": 1,
+    "accuracy": 6.497075664605868,
+    "timestamp": "2026-04-30T13:26:28.571Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f30f6c",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8033",
+      "registrationNumber": "CP FBJ-2609"
+    },
+    "latitude": 7.298208,
+    "longitude": 80.656308,
+    "speed": 19.9,
+    "heading": 125,
+    "accuracy": 17.32214026920245,
+    "timestamp": "2026-04-30T13:26:28.560Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f30aa9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8031",
+      "registrationNumber": "RP GRA-9060"
+    },
+    "latitude": 6.684723,
+    "longitude": 80.327546,
+    "speed": 12.8,
+    "heading": 187,
+    "accuracy": 16.094951191130072,
+    "timestamp": "2026-04-30T13:26:28.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f3097e",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8030",
+      "registrationNumber": "JF YMV-3111"
+    },
+    "latitude": 9.349796,
+    "longitude": 80.431892,
+    "speed": 37.2,
+    "heading": 262,
+    "accuracy": 12.182645245745078,
+    "timestamp": "2026-04-30T13:26:28.555Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f30005",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802f",
+      "registrationNumber": "TC HBU-8276"
+    },
+    "latitude": 7.789939,
+    "longitude": 81.629201,
+    "speed": 12.2,
+    "heading": 247,
+    "accuracy": 7.7457585882856606,
+    "timestamp": "2026-04-30T13:26:28.553Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f2f691",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802e",
+      "registrationNumber": "WP ILA-3139"
+    },
+    "latitude": 7.016835,
+    "longitude": 80.028211,
+    "speed": 3.1,
+    "heading": 148,
+    "accuracy": 13.198406815193813,
+    "timestamp": "2026-04-30T13:26:28.550Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f2ed0e",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802d",
+      "registrationNumber": "KY YKD-7695"
+    },
+    "latitude": 7.257456,
+    "longitude": 80.659872,
+    "speed": 41.5,
+    "heading": 16,
+    "accuracy": 10.20803068012945,
+    "timestamp": "2026-04-30T13:26:28.549Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f2e847",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802a",
+      "registrationNumber": "NP ZIF-1221"
+    },
+    "latitude": 9.27818,
+    "longitude": 80.422892,
+    "speed": 37.8,
+    "heading": 318,
+    "accuracy": 19.61693383746907,
+    "timestamp": "2026-04-30T13:26:28.545Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358843663da3351f2b85d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8025",
+      "registrationNumber": "KY DZB-5536"
+    },
+    "latitude": 7.300127,
+    "longitude": 80.598578,
+    "speed": 2.9,
+    "heading": 346,
+    "accuracy": 19.783936500616942,
+    "timestamp": "2026-04-30T13:26:28.529Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587d3663da3351f2adad",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8021",
+      "registrationNumber": "SP TDJ-6755"
+    },
+    "latitude": 6.02367,
+    "longitude": 80.647481,
+    "speed": 9.4,
+    "heading": 317,
+    "accuracy": 6.592926733899143,
+    "timestamp": "2026-04-30T13:26:20.208Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587c3663da3351f25ee3",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8013",
+      "registrationNumber": "KU YPF-5125"
+    },
+    "latitude": 7.884744,
+    "longitude": 80.038377,
+    "speed": 20.9,
+    "heading": 73,
+    "accuracy": 15.394431681278885,
+    "timestamp": "2026-04-30T13:26:20.180Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358713663da3351f23500",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800c",
+      "registrationNumber": "NP GML-8222"
+    },
+    "latitude": 9.323401,
+    "longitude": 80.39417,
+    "speed": 35.2,
+    "heading": 213,
+    "accuracy": 17.692647213561607,
+    "timestamp": "2026-04-30T13:26:08.314Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358713663da3351f20b28",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8007",
+      "registrationNumber": "RP UTA-9846"
+    },
+    "latitude": 6.670098,
+    "longitude": 80.346171,
+    "speed": 42,
+    "heading": 6,
+    "accuracy": 9.562724819846729,
+    "timestamp": "2026-04-30T13:26:08.303Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358703663da3351f1f803",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8005",
+      "registrationNumber": "NC KKV-3667"
+    },
+    "latitude": 8.333716,
+    "longitude": 80.404735,
+    "speed": 31.1,
+    "heading": 120,
+    "accuracy": 17.039959264481208,
+    "timestamp": "2026-04-30T13:26:08.297Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358703663da3351f1eaf0",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8003",
+      "registrationNumber": "JF RKH-1972"
+    },
+    "latitude": 9.314881,
+    "longitude": 80.382745,
+    "speed": 18.9,
+    "heading": 231,
+    "accuracy": 6.138909954884358,
+    "timestamp": "2026-04-30T13:26:08.289Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358703663da3351f1e157",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8002",
+      "registrationNumber": "GL ZLL-1249"
+    },
+    "latitude": 6.00993,
+    "longitude": 80.589351,
+    "speed": 29,
+    "heading": 267,
+    "accuracy": 19.17990539946892,
+    "timestamp": "2026-04-30T13:26:08.288Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358703663da3351f1c71c",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffe",
+      "registrationNumber": "NC MRU-7662"
+    },
+    "latitude": 8.312412,
+    "longitude": 80.436701,
+    "speed": 10.7,
+    "heading": 144,
+    "accuracy": 3.2343444739856393,
+    "timestamp": "2026-04-30T13:26:08.274Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358663663da3351f1a5d6",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff9",
+      "registrationNumber": "JF YZS-4243"
+    },
+    "latitude": 9.313172,
+    "longitude": 80.380961,
+    "speed": 26.4,
+    "heading": 298,
+    "accuracy": 14.994109994148488,
+    "timestamp": "2026-04-30T13:25:57.605Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358663663da3351f18f38",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff6",
+      "registrationNumber": "NW VWL-8148"
+    },
+    "latitude": 7.952672,
+    "longitude": 80.021205,
+    "speed": 28.7,
+    "heading": 327,
+    "accuracy": 16.104287756192797,
+    "timestamp": "2026-04-30T13:25:57.593Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358663663da3351f14ea8",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fed",
+      "registrationNumber": "CP IOE-9234"
+    },
+    "latitude": 7.29054,
+    "longitude": 80.6338,
+    "speed": 26.9,
+    "heading": 335,
+    "accuracy": 14.024867762890976,
+    "timestamp": "2026-04-30T13:25:57.569Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358653663da3351f12fcc",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe9",
+      "registrationNumber": "EP PFC-3974"
+    },
+    "latitude": 7.821896,
+    "longitude": 81.560217,
+    "speed": 30.6,
+    "heading": 175,
+    "accuracy": 6.553944543388841,
+    "timestamp": "2026-04-30T13:25:57.560Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358653663da3351f12503",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe7",
+      "registrationNumber": "KU WXR-4337"
+    },
+    "latitude": 7.862742,
+    "longitude": 80.002703,
+    "speed": 44.4,
+    "heading": 161,
+    "accuracy": 10.319186930417004,
+    "timestamp": "2026-04-30T13:25:57.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3585a3663da3351f1191b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe5",
+      "registrationNumber": "SP ICX-7899"
+    },
+    "latitude": 6.032602,
+    "longitude": 80.568234,
+    "speed": 41.9,
+    "heading": 190,
+    "accuracy": 10.56567464387578,
+    "timestamp": "2026-04-30T13:25:45.188Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3585a3663da3351f11583",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe4",
+      "registrationNumber": "SP QDI-9654"
+    },
+    "latitude": 6.024423,
+    "longitude": 80.655159,
+    "speed": 20.1,
+    "heading": 321,
+    "accuracy": 15.697633383271649,
+    "timestamp": "2026-04-30T13:25:45.183Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3585a3663da3351f10c0b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe3",
+      "registrationNumber": "WP DFS-6165"
+    },
+    "latitude": 7.049616,
+    "longitude": 80.03904,
+    "speed": 9.5,
+    "heading": 284,
+    "accuracy": 5.1962947377437025,
+    "timestamp": "2026-04-30T13:25:45.178Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3585a3663da3351f1029b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe2",
+      "registrationNumber": "CP DFK-6852"
+    },
+    "latitude": 7.284637,
+    "longitude": 80.610628,
+    "speed": 33.3,
+    "heading": 326,
+    "accuracy": 17.8276664009593,
+    "timestamp": "2026-04-30T13:25:45.173Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0d67b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdb",
+      "registrationNumber": "JF BBP-4203"
+    },
+    "latitude": 9.289725,
+    "longitude": 80.402839,
+    "speed": 40.6,
+    "heading": 66,
+    "accuracy": 11.1177896621813,
+    "timestamp": "2026-04-30T13:25:45.158Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0d1bc",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd9",
+      "registrationNumber": "NW TPD-2897"
+    },
+    "latitude": 7.892141,
+    "longitude": 80.009531,
+    "speed": 40.6,
+    "heading": 356,
+    "accuracy": 5.351091963637742,
+    "timestamp": "2026-04-30T13:25:45.155Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0c839",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd8",
+      "registrationNumber": "RP UAX-7667"
+    },
+    "latitude": 6.659652,
+    "longitude": 80.355203,
+    "speed": 34.5,
+    "heading": 299,
+    "accuracy": 8.43310889544109,
+    "timestamp": "2026-04-30T13:25:45.152Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f39d07",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8047",
+      "registrationNumber": "CP DHP-1647"
+    },
+    "latitude": 7.274912,
+    "longitude": 80.64123,
+    "speed": 1.2,
+    "heading": 36,
+    "accuracy": 7.375642996020658,
+    "timestamp": "2026-04-30T13:25:36.246Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f38692",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8044",
+      "registrationNumber": "WP DUJ-8155"
+    },
+    "latitude": 7.029966,
+    "longitude": 80.000517,
+    "speed": 40.9,
+    "heading": 115,
+    "accuracy": 5.8891971053778365,
+    "timestamp": "2026-04-30T13:25:36.239Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f37999",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8042",
+      "registrationNumber": "BD ZJO-2903"
+    },
+    "latitude": 6.750269,
+    "longitude": 81.034194,
+    "speed": 43.5,
+    "heading": 252,
+    "accuracy": 10.178900671482417,
+    "timestamp": "2026-04-30T13:25:36.236Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f36fff",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8041",
+      "registrationNumber": "BD UPO-7763"
+    },
+    "latitude": 6.792461,
+    "longitude": 81.004253,
+    "speed": 22.3,
+    "heading": 60,
+    "accuracy": 9.301666987208744,
+    "timestamp": "2026-04-30T13:25:36.233Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588c3663da3351f33ba9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803a",
+      "registrationNumber": "KU RLF-2755"
+    },
+    "latitude": 7.910955,
+    "longitude": 80.028847,
+    "speed": 16.4,
+    "heading": 270,
+    "accuracy": 9.247316340344938,
+    "timestamp": "2026-04-30T13:25:36.210Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588c3663da3351f32e7e",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8038",
+      "registrationNumber": "AN BRO-1566"
+    },
+    "latitude": 8.26301,
+    "longitude": 80.443992,
+    "speed": 9.2,
+    "heading": 27,
+    "accuracy": 9.260577313131696,
+    "timestamp": "2026-04-30T13:25:36.208Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f2deb6",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8029",
+      "registrationNumber": "SP QJB-9233"
+    },
+    "latitude": 6.020758,
+    "longitude": 80.594051,
+    "speed": 27.6,
+    "heading": 249,
+    "accuracy": 12.179769456987096,
+    "timestamp": "2026-04-30T13:25:28.540Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358843663da3351f2d511",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8028",
+      "registrationNumber": "NP QTZ-6441"
+    },
+    "latitude": 9.315526,
+    "longitude": 80.35592,
+    "speed": 31.9,
+    "heading": 167,
+    "accuracy": 6.725381224117163,
+    "timestamp": "2026-04-30T13:25:28.535Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358843663da3351f2c1f5",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8026",
+      "registrationNumber": "KY ACF-3137"
+    },
+    "latitude": 7.22314,
+    "longitude": 80.691838,
+    "speed": 13.6,
+    "heading": 172,
+    "accuracy": 3.2743983741563483,
+    "timestamp": "2026-04-30T13:25:28.530Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358843663da3351f2b4c6",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8024",
+      "registrationNumber": "WP WNN-9613"
+    },
+    "latitude": 7.015017,
+    "longitude": 80.015779,
+    "speed": 17.2,
+    "heading": 279,
+    "accuracy": 17.53568270717904,
+    "timestamp": "2026-04-30T13:25:28.528Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358843663da3351f2b267",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8023",
+      "registrationNumber": "CP OXZ-8335"
+    },
+    "latitude": 7.286757,
+    "longitude": 80.646826,
+    "speed": 20.7,
+    "heading": 6,
+    "accuracy": 7.999439339348427,
+    "timestamp": "2026-04-30T13:25:28.527Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358463663da3351f09c64",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd1",
+      "registrationNumber": "NP ICL-7552"
+    },
+    "latitude": 9.256666,
+    "longitude": 80.444528,
+    "speed": 37.3,
+    "heading": 277,
+    "accuracy": 14.083585683657097,
+    "timestamp": "2026-04-30T13:25:25.583Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358463663da3351f06ef2",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcb",
+      "registrationNumber": "NC FHK-6244"
+    },
+    "latitude": 8.303548,
+    "longitude": 80.352901,
+    "speed": 38.4,
+    "heading": 267,
+    "accuracy": 8.896798440825542,
+    "timestamp": "2026-04-30T13:25:25.572Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587d3663da3351f29927",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801e",
+      "registrationNumber": "AN FNP-9106"
+    },
+    "latitude": 8.338923,
+    "longitude": 80.381784,
+    "speed": 42.4,
+    "heading": 176,
+    "accuracy": 5.725049128523004,
+    "timestamp": "2026-04-30T13:25:20.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587d3663da3351f2957e",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801d",
+      "registrationNumber": "EP QAV-5235"
+    },
+    "latitude": 7.813515,
+    "longitude": 81.615805,
+    "speed": 23,
+    "heading": 58,
+    "accuracy": 14.26420810465247,
+    "timestamp": "2026-04-30T13:25:20.201Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587d3663da3351f28ac9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee801b",
+      "registrationNumber": "BD PHT-1910"
+    },
+    "latitude": 6.807334,
+    "longitude": 81.039683,
+    "speed": 1.1,
+    "heading": 21,
+    "accuracy": 10.337131202438325,
+    "timestamp": "2026-04-30T13:25:20.198Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587c3663da3351f27ee8",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8018",
+      "registrationNumber": "KY AHQ-7359"
+    },
+    "latitude": 7.321374,
+    "longitude": 80.617263,
+    "speed": 41.2,
+    "heading": 99,
+    "accuracy": 9.006957060240886,
+    "timestamp": "2026-04-30T13:25:20.191Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587c3663da3351f26988",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8015",
+      "registrationNumber": "GL GEN-6029"
+    },
+    "latitude": 6.084592,
+    "longitude": 80.645201,
+    "speed": 18.7,
+    "heading": 194,
+    "accuracy": 16.554585346739987,
+    "timestamp": "2026-04-30T13:25:20.187Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587c3663da3351f26856",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8014",
+      "registrationNumber": "WP XKB-7702"
+    },
+    "latitude": 6.972252,
+    "longitude": 80.001536,
+    "speed": 18.2,
+    "heading": 66,
+    "accuracy": 8.322495434654757,
+    "timestamp": "2026-04-30T13:25:20.184Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587c3663da3351f25545",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8012",
+      "registrationNumber": "CP RMQ-9016"
+    },
+    "latitude": 7.222599,
+    "longitude": 80.636868,
+    "speed": 5.3,
+    "heading": 236,
+    "accuracy": 7.885397495637939,
+    "timestamp": "2026-04-30T13:25:20.179Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358713663da3351f221d2",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee800a",
+      "registrationNumber": "SP YXD-8278"
+    },
+    "latitude": 6.040492,
+    "longitude": 80.593334,
+    "speed": 16.7,
+    "heading": 310,
+    "accuracy": 15.284285173240391,
+    "timestamp": "2026-04-30T13:25:08.309Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358713663da3351f20ec9",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8008",
+      "registrationNumber": "GL TKX-8351"
+    },
+    "latitude": 6.09004,
+    "longitude": 80.650097,
+    "speed": 8,
+    "heading": 150,
+    "accuracy": 6.943009112727417,
+    "timestamp": "2026-04-30T13:25:08.306Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358703663da3351f1ee8f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8004",
+      "registrationNumber": "NP RSO-2205"
+    },
+    "latitude": 9.35484,
+    "longitude": 80.401077,
+    "speed": 43.9,
+    "heading": 189,
+    "accuracy": 13.186049363389678,
+    "timestamp": "2026-04-30T13:25:08.296Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358703663da3351f1da3e",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8000",
+      "registrationNumber": "NP DMG-6334"
+    },
+    "latitude": 9.254079,
+    "longitude": 80.389021,
+    "speed": 27.9,
+    "heading": 346,
+    "accuracy": 11.027652433372351,
+    "timestamp": "2026-04-30T13:25:08.281Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3582e3663da3351f01b87",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fbd",
+      "registrationNumber": "NP ACN-5381"
+    },
+    "latitude": 9.257691,
+    "longitude": 80.388469,
+    "speed": 6.2,
+    "heading": 89,
+    "accuracy": 16.229008190944246,
+    "timestamp": "2026-04-30T13:25:01.091Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3582d3663da3351f0073f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fb9",
+      "registrationNumber": "BD TJI-9116"
+    },
+    "latitude": 6.778526,
+    "longitude": 81.045556,
+    "speed": 12.9,
+    "heading": 285,
+    "accuracy": 15.510959937364518,
+    "timestamp": "2026-04-30T13:25:01.073Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3582d3663da3351efae20",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fae",
+      "registrationNumber": "JF XRR-6788"
+    },
+    "latitude": 9.340589,
+    "longitude": 80.400489,
+    "speed": 19.2,
+    "heading": 166,
+    "accuracy": 13.025677034282129,
+    "timestamp": "2026-04-30T13:25:01.046Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3582d3663da3351ef9fca",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fab",
+      "registrationNumber": "TC AOP-1453"
+    },
+    "latitude": 7.821516,
+    "longitude": 81.636637,
+    "speed": 5.2,
+    "heading": 116,
+    "accuracy": 19.223891843018436,
+    "timestamp": "2026-04-30T13:25:01.042Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358673663da3351f1af3d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ffa",
+      "registrationNumber": "CP VSI-3529"
+    },
+    "latitude": 7.305486,
+    "longitude": 80.590728,
+    "speed": 26,
+    "heading": 264,
+    "accuracy": 11.952760666007835,
+    "timestamp": "2026-04-30T13:24:57.621Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358663663da3351f192bf",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff7",
+      "registrationNumber": "NP EAU-8624"
+    },
+    "latitude": 9.337899,
+    "longitude": 80.348614,
+    "speed": 26.8,
+    "heading": 79,
+    "accuracy": 7.3772491721295825,
+    "timestamp": "2026-04-30T13:24:57.597Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358663663da3351f185a6",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff5",
+      "registrationNumber": "TC BPJ-3942"
+    },
+    "latitude": 7.771461,
+    "longitude": 81.607971,
+    "speed": 6.4,
+    "heading": 260,
+    "accuracy": 8.313987679969724,
+    "timestamp": "2026-04-30T13:24:57.590Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358663663da3351f17c25",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7ff4",
+      "registrationNumber": "WP CRW-3803"
+    },
+    "latitude": 7.029353,
+    "longitude": 79.966307,
+    "speed": 21.2,
+    "heading": 102,
+    "accuracy": 3.276731132480858,
+    "timestamp": "2026-04-30T13:24:57.588Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358653663da3351f13226",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fea",
+      "registrationNumber": "WP BCD-8199"
+    },
+    "latitude": 7.004268,
+    "longitude": 80.041158,
+    "speed": 9,
+    "heading": 221,
+    "accuracy": 3.653709746000269,
+    "timestamp": "2026-04-30T13:24:57.563Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3585a3663da3351f0f6ae",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fe0",
+      "registrationNumber": "WP XCF-4681"
+    },
+    "latitude": 6.959909,
+    "longitude": 79.945569,
+    "speed": 3.3,
+    "heading": 60,
+    "accuracy": 4.043587741166117,
+    "timestamp": "2026-04-30T13:24:45.166Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0ed35",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdf",
+      "registrationNumber": "NW VKX-9432"
+    },
+    "latitude": 7.930975,
+    "longitude": 79.979819,
+    "speed": 33.2,
+    "heading": 253,
+    "accuracy": 15.549732780482028,
+    "timestamp": "2026-04-30T13:24:45.162Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0dffe",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fdc",
+      "registrationNumber": "KY YFV-5701"
+    },
+    "latitude": 7.262592,
+    "longitude": 80.600566,
+    "speed": 24.9,
+    "heading": 103,
+    "accuracy": 5.486209869429262,
+    "timestamp": "2026-04-30T13:24:45.159Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0bd85",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd6",
+      "registrationNumber": "WP ILQ-4279"
+    },
+    "latitude": 6.952154,
+    "longitude": 80.045601,
+    "speed": 2.1,
+    "heading": 131,
+    "accuracy": 4.705345734791168,
+    "timestamp": "2026-04-30T13:24:45.152Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0bc50",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd5",
+      "registrationNumber": "WP CCR-2554"
+    },
+    "latitude": 6.951773,
+    "longitude": 79.979313,
+    "speed": 40.7,
+    "heading": 260,
+    "accuracy": 8.72231462195416,
+    "timestamp": "2026-04-30T13:24:45.149Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358593663da3351f0a962",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd3",
+      "registrationNumber": "CP GUR-2261"
+    },
+    "latitude": 7.266276,
+    "longitude": 80.672126,
+    "speed": 41.5,
+    "heading": 284,
+    "accuracy": 3.088652448686767,
+    "timestamp": "2026-04-30T13:24:45.144Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f39f70",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8048",
+      "registrationNumber": "SP QXJ-9218"
+    },
+    "latitude": 6.025914,
+    "longitude": 80.630078,
+    "speed": 10.6,
+    "heading": 225,
+    "accuracy": 3.7536191907131213,
+    "timestamp": "2026-04-30T13:24:36.248Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588d3663da3351f37d2b",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8043",
+      "registrationNumber": "WP JNV-7636"
+    },
+    "latitude": 6.972408,
+    "longitude": 79.990212,
+    "speed": 29.7,
+    "heading": 266,
+    "accuracy": 8.991874280677326,
+    "timestamp": "2026-04-30T13:24:36.238Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588c3663da3351f350ef",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803d",
+      "registrationNumber": "UV JSZ-2177"
+    },
+    "latitude": 6.762569,
+    "longitude": 80.993298,
+    "speed": 38.9,
+    "heading": 332,
+    "accuracy": 19.07713305830032,
+    "timestamp": "2026-04-30T13:24:36.219Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588c3663da3351f34773",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803c",
+      "registrationNumber": "GL IQC-6430"
+    },
+    "latitude": 5.997719,
+    "longitude": 80.628178,
+    "speed": 1,
+    "heading": 260,
+    "accuracy": 11.898448463438523,
+    "timestamp": "2026-04-30T13:24:36.216Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3588c3663da3351f33e07",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee803b",
+      "registrationNumber": "CP LGE-3759"
+    },
+    "latitude": 7.311654,
+    "longitude": 80.684557,
+    "speed": 29.1,
+    "heading": 135,
+    "accuracy": 9.817609144735142,
+    "timestamp": "2026-04-30T13:24:36.215Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580f3663da3351ef8c90",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa9",
+      "registrationNumber": "EP KBW-7276"
+    },
+    "latitude": 7.835304,
+    "longitude": 81.63284,
+    "speed": 19.6,
+    "heading": 208,
+    "accuracy": 10.668455878923947,
+    "timestamp": "2026-04-30T13:24:30.385Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580f3663da3351ef8903",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa8",
+      "registrationNumber": "BD GCI-9694"
+    },
+    "latitude": 6.755038,
+    "longitude": 80.989436,
+    "speed": 28.2,
+    "heading": 164,
+    "accuracy": 9.143729615040673,
+    "timestamp": "2026-04-30T13:24:30.384Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580f3663da3351ef6659",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fa2",
+      "registrationNumber": "SP VGT-4863"
+    },
+    "latitude": 6.096113,
+    "longitude": 80.557487,
+    "speed": 39.6,
+    "heading": 225,
+    "accuracy": 6.8218404070175716,
+    "timestamp": "2026-04-30T13:24:30.373Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580f3663da3351ef5233",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9f",
+      "registrationNumber": "BD TBQ-9590"
+    },
+    "latitude": 6.817129,
+    "longitude": 80.990931,
+    "speed": 2,
+    "heading": 16,
+    "accuracy": 9.48240553152803,
+    "timestamp": "2026-04-30T13:24:30.368Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580e3663da3351ef48a1",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9e",
+      "registrationNumber": "SP ZBA-3624"
+    },
+    "latitude": 6.05642,
+    "longitude": 80.567618,
+    "speed": 31.1,
+    "heading": 322,
+    "accuracy": 8.343721416426607,
+    "timestamp": "2026-04-30T13:24:30.364Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580e3663da3351ef3f0c",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9d",
+      "registrationNumber": "RP GTR-3463"
+    },
+    "latitude": 6.674383,
+    "longitude": 80.306299,
+    "speed": 43.1,
+    "heading": 328,
+    "accuracy": 17.166349761315495,
+    "timestamp": "2026-04-30T13:24:30.362Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580e3663da3351ef358f",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9c",
+      "registrationNumber": "UV QFH-6566"
+    },
+    "latitude": 6.821126,
+    "longitude": 80.967805,
+    "speed": 7.4,
+    "heading": 202,
+    "accuracy": 4.499824466267941,
+    "timestamp": "2026-04-30T13:24:30.359Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3580e3663da3351ef2c09",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7f9b",
+      "registrationNumber": "EP HKB-4498"
+    },
+    "latitude": 7.816463,
+    "longitude": 81.583458,
+    "speed": 28.9,
+    "heading": 55,
+    "accuracy": 18.11314592696484,
+    "timestamp": "2026-04-30T13:24:30.354Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f323c2",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8036",
+      "registrationNumber": "NC TXF-6475"
+    },
+    "latitude": 8.297867,
+    "longitude": 80.447818,
+    "speed": 26.4,
+    "heading": 248,
+    "accuracy": 12.777950650790121,
+    "timestamp": "2026-04-30T13:24:28.574Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f310a6",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8034",
+      "registrationNumber": "RP DPU-8384"
+    },
+    "latitude": 6.656661,
+    "longitude": 80.352612,
+    "speed": 27.7,
+    "heading": 118,
+    "accuracy": 17.047952716242143,
+    "timestamp": "2026-04-30T13:24:28.560Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f30cff",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8032",
+      "registrationNumber": "SP XGN-2019"
+    },
+    "latitude": 6.017605,
+    "longitude": 80.592831,
+    "speed": 37.2,
+    "heading": 55,
+    "accuracy": 8.90453489927805,
+    "timestamp": "2026-04-30T13:24:28.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f30aa8",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8031",
+      "registrationNumber": "RP GRA-9060"
+    },
+    "latitude": 6.684795,
+    "longitude": 80.327435,
+    "speed": 0.7,
+    "heading": 280,
+    "accuracy": 6.153663465733198,
+    "timestamp": "2026-04-30T13:24:28.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f2ed0d",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802d",
+      "registrationNumber": "KY YKD-7695"
+    },
+    "latitude": 7.25732,
+    "longitude": 80.659939,
+    "speed": 23.9,
+    "heading": 181,
+    "accuracy": 15.089153733198014,
+    "timestamp": "2026-04-30T13:24:28.549Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358853663da3351f2e971",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee802b",
+      "registrationNumber": "SP YEY-1319"
+    },
+    "latitude": 6.039939,
+    "longitude": 80.596266,
+    "speed": 22.4,
+    "heading": 70,
+    "accuracy": 15.599135525785144,
+    "timestamp": "2026-04-30T13:24:28.548Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358843663da3351f2cb7e",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8027",
+      "registrationNumber": "KY VYB-6172"
+    },
+    "latitude": 7.248803,
+    "longitude": 80.647652,
+    "speed": 16.6,
+    "heading": 251,
+    "accuracy": 4.727914152886698,
+    "timestamp": "2026-04-30T13:24:28.532Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358463663da3351f0a5ce",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fd2",
+      "registrationNumber": "NP ZVO-4906"
+    },
+    "latitude": 9.28026,
+    "longitude": 80.348682,
+    "speed": 36.2,
+    "heading": 313,
+    "accuracy": 10.527336238354783,
+    "timestamp": "2026-04-30T13:24:25.585Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358463663da3351f08f4a",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcf",
+      "registrationNumber": "SP BQG-1810"
+    },
+    "latitude": 6.061859,
+    "longitude": 80.622509,
+    "speed": 29,
+    "heading": 23,
+    "accuracy": 10.971018610818737,
+    "timestamp": "2026-04-30T13:24:25.580Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358463663da3351f08222",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fcd",
+      "registrationNumber": "JF XQC-1440"
+    },
+    "latitude": 9.312821,
+    "longitude": 80.397473,
+    "speed": 6.9,
+    "heading": 87,
+    "accuracy": 19.561027595638766,
+    "timestamp": "2026-04-30T13:24:25.576Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358463663da3351f06565",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fca",
+      "registrationNumber": "JF BWK-1771"
+    },
+    "latitude": 9.290463,
+    "longitude": 80.453475,
+    "speed": 3.4,
+    "heading": 205,
+    "accuracy": 7.362949407823336,
+    "timestamp": "2026-04-30T13:24:25.569Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358453663da3351f04eca",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc7",
+      "registrationNumber": "JF ZMP-2760"
+    },
+    "latitude": 9.331157,
+    "longitude": 80.367373,
+    "speed": 4.3,
+    "heading": 4,
+    "accuracy": 13.141686750602014,
+    "timestamp": "2026-04-30T13:24:25.563Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358453663da3351f04536",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc6",
+      "registrationNumber": "EP MVM-5065"
+    },
+    "latitude": 7.841057,
+    "longitude": 81.566131,
+    "speed": 43.6,
+    "heading": 26,
+    "accuracy": 5.476202103285827,
+    "timestamp": "2026-04-30T13:24:25.561Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f358453663da3351f02d68",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee7fc2",
+      "registrationNumber": "SG LDK-9523"
+    },
+    "latitude": 6.714528,
+    "longitude": 80.384748,
+    "speed": 4.9,
+    "heading": 190,
+    "accuracy": 8.33637586924496,
+    "timestamp": "2026-04-30T13:24:25.553Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587d3663da3351f2b008",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8022",
+      "registrationNumber": "SP BWP-2964"
+    },
+    "latitude": 6.042039,
+    "longitude": 80.580184,
+    "speed": 40.5,
+    "heading": 78,
+    "accuracy": 12.995534015973686,
+    "timestamp": "2026-04-30T13:24:20.214Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587d3663da3351f2adac",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8021",
+      "registrationNumber": "SP TDJ-6755"
+    },
+    "latitude": 6.023643,
+    "longitude": 80.647496,
+    "speed": 16.6,
+    "heading": 359,
+    "accuracy": 11.05086757462575,
+    "timestamp": "2026-04-30T13:24:20.208Z",
+    "__v": 0
+  },
+  {
+    "_id": "69f3587d3663da3351f2a414",
+    "tukTuk": {
+      "_id": "69f357d43663da3351ee8020",
+      "registrationNumber": "SP AGQ-1854"
+    },
+    "latitude": 6.086346,
+    "longitude": 80.603084,
+    "speed": 0.3,
+    "heading": 173,
+    "accuracy": 11.86122597236613,
+    "timestamp": "2026-04-30T13:24:20.208Z",
+    "__v": 0
+  }
+]

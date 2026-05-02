@@ -56,7 +56,14 @@ const writeCSV = (filename, rows, columns) => {
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 const exportData = async () => {
-  await mongoose.connect(process.env.MONGODB_URI);
+  // Prefer a direct (non-`mongodb+srv`) URI when provided, since some
+  // environments can fail during SRV DNS resolution.
+  const mongoUri = process.env.MONGODB_URI_DIRECT || process.env.MONGODB_URI;
+  if (!mongoUri) {
+    throw new Error("Missing MongoDB URI. Set MONGODB_URI (and optionally MONGODB_URI_DIRECT) in .env");
+  }
+
+  await mongoose.connect(mongoUri, { serverSelectionTimeoutMS: 5000 });
   console.log("✅ Connected to MongoDB\n📦 Exporting simulation data...\n");
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
