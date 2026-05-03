@@ -20,6 +20,8 @@ import LocationPing from "../src/models/LocationPing.js";
 
 dotenv.config();
 
+const mongoServerSelectionTimeoutMS = Number(process.env.MONGODB_SERVER_SELECTION_TIMEOUT_MS || 30000);
+
 // ─── Test helpers ─────────────────────────────────────────────────────────────
 let adminToken;
 let officerToken;
@@ -38,7 +40,10 @@ beforeAll(async () => {
     process.env.MONGODB_URI_TEST ||
     process.env.MONGODB_URI_DIRECT ||
     process.env.MONGODB_URI;
-  await mongoose.connect(uri);
+  await mongoose.connect(uri, {
+    serverSelectionTimeoutMS: mongoServerSelectionTimeoutMS,
+    family: 4,
+  });
 
   // Clean test collections
   await Promise.all([

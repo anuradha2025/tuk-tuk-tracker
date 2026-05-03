@@ -17,6 +17,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+const mongoServerSelectionTimeoutMS = Number(process.env.MONGODB_SERVER_SELECTION_TIMEOUT_MS || 30000);
+
 // ─── Model imports ────────────────────────────────────────────────────────────
 import Province from "../src/models/Province.js";
 import District from "../src/models/District.js";
@@ -236,8 +238,19 @@ const seed = async () => {
   if (!mongoUri) {
     throw new Error("Missing MongoDB URI. Set MONGODB_URI (and optionally MONGODB_URI_DIRECT) in .env");
   }
-  await mongoose.connect(mongoUri, { autoIndex: true });
-  console.log("✅ Connected to MongoDB");
+  try {
+    await mongoose.connect(mongoUri, {
+      autoIndex: true,
+      serverSelectionTimeoutMS: mongoServerSelectionTimeoutMS,
+      family: 4,
+    });
+    console.log("✅ Connected to MongoDB");
+  } catch (error) {
+    console.error("❌ Could not reach MongoDB.");
+    console.error("   Check that your Atlas cluster is running, your current IP is whitelisted, and the URI in .env is correct.");
+    console.error("   If you want to seed locally, point MONGODB_URI at mongodb://127.0.0.1:27017/tuktuk_tracker and start a local MongoDB server.");
+    throw error;
+  }
 
   // Clear existing data
   console.log("🗑  Clearing existing data...");
