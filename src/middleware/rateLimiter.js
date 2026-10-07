@@ -1,46 +1,40 @@
 import rateLimit from "express-rate-limit";
 
-/**
- * Global rate limiter – applied to all routes.
- * Allows 200 requests per 15-minute window per IP.
- */
+const json = (message) => ({ success: false, message });
+
+const isProd = process.env.NODE_ENV === "production";
+
+/** Global limiter – per IP. Device pings are excluded: they have their own per-device limiter. */
 export const globalLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 200,
+  windowMs: 15 * 60 * 1000,
+  max: Number(process.env.RATE_LIMIT_GLOBAL || 1000),
   standardHeaders: true,
   legacyHeaders: false,
-  message: {
-    success: false,
-    message: "Too many requests from this IP. Please try again after 15 minutes.",
-  },
+  skip: (req) =>
+    req.path.startsWith("/api/locations/ping") ||
+    // local testing only: RATE_LIMIT_DISABLED=true is ignored in production
+    (!isProd && process.env.RATE_LIMIT_DISABLED === "true"),
+  message: json("Too many requests from this IP. Please try again later."),
 });
 
-/**
- * Strict limiter for authentication endpoints.
- * Mitigates brute-force attacks on login/register.
- */
+/** Strict limiter for login – mitigates credential stuffing / brute force. */
 export const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 20,
   standardHeaders: true,
   legacyHeaders: false,
-  message: {
-    success: false,
-    message: "Too many authentication attempts. Please try again after 15 minutes.",
-  },
+  message: json("Too many authentication attempts. Please try again after 15 minutes."),
 });
 
 /**
- * High-throughput limiter for device location ping endpoints.
- * Tuk-tuk devices may ping frequently; allow up to 1000/15 min per IP.
+ * Device ping limiter – keyed per DEVICE (not per IP): many devices can share one
+ * mobile-carrier NAT address, and one noisy device must not starve the others.
  */
 export const pingLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 1000,
+  windowMs: 60 * 1000,
+  max: Number(process.env.RATE_LIMIT_PINGS_PER_MIN || 60),
   standardHeaders: true,
   legacyHeaders: false,
-  message: {
-    success: false,
-    message: "Ping rate limit exceeded.",
-  },
+  keyGenerator: (req) => req.headers["x-device-id"] || req.ip,
+  message: json("Ping rate limit exceeded for this device."),
 });

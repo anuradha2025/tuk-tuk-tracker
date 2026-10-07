@@ -16,7 +16,7 @@ import bcrypt from "bcryptjs";
  *           type: string
  *         role:
  *           type: string
- *           enum: [hq_admin, provincial_admin, station_officer, device]
+ *           enum: [hq_admin, provincial_admin, station_officer]
  *         province:
  *           type: string
  *           description: Assigned province (for provincial_admin)
@@ -54,7 +54,7 @@ const userSchema = new mongoose.Schema(
     role: {
       type: String,
       enum: {
-        values: ["hq_admin", "provincial_admin", "station_officer", "device"],
+        values: ["hq_admin", "provincial_admin", "station_officer"],
         message: "{VALUE} is not a valid role",
       },
       default: "station_officer",
@@ -79,6 +79,10 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    // Brute-force protection: lock the account after repeated failed logins
+    failedLoginAttempts: { type: Number, default: 0, select: false },
+    lockUntil: { type: Date, default: null, select: false },
+    passwordChangedAt: { type: Date, default: null },
   },
   {
     timestamps: true,
@@ -92,6 +96,7 @@ userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
   const salt = await bcrypt.genSalt(12);
   this.password = await bcrypt.hash(this.password, salt);
+  if (!this.isNew) this.passwordChangedAt = new Date(Date.now() - 1000); // invalidates older JWTs
   next();
 });
 

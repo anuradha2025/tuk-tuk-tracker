@@ -17,6 +17,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+const mongoServerSelectionTimeoutMS = Number(process.env.MONGODB_SERVER_SELECTION_TIMEOUT_MS || 30000);
+
 // ─── Model imports ────────────────────────────────────────────────────────────
 import Province from "../src/models/Province.js";
 import District from "../src/models/District.js";
@@ -24,6 +26,11 @@ import PoliceStation from "../src/models/PoliceStation.js";
 import User from "../src/models/User.js";
 import TukTuk from "../src/models/TukTuk.js";
 import LocationPing from "../src/models/LocationPing.js";
+import Alert from "../src/models/Alert.js";
+import Geofence from "../src/models/Geofence.js";
+import AuditLog from "../src/models/AuditLog.js";
+import fs from "fs";
+import { hashDeviceKey, generateDeviceKey } from "../src/middleware/auth.js";
 
 // ─── Helper utilities ─────────────────────────────────────────────────────────
 const rand = (min, max) => Math.random() * (max - min) + min;
@@ -166,69 +173,149 @@ const randomPlate = (provinceCode) => {
 let nicCounter = 100000000;
 const nextNIC = () => `${nicCounter++}V`;
 
-// ─── Simulate a realistic GPS trail ──────────────────────────────────────────
+// ─── Realistic GPS history generator ─────────────────────────────────────────
+// Each vehicle has a HOME (parked overnight) and a STAND (town-centre rank) inside
+// its own district. Days follow a pattern:
+//   home → stand → [wait → fare → (fare | back to stand)]* → lunch at stand → … → home
+// with morning (07-09) and evening (16-19) peaks (shorter waits, more fares),
+// ~half of Sundays off, occasional speeding, a few vehicles that go offline, and a
+// few that run at night (an "unusual pattern" for investigators to find).
+const LOCAL_OFFSET_MS = 5.5 * 3600 * 1000; // Asia/Colombo
+const M_PER_DEG = 111320;
+const STEP_SEC = Number(process.env.SEED_PING_INTERVAL_SEC || 120);
+const SPEED_LIMIT = Number(process.env.SPEED_LIMIT_KMH || 60);
+
+const localParts = (d) => {
+  const l = new Date(d.getTime() + LOCAL_OFFSET_MS);
+  return { hour: l.getUTCHours() + l.getUTCMinutes() / 60, dow: l.getUTCDay(), key: l.toISOString().slice(0, 10) };
+};
+const offsetPoint = (p, dxM, dyM) => ({
+  lat: p.lat + dyM / M_PER_DEG,
+  lng: p.lng + dxM / (M_PER_DEG * Math.cos((p.lat * Math.PI) / 180)),
+});
+const distM = (a, b) => Math.hypot((b.lat - a.lat) * M_PER_DEG, (b.lng - a.lng) * M_PER_DEG * Math.cos((a.lat * Math.PI) / 180));
+const bearingDeg = (a, b) =>
+  (Math.atan2((b.lng - a.lng) * Math.cos((a.lat * Math.PI) / 180), b.lat - a.lat) * 180 / Math.PI + 360) % 360;
+
 /**
- * Generates ~1 week of location pings for a vehicle.
- * Simulates parked periods (night), short trips, and movement.
+ * @param {object} v  { id, registrationNumber, province, district, base:{lat,lng}, stand?:{lat,lng},
+ *                      days, stopAt?:Date, nightOps?:boolean, speeder?:boolean }
+ * @returns {{pings:Array, alerts:Array}}
  */
-const generateLocationHistory = (tukTukId, baseLat, baseLng, daysBack = 8) => {
-  const pings = [];
+const generateLocationHistory = (v) => {
   const now = new Date();
-  const startTime = new Date(now.getTime() - daysBack * 24 * 60 * 60 * 1000);
+  const end = v.stopAt || now;
+  const pings = [];
+  const alerts = [];
 
-  let currentTime = new Date(startTime);
-  let currentLat = baseLat + rand(-0.05, 0.05);
-  let currentLng = baseLng + rand(-0.05, 0.05);
+  const home = offsetPoint(v.base, rand(-4000, 4000), rand(-4000, 4000));
+  const stand = v.stand || offsetPoint(v.base, rand(-600, 600), rand(-600, 600));
+  const shiftStart = rand(6.0, 8.0);
+  const shiftEnd = rand(17.5, 20.5);
+  const worksDay = {};
+  const nightDays = new Set();
 
-  while (currentTime <= now) {
-    const hour = currentTime.getHours();
+  let pos = { ...home };
+  let mode = "parked"; // parked | toStand | waiting | fare | toHome
+  let target = null;
+  let waitUntil = 0;
+  let speed = 0;
+  let sinceLastPing = 1e9;
+  let lastSpeedAlert = 0;
 
-    // Night time (22:00–05:00): vehicle is parked, sparse pings
-    if (hour >= 22 || hour < 5) {
-      // One ping every 30 minutes while parked
-      pings.push({
-        tukTuk: tukTukId,
-        latitude: +(currentLat + rand(-0.001, 0.001)).toFixed(6),
-        longitude: +(currentLng + rand(-0.001, 0.001)).toFixed(6),
-        speed: 0,
-        heading: randInt(0, 360),
-        accuracy: rand(5, 15),
-        timestamp: new Date(currentTime),
-      });
-      currentTime = new Date(currentTime.getTime() + 30 * 60 * 1000);
-    } else {
-      // Daytime: active movement, ping every 2–5 minutes
-      const speed = rand(0, 45); // 0–45 km/h
-      const heading = randInt(0, 360);
-      const headingRad = (heading * Math.PI) / 180;
-
-      // Move vehicle based on speed and heading
-      const distanceDeg = (speed / 3600) * (5 / 111000); // approximate degrees per ping interval
-      currentLat += distanceDeg * Math.cos(headingRad) + rand(-0.0002, 0.0002);
-      currentLng += distanceDeg * Math.sin(headingRad) + rand(-0.0002, 0.0002);
-
-      // Clamp to Sri Lanka bounds
-      currentLat = Math.max(sriLankaBounds.latMin, Math.min(sriLankaBounds.latMax, currentLat));
-      currentLng = Math.max(sriLankaBounds.lngMin, Math.min(sriLankaBounds.lngMax, currentLng));
-
-      pings.push({
-        tukTuk: tukTukId,
-        latitude: +currentLat.toFixed(6),
-        longitude: +currentLng.toFixed(6),
-        speed: +speed.toFixed(1),
-        heading,
-        accuracy: rand(3, 20),
-        timestamp: new Date(currentTime),
-      });
-
-      currentTime = new Date(currentTime.getTime() + randInt(2, 5) * 60 * 1000);
+  let t = new Date(Math.floor((now.getTime() - v.days * 86400000) / (STEP_SEC * 1000)) * STEP_SEC * 1000);
+  while (t <= end) {
+    const lp = localParts(t);
+    if (worksDay[lp.key] === undefined) {
+      worksDay[lp.key] = lp.dow === 0 ? Math.random() < 0.5 : Math.random() < 0.95;
+      if (v.nightOps && Math.random() < 0.35) nightDays.add(lp.key);
     }
-  }
+    const peak = (lp.hour >= 7 && lp.hour < 9) || (lp.hour >= 16 && lp.hour < 19);
+    const lunch = lp.hour >= 12.5 && lp.hour < 13.5;
+    const nightShift = v.nightOps && nightDays.has(lp.key) && (lp.hour >= 23 || lp.hour < 3);
+    const working = nightShift || (worksDay[lp.key] && lp.hour >= shiftStart && lp.hour < shiftEnd);
 
-  return pings;
+    // ── decide mode ──
+    if (!working && (mode === "waiting" || mode === "fare" || mode === "toStand")) {
+      mode = "toHome";
+      target = home;
+    } else if (working && (mode === "parked" || mode === "toHome")) {
+      mode = "toStand";
+      target = nightShift ? offsetPoint(pos, rand(-9000, 9000), rand(-9000, 9000)) : stand;
+    }
+    if (mode === "waiting" && t.getTime() >= waitUntil && !lunch) {
+      mode = "fare";
+      const dist = rand(1500, 8000);
+      const ang = rand(0, 2 * Math.PI);
+      target = offsetPoint(stand, Math.cos(ang) * dist, Math.sin(ang) * dist); // fares stay local to the stand
+    }
+
+    // ── move ──
+    let moving = false;
+    if (target && (mode === "toStand" || mode === "fare" || mode === "toHome")) {
+      const want = mode === "fare" ? rand(18, 42) : rand(25, 38);
+      speed = Math.max(0, speed + (want - speed) * 0.5 + rand(-3, 3));
+      if (v.speeder && mode === "fare" && Math.random() < 0.04) speed = rand(72, 92);
+      const stepM = (speed * 1000 / 3600) * STEP_SEC;
+      const d = distM(pos, target);
+      if (d <= stepM) {
+        pos = { ...target };
+        speed = 0;
+        if (mode === "toHome") mode = "parked";
+        else if (mode === "toStand") { mode = "waiting"; waitUntil = t.getTime() + (peak ? rand(1, 4) : rand(4, 15)) * 60000; }
+        else {
+          // fare finished: another fare from here (peak) or back to the stand
+          if (Math.random() < (peak ? 0.55 : 0.25)) { mode = "waiting"; waitUntil = t.getTime() + rand(1, 3) * 60000; }
+          else { mode = "toStand"; target = stand; }
+        }
+      } else {
+        const b = bearingDeg(pos, target);
+        const jitter = offsetPoint(pos, rand(-6, 6), rand(-6, 6)); // road wobble
+        pos = offsetPoint(jitter, (Math.sin((b * Math.PI) / 180) * stepM), (Math.cos((b * Math.PI) / 180) * stepM));
+        moving = true;
+      }
+    } else {
+      speed = 0;
+    }
+
+    // ── emit ping (dense while moving, sparse while stationary) ──
+    sinceLastPing += STEP_SEC;
+    const interval = moving ? STEP_SEC : mode === "parked" ? 3600 : 600;
+    if (sinceLastPing >= interval) {
+      sinceLastPing = 0;
+      const stationary = !moving;
+      const p = stationary ? offsetPoint(pos, rand(-12, 12), rand(-12, 12)) : pos;
+      const sp = stationary ? 0 : +speed.toFixed(1);
+      pings.push({
+        tukTuk: v.id,
+        latitude: +p.lat.toFixed(6),
+        longitude: +p.lng.toFixed(6),
+        location: { type: "Point", coordinates: [+p.lng.toFixed(6), +p.lat.toFixed(6)] },
+        speed: sp,
+        heading: target && moving ? Math.round(bearingDeg(pos, target)) : randInt(0, 359),
+        accuracy: +rand(3, 15).toFixed(1),
+        timestamp: new Date(t),
+        receivedAt: new Date(t),
+      });
+      if (sp > SPEED_LIMIT && t.getTime() - lastSpeedAlert > 5 * 60000) {
+        lastSpeedAlert = t.getTime();
+        alerts.push({
+          tukTuk: v.id, type: "speeding", severity: sp > SPEED_LIMIT * 1.4 ? "critical" : "warning",
+          message: `${v.registrationNumber} travelling at ${sp} km/h (limit ${SPEED_LIMIT} km/h).`,
+          speed: sp, location: { type: "Point", coordinates: [+p.lng.toFixed(6), +p.lat.toFixed(6)] },
+          timestamp: new Date(t), province: v.province, district: v.district,
+        });
+      }
+    }
+    t = new Date(t.getTime() + STEP_SEC * 1000);
+  }
+  return { pings, alerts };
 };
 
 // ─── Main seed function ───────────────────────────────────────────────────────
+// Stand for the 4 Colombo Fort vehicles: within ~120 m of the station so a 300 m search finds them
+const offsetPointExport = (p) => offsetPoint(p, rand(-120, 120), rand(-120, 120));
+
 const seed = async () => {
   // Prefer a direct (non-`mongodb+srv`) URI when provided, since some environments
   // can fail during SRV DNS resolution.
@@ -236,8 +323,19 @@ const seed = async () => {
   if (!mongoUri) {
     throw new Error("Missing MongoDB URI. Set MONGODB_URI (and optionally MONGODB_URI_DIRECT) in .env");
   }
-  await mongoose.connect(mongoUri, { autoIndex: true });
-  console.log("✅ Connected to MongoDB");
+  try {
+    await mongoose.connect(mongoUri, {
+      autoIndex: true,
+      serverSelectionTimeoutMS: mongoServerSelectionTimeoutMS,
+      family: 4,
+    });
+    console.log("✅ Connected to MongoDB");
+  } catch (error) {
+    console.error("❌ Could not reach MongoDB.");
+    console.error("   Check that your Atlas cluster is running, your current IP is whitelisted, and the URI in .env is correct.");
+    console.error("   If you want to seed locally, point MONGODB_URI at mongodb://127.0.0.1:27017/tuktuk_tracker and start a local MongoDB server.");
+    throw error;
+  }
 
   // Clear existing data
   console.log("🗑  Clearing existing data...");
@@ -250,6 +348,9 @@ const seed = async () => {
     User.collection.drop().catch(() => {}),
     TukTuk.collection.drop().catch(() => {}),
     LocationPing.collection.drop().catch(() => {}),
+    Alert.collection.drop().catch(() => {}),
+    Geofence.collection.drop().catch(() => {}),
+    AuditLog.collection.drop().catch(() => {}),
   ]);
 
   // ─── 1. Provinces ─────────────────────────────────────────────────────────
@@ -282,11 +383,12 @@ const seed = async () => {
     longitude: s.lng,
     address: `${s.name}, ${s.district}, Sri Lanka`,
   }));
-  await PoliceStation.insertMany(stationDocs);
+  const stations = await PoliceStation.insertMany(stationDocs);
 
   // ─── 4. Users ─────────────────────────────────────────────────────────────
   console.log("👤 Seeding users...");
-  const hashedPassword = await bcrypt.hash("Password@123", 12);
+  const DEMO_PASSWORD = process.env.SEED_PASSWORD || "police123";
+  const hashedPassword = await bcrypt.hash(DEMO_PASSWORD, 12);
 
   const userDocs = [
     {
@@ -341,22 +443,32 @@ const seed = async () => {
   const districtList = districts;
   const tukTukDocs = [];
 
+  const COLOMBO_FORT = { lat: 6.9344, lng: 79.8428 }; // incident scenario location
+  const colomboId = districtMap["Colombo"]._id;
+  const deviceKeys = {};
   for (let i = 0; i < 200; i++) {
-    const district = pick(districtList);
+    // first 25 vehicles guarantee every district has at least one; 4 extra Colombo vehicles
+    // share a stand at Colombo Fort (used by the "search-area" investigation demo)
+    const district = i < 25 ? districtList[i] : i < 29 ? districtMap["Colombo"] : pick(districtList);
     const province = provinces.find((p) => p._id.equals(district.province));
-    const firstName = pick(FIRST_NAMES);
-    const lastName = pick(LAST_NAMES);
-    const statusOptions = ["active", "active", "active", "inactive", "suspended"];
+    const station = stations.find((st) => st.district.equals(district._id));
+    const statusOptions = ["active", "active", "active", "active", "inactive", "suspended"];
+    const deviceId = `DEV-${String(i + 1).padStart(4, "0")}`;
+    const key = generateDeviceKey();
+    deviceKeys[deviceId] = key;
 
     tukTukDocs.push({
       registrationNumber: randomPlate(province.code),
-      driverName: `${firstName} ${lastName}`,
+      driverName: `${pick(FIRST_NAMES)} ${pick(LAST_NAMES)}`,
       driverNIC: nextNIC(),
       driverPhone: `07${randInt(0, 9)}${randInt(1000000, 9999999)}`,
       district: district._id,
       province: province._id,
-      deviceId: `DEV-${String(i + 1).padStart(4, "0")}`,
-      status: pick(statusOptions),
+      station: station?._id,
+      deviceId,
+      deviceKeyHash: hashDeviceKey(key),
+      deviceKeyIssuedAt: new Date(),
+      status: i >= 25 && i < 29 ? "active" : i < 25 ? "active" : pick(statusOptions),
       isActive: true,
       registeredAt: new Date(Date.now() - randInt(30, 730) * 24 * 60 * 60 * 1000),
     });
@@ -365,47 +477,85 @@ const seed = async () => {
   const tukTuks = await TukTuk.insertMany(tukTukDocs);
   console.log(`   ✓ ${tukTuks.length} tuk-tuks created`);
 
-  // ─── 6. Location History (1 week per vehicle) ─────────────────────────────
-  console.log("📍 Generating 1-week location history (this may take a minute)...");
+  // ─── 6. Location history (>= 8 days, relative to NOW – re-seed shortly before a demo) ──
+  console.log("📍 Generating location history with daily patterns (this may take a minute)...");
+  const districtCentre = (name) => {
+    const st = STATION_TEMPLATES.filter((x) => x.district === name);
+    return { lat: st.reduce((a, x) => a + x.lat, 0) / st.length, lng: st.reduce((a, x) => a + x.lng, 0) / st.length };
+  };
+  const districtById = Object.fromEntries(districts.map((d) => [String(d._id), d]));
+  const activeIdx = tukTuks.map((t, i) => (t.status === "active" && i >= 29 ? i : -1)).filter((i) => i >= 0);
+  const offlineSet = new Set(activeIdx.slice(0, 4));            // went silent 3h ago
+  const nightSet = new Set(activeIdx.slice(4, 7));              // run at night (unusual pattern)
+  const speederSet = new Set(activeIdx.slice(7, 12));           // occasionally speeding
 
   let totalPings = 0;
-  const BATCH_SIZE = 20; // Insert 20 vehicles' pings at a time
-
+  let allAlerts = [];
+  const BATCH_SIZE = 10;
   for (let i = 0; i < tukTuks.length; i += BATCH_SIZE) {
     const batch = tukTuks.slice(i, i + BATCH_SIZE);
-    const allPings = [];
-
-    for (const tukTuk of batch) {
-      const province = provinces.find((p) => p._id.equals(tukTuk.province));
-      const centre = provinceCentres[province.name] || { lat: 7.0, lng: 80.5 };
-
-      // Skip suspended/inactive vehicles (sparse history)
-      const daysBack = tukTuk.status === "active" ? 8 : randInt(1, 3);
-      const pings = generateLocationHistory(tukTuk._id, centre.lat, centre.lng, daysBack);
-      allPings.push(...pings);
+    let buffer = [];
+    for (let j = 0; j < batch.length; j++) {
+      const idx = i + j;
+      const tukTuk = batch[j];
+      const dName = districtById[String(tukTuk.district)].name;
+      const isFortVehicle = idx >= 25 && idx < 29;
+      const { pings, alerts } = generateLocationHistory({
+        id: tukTuk._id,
+        registrationNumber: tukTuk.registrationNumber,
+        province: tukTuk.province,
+        district: tukTuk.district,
+        base: isFortVehicle ? COLOMBO_FORT : districtCentre(dName),
+        stand: isFortVehicle ? offsetPointExport(COLOMBO_FORT) : undefined,
+        days: 8,
+        stopAt: tukTuk.status !== "active" ? new Date(Date.now() - randInt(2, 5) * 86400000)
+          : offlineSet.has(idx) ? new Date(Date.now() - 3 * 3600000) : undefined,
+        nightOps: nightSet.has(idx),
+        speeder: speederSet.has(idx),
+      });
+      buffer.push(...pings);
+      allAlerts.push(...alerts);
+      if (pings.length) {
+        const last = pings[pings.length - 1];
+        await TukTuk.updateOne(
+          { _id: tukTuk._id },
+          { $set: { lastLocation: { point: last.location, speed: last.speed, heading: last.heading, accuracy: last.accuracy, timestamp: last.timestamp }, lastSeenAt: last.timestamp } }
+        );
+      }
     }
-
-    await LocationPing.insertMany(allPings, { ordered: false });
-    totalPings += allPings.length;
-    process.stdout.write(`\r   ✓ Inserted ${i + Math.min(BATCH_SIZE, tukTuks.length - i)}/${tukTuks.length} vehicles' history...`);
+    await LocationPing.insertMany(buffer, { ordered: false });
+    totalPings += buffer.length;
+    process.stdout.write(`\r    Inserted history for ${Math.min(i + BATCH_SIZE, tukTuks.length)}/${tukTuks.length} vehicles...`);
   }
+  console.log(`\n    ✓ ${totalPings.toLocaleString()} location pings inserted`);
 
-  console.log(`\n   ✓ ${totalPings.toLocaleString()} total location pings inserted`);
+  // ─── 7. Alerts + geofences ────────────────────────────────────────────────
+  if (allAlerts.length) await Alert.insertMany(allAlerts);
+  await Geofence.insertMany([
+    { name: "Colombo Fort restricted zone", type: "restricted", center: { type: "Point", coordinates: [79.8428, 6.9344] }, radiusMetres: 400, province: null, district: null },
+    { name: "Kandy Sacred City zone", type: "restricted", center: { type: "Point", coordinates: [80.6411, 7.2936] }, radiusMetres: 350 },
+  ]);
+  console.log(`    ✓ ${allAlerts.length} speeding alerts, 2 geofences`);
+
+  // ─── 8. Device credentials for the simulator (git-ignored) ───────────────
+  fs.mkdirSync("simulation-data", { recursive: true });
+  fs.writeFileSync("simulation-data/device-keys.json", JSON.stringify(deviceKeys, null, 2));
+  console.log("    ✓ device keys written to simulation-data/device-keys.json (do NOT commit)");
 
   // ─── Summary ──────────────────────────────────────────────────────────────
-  console.log("\n🎉 Seed complete!");
-  console.log("─────────────────────────────────────────");
+  console.log("\n✅ Seed complete!\n");
   console.log(`  Provinces:       ${await Province.countDocuments()}`);
   console.log(`  Districts:       ${await District.countDocuments()}`);
   console.log(`  Police Stations: ${await PoliceStation.countDocuments()}`);
   console.log(`  Users:           ${await User.countDocuments()}`);
   console.log(`  Tuk-Tuks:        ${await TukTuk.countDocuments()}`);
   console.log(`  Location Pings:  ${(await LocationPing.countDocuments()).toLocaleString()}`);
-  console.log("─────────────────────────────────────────");
-  console.log("\n🔑 Default login credentials:");
-  console.log("  HQ Admin:  admin@police.lk / Password@123");
-  console.log("  WP Admin:  wp.admin@police.lk / Password@123");
-  console.log("  Officer:   colombo.officer@police.lk / Password@123");
+  console.log(`  Alerts:          ${await Alert.countDocuments()}`);
+  console.log("\n🔑 Demo logins (override the password with SEED_PASSWORD):");
+  console.log(`  HQ Admin:  admin@police.lk / ${DEMO_PASSWORD}`);
+  console.log(`  WP Admin:  wp.admin@police.lk / ${DEMO_PASSWORD}`);
+  console.log(`  Officer:   colombo.officer@police.lk / ${DEMO_PASSWORD}`);
+  console.log("\n🔎 Investigation demo: GET /api/locations/search-area?lat=6.9344&lng=79.8428&radius=300&from=<ISO>&to=<ISO>");
 
   await mongoose.disconnect();
   process.exit(0);

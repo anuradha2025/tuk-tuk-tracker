@@ -28,7 +28,7 @@ export const etagMiddleware = (req, res, next) => {
     const etag = `W/"${hash}"`;
 
     res.setHeader("ETag", etag);
-    res.setHeader("Cache-Control", "no-cache"); // Must revalidate every time
+    res.setHeader("Cache-Control", "private, no-cache"); // authenticated data: never shared-cache; always revalidate
 
     // If the client's cached ETag matches → 304
     const ifNoneMatch = req.headers["if-none-match"];

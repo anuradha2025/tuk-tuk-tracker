@@ -9,6 +9,7 @@ import { swaggerSpec, swaggerUi } from "./src/config/swagger.js";
 import { errorHandler } from "./src/middleware/errorHandler.js";
 import { globalLimiter } from "./src/middleware/rateLimiter.js";
 import { etagMiddleware } from "./src/middleware/etag.js";
+import { sanitize } from "./src/middleware/sanitize.js";
 
 // Route imports
 import authRoutes from "./src/routes/auth.js";
@@ -17,10 +18,22 @@ import districtRoutes from "./src/routes/districts.js";
 import stationRoutes from "./src/routes/stations.js";
 import tukTukRoutes from "./src/routes/tuktuks.js";
 import locationRoutes from "./src/routes/locations.js";
+import alertRoutes from "./src/routes/alerts.js";
+import geofenceRoutes from "./src/routes/geofences.js";
 
 dotenv.config();
 
+if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32) {
+  if (process.env.NODE_ENV === "production") {
+    throw new Error("JWT_SECRET must be set to a random string of at least 32 characters.");
+  }
+  console.warn("⚠️  JWT_SECRET is missing or short – acceptable for local development only.");
+}
+
 const app = express();
+// Render (and most PaaS) terminate TLS at a proxy: without this every client appears
+// to share the proxy's IP, so IP rate-limiting would throttle ALL users together.
+app.set("trust proxy", 1);
 const PORT = process.env.PORT || 3000;
 
 // ─── Connect to Database ─────────────────────────────────────────────────────
@@ -33,13 +46,15 @@ app.use(helmet());
 app.use(
   cors({
     origin: process.env.CORS_ORIGIN || "*",
+    exposedHeaders: ["Link", "X-Total-Count", "X-Total-Pages", "X-Current-Page", "ETag"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization", "X-Device-Id", "X-Device-Key", "If-None-Match"],
   })
 );
 app.use(morgan("combined"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: "200kb" })); // batch of 100 pings is ~20kb
+app.use(express.urlencoded({ extended: false, limit: "10kb" }));
+app.use(sanitize); // strip $-operators / dotted keys (NoSQL injection)
 app.use(globalLimiter);
 app.use(etagMiddleware); // Conditional GET (ETag / If-None-Match)
 
@@ -53,13 +68,15 @@ app.use("/api/districts", districtRoutes);
 app.use("/api/stations", stationRoutes);
 app.use("/api/tuktuks", tukTukRoutes);
 app.use("/api/locations", locationRoutes);
+app.use("/api/alerts", alertRoutes);
+app.use("/api/geofences", geofenceRoutes);
 
 // ─── Health Check ────────────────────────────────────────────────────────────
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "OK",
     service: "Tuk-Tuk Tracker API",
-    version: "1.0.0",
+    version: "2.0.0",
     timestamp: new Date().toISOString(),
   });
 });

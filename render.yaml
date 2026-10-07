@@ -28,9 +28,13 @@ services:
       - key: JWT_SECRET
         generateValue: true   # Render auto-generates a secure random value
       - key: JWT_EXPIRES_IN
-        value: 7d
+        value: 8h
       - key: CORS_ORIGIN
         value: "*"
+      - key: SPEED_LIMIT_KMH
+        value: "60"
+      - key: PING_TTL_DAYS
+        value: "365"
       - key: API_URL
         sync: false           # Set to your Render URL after first deploy
       - key: MONGODB_URI_DIRECT

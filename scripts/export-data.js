@@ -22,6 +22,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+const mongoServerSelectionTimeoutMS = Number(process.env.MONGODB_SERVER_SELECTION_TIMEOUT_MS || 30000);
+
 import Province from "../src/models/Province.js";
 import District from "../src/models/District.js";
 import PoliceStation from "../src/models/PoliceStation.js";
@@ -63,7 +65,7 @@ const exportData = async () => {
     throw new Error("Missing MongoDB URI. Set MONGODB_URI (and optionally MONGODB_URI_DIRECT) in .env");
   }
 
-  await mongoose.connect(mongoUri, { serverSelectionTimeoutMS: 5000 });
+  await mongoose.connect(mongoUri, { serverSelectionTimeoutMS: mongoServerSelectionTimeoutMS, family: 4 });
   console.log("✅ Connected to MongoDB\n📦 Exporting simulation data...\n");
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });

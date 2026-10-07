@@ -1,127 +1,89 @@
 /**
- * Simulation Script – Continuously sends live GPS pings for active tuk-tuks
- * Demonstrates real-time tracking without requiring physical devices.
+ * Live device simulator – every tuk-tuk acts as an independent GPS device.
  *
- * Usage:
- *   node scripts/simulate.js
+ *  - Authenticates like real hardware: X-Device-Id + X-Device-Key (from simulation-data/device-keys.json,
+ *    created by `npm run seed`). It does NOT use an admin login.
+ *  - Starts each vehicle at its last known position and drives it toward random destinations.
+ *  - Randomly drops signal for a vehicle, then uploads the buffered fixes via /ping/batch.
  *
- * Requires:
- *   - API running at process.env.API_URL (default: http://localhost:3000)
- *   - At least one user seeded (uses admin@police.lk)
+ * Usage:  node scripts/simulate.js            (env: API_URL, PING_EVERY_SEC=10, SIM_PASSWORD)
  */
-
 import dotenv from "dotenv";
+import fs from "fs";
 dotenv.config();
 
 const API_URL = process.env.API_URL || "http://localhost:3000";
-const PING_INTERVAL_MS = 5000; // 5 seconds between rounds
-const MAX_VEHICLES_PER_ROUND = 10; // ping 10 vehicles per interval
+const EVERY_SEC = Number(process.env.PING_EVERY_SEC || 10);
+const ADMIN_EMAIL = process.env.SIM_EMAIL || "admin@police.lk";
+const ADMIN_PASSWORD = process.env.SIM_PASSWORD || process.env.SEED_PASSWORD || "police123";
+const keys = JSON.parse(fs.readFileSync("simulation-data/device-keys.json", "utf8"));
 
-const sriLankaBounds = { latMin: 5.92, latMax: 9.84, lngMin: 79.65, lngMax: 81.88 };
-const rand = (min, max) => Math.random() * (max - min) + min;
-const clamp = (val, min, max) => Math.max(min, Math.min(max, val));
+const rand = (a, b) => Math.random() * (b - a) + a;
+const M = 111320;
+const bearing = (a, b) => (Math.atan2((b.lng - a.lng) * Math.cos((a.lat * Math.PI) / 180), b.lat - a.lat) * 180) / Math.PI;
+const dist = (a, b) => Math.hypot((b.lat - a.lat) * M, (b.lng - a.lng) * M * Math.cos((a.lat * Math.PI) / 180));
 
-// In-memory state: vehicle positions
-const vehicleState = {};
+const post = (path, headers, body) =>
+  fetch(`${API_URL}${path}`, { method: "POST", headers: { "Content-Type": "application/json", ...headers }, body: JSON.stringify(body) });
 
-// ─── Step 1: Login to get JWT ────────────────────────────────────────────────
-const login = async () => {
-  const res = await fetch(`${API_URL}/api/auth/login`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email: "admin@police.lk", password: "Password@123" }),
-  });
-  const data = await res.json();
-  if (!data.success) throw new Error("Login failed: " + data.message);
-  console.log("✅ Logged in as HQ Admin");
-  return data.data.token;
+// Admin login is used ONLY to discover which vehicles exist and where they last were.
+const discover = async () => {
+  const login = await post("/api/auth/login", {}, { email: ADMIN_EMAIL, password: ADMIN_PASSWORD });
+  const j = await login.json();
+  if (!j.success) throw new Error(`Login failed: ${j.message}`);
+  const res = await fetch(`${API_URL}/api/locations/live?limit=500`, { headers: { Authorization: `Bearer ${j.data.token}` } });
+  return (await res.json()).data;
 };
 
-// ─── Step 2: Fetch active tuk-tuks ───────────────────────────────────────────
-const fetchActiveTukTuks = async (token) => {
-  const res = await fetch(`${API_URL}/api/tuktuks?status=active&limit=200`, {
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  const data = await res.json();
-  if (!data.success) throw new Error("Failed to fetch tuk-tuks: " + data.message);
-  console.log(`🛺 Found ${data.data.length} active tuk-tuks to simulate`);
-  return data.data;
+const main = async () => {
+  const live = await discover();
+  const sims = live
+    .map((v) => {
+      return { name: v.registrationNumber, pos: { lat: v.latitude, lng: v.longitude }, speed: 0, dest: null, buffer: [], offlineUntil: 0 };
+    })
+
+
+  // vehicle -> deviceId mapping via the registry
+  const login = await (await post("/api/auth/login", {}, { email: ADMIN_EMAIL, password: ADMIN_PASSWORD })).json();
+  const reg = await (await fetch(`${API_URL}/api/tuktuks?status=active&limit=200`, { headers: { Authorization: `Bearer ${login.data.token}` } })).json();
+  const byReg = Object.fromEntries(reg.data.map((t) => [t.registrationNumber, t.deviceId]));
+  sims.forEach((s) => (s.deviceId = byReg[s.name]));
+  const fleet = sims.filter((s) => s.deviceId && keys[s.deviceId]);
+  console.log(`🛺 Simulating ${fleet.length} devices → ${API_URL}, one fix every ${EVERY_SEC}s each (Ctrl+C to stop)`);
+
+  let rounds = 0;
+  setInterval(async () => {
+    rounds++;
+    await Promise.allSettled(
+      fleet.map(async (s) => {
+        if (!s.dest || dist(s.pos, s.dest) < 40) {
+          const d = rand(1000, 6000), a = rand(0, 2 * Math.PI);
+          s.dest = { lat: s.pos.lat + (Math.sin(a) * d) / M, lng: s.pos.lng + (Math.cos(a) * d) / (M * Math.cos((s.pos.lat * Math.PI) / 180)) };
+        }
+        s.speed = Math.max(0, Math.min(50, s.speed + rand(-6, 8)));
+        const step = ((s.speed * 1000) / 3600) * EVERY_SEC;
+        const b = (bearing(s.pos, s.dest) * Math.PI) / 180;
+        s.pos = { lat: s.pos.lat + (Math.cos(b) * step) / M, lng: s.pos.lng + (Math.sin(b) * step) / (M * Math.cos((s.pos.lat * Math.PI) / 180)) };
+        const fix = {
+          latitude: +s.pos.lat.toFixed(6), longitude: +s.pos.lng.toFixed(6),
+          speed: +s.speed.toFixed(1), heading: Math.round((bearing(s.pos, s.dest) + 360) % 360),
+          accuracy: +rand(3, 12).toFixed(1), timestamp: new Date().toISOString(),
+        };
+        const headers = { "X-Device-Id": s.deviceId, "X-Device-Key": keys[s.deviceId] };
+
+        // ~1% chance per tick to lose signal for 1–3 minutes; buffer, then batch-upload
+        if (Date.now() < s.offlineUntil) { s.buffer.push(fix); return; }
+        if (!s.buffer.length && Math.random() < 0.01) { s.offlineUntil = Date.now() + rand(60, 180) * 1000; s.buffer.push(fix); return; }
+        if (s.buffer.length) {
+          const r = await post("/api/locations/ping/batch", headers, { pings: [...s.buffer, fix].slice(-100) });
+          if (r.ok) s.buffer = [];
+          return;
+        }
+        await post("/api/locations/ping", headers, fix);
+      })
+    );
+    process.stdout.write(`\r📍 round ${rounds} – ${fleet.length} devices reported`);
+  }, EVERY_SEC * 1000);
 };
 
-// ─── Step 3: Initialise vehicle state ────────────────────────────────────────
-const initVehicleState = (tukTuks) => {
-  for (const t of tukTuks) {
-    vehicleState[t._id] = {
-      lat: rand(sriLankaBounds.latMin, sriLankaBounds.latMax),
-      lng: rand(sriLankaBounds.lngMin, sriLankaBounds.lngMax),
-      heading: rand(0, 360),
-      speed: rand(10, 40),
-    };
-  }
-};
-
-// ─── Step 4: Send a ping for one vehicle ─────────────────────────────────────
-const sendPing = async (token, tukTukId) => {
-  const state = vehicleState[tukTukId];
-
-  // Simulate movement
-  const headingRad = (state.heading * Math.PI) / 180;
-  state.speed = clamp(state.speed + rand(-5, 5), 0, 50);
-  state.heading = (state.heading + rand(-15, 15) + 360) % 360;
-
-  const moveDistance = (state.speed / 3600) * (5 / 111000);
-  state.lat = clamp(state.lat + moveDistance * Math.cos(headingRad), sriLankaBounds.latMin, sriLankaBounds.latMax);
-  state.lng = clamp(state.lng + moveDistance * Math.sin(headingRad), sriLankaBounds.lngMin, sriLankaBounds.lngMax);
-
-  await fetch(`${API_URL}/api/locations/ping`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({
-      tukTukId,
-      latitude: +state.lat.toFixed(6),
-      longitude: +state.lng.toFixed(6),
-      speed: +state.speed.toFixed(1),
-      heading: +state.heading.toFixed(0),
-      accuracy: +rand(3, 15).toFixed(1),
-    }),
-  });
-};
-
-// ─── Main simulation loop ─────────────────────────────────────────────────────
-const simulate = async () => {
-  console.log("🚀 Starting Tuk-Tuk Tracker Simulation");
-  console.log(`📡 API: ${API_URL}`);
-  console.log(`⏱  Ping interval: ${PING_INTERVAL_MS / 1000}s | Vehicles/round: ${MAX_VEHICLES_PER_ROUND}`);
-  console.log("Press Ctrl+C to stop\n");
-
-  const token = await login();
-  const tukTuks = await fetchActiveTukTuks(token);
-  initVehicleState(tukTuks);
-
-  const ids = tukTuks.map((t) => t._id);
-  let round = 0;
-  let offset = 0;
-
-  const loop = setInterval(async () => {
-    round++;
-    const batch = ids.slice(offset, offset + MAX_VEHICLES_PER_ROUND);
-    offset = (offset + MAX_VEHICLES_PER_ROUND) % ids.length;
-
-    await Promise.allSettled(batch.map((id) => sendPing(token, id)));
-    process.stdout.write(`\r📍 Round ${round} | Pinged ${batch.length} vehicles | Total rounds: ${round}`);
-  }, PING_INTERVAL_MS);
-
-  process.on("SIGINT", () => {
-    clearInterval(loop);
-    console.log("\n\n🛑 Simulation stopped.");
-    process.exit(0);
-  });
-};
-
-simulate().catch((err) => {
-  console.error("❌ Simulation error:", err.message);
-  process.exit(1);
-});
+main().catch((e) => { console.error("❌", e.message); process.exit(1); });

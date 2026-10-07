@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+const mongoServerSelectionTimeoutMS = Number(process.env.MONGODB_SERVER_SELECTION_TIMEOUT_MS || 30000);
+
 /**
  * Connects to MongoDB using the URI defined in environment variables.
  * Exits the process if connection fails (fail-fast on startup).
@@ -16,7 +18,8 @@ export const connectDB = async () => {
     }
 
     const conn = await mongoose.connect(mongoUri, {
-      serverSelectionTimeoutMS: 5000,
+      serverSelectionTimeoutMS: mongoServerSelectionTimeoutMS,
+      family: 4,
     });
     console.log(`✅ MongoDB connected: ${conn.connection.host}`);
 
