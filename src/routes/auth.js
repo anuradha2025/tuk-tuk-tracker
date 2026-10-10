@@ -1,5 +1,8 @@
 import { Router } from "express";
-import { register, login, getMe, getAllUsers, deactivateUser } from "../controllers/authController.js";
+import { register, login, getMe, getAllUsers, deactivateUser, changePassword } from "../controllers/authController.js";
+import { body } from "express-validator";
+import { validate } from "../middleware/validate.js";
+import AuditLog from "../models/AuditLog.js";
 import { protect, authorize } from "../middleware/auth.js";
 import { authLimiter } from "../middleware/rateLimiter.js";
 
@@ -16,9 +19,8 @@ const router = Router();
  * @swagger
  * /api/auth/register:
  *   post:
- *     summary: Register a new user
+ *     summary: Create a user account (hq_admin only; no public sign-up)
  *     tags: [Auth]
- *     security: []
  *     requestBody:
  *       required: true
  *       content:
@@ -47,7 +49,49 @@ const router = Router();
  *       409:
  *         description: Email already exists
  */
-router.post("/register", authLimiter, register);
+const strongPassword = (field) =>
+  body(field)
+    .isString()
+    .isLength({ min: 10 }).withMessage("Password must be at least 10 characters")
+    .matches(/[a-z]/).withMessage("Password needs a lowercase letter")
+    .matches(/[A-Z]/).withMessage("Password needs an uppercase letter")
+    .matches(/\d/).withMessage("Password needs a digit");
+
+// Accounts are issued by HQ only (previously open to anyone – privilege-escalation risk)
+router.post(
+  "/register",
+  protect,
+  authorize("hq_admin"),
+  validate([
+    body("name").isString().trim().notEmpty(),
+    body("email").isEmail().normalizeEmail(),
+    strongPassword("password"),
+    body("role").isIn(["hq_admin", "provincial_admin", "station_officer"]),
+    body("province").optional().isMongoId(),
+    body("district").optional().isMongoId(),
+  ]),
+  register
+);
+
+router.patch(
+  "/me/password",
+  protect,
+  validate([body("currentPassword").isString().notEmpty(), strongPassword("newPassword")]),
+  changePassword
+);
+
+// Who accessed which tracking data (hq_admin only)
+router.get("/audit-log", protect, authorize("hq_admin"), async (req, res, next) => {
+  try {
+    const limit = Math.min(Number(req.query.limit) || 100, 500);
+    const filter = {};
+    if (typeof req.query.action === "string") filter.action = req.query.action;
+    const logs = await AuditLog.find(filter).populate("user", "name email role").sort({ createdAt: -1 }).limit(limit);
+    res.status(200).json({ success: true, count: logs.length, data: logs });
+  } catch (e) {
+    next(e);
+  }
+});
 
 /**
  * @swagger

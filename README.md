@@ -40,7 +40,7 @@ cp .env.example .env
 npm run seed
 ```
 
-Populates: 9 provinces, 25 districts, 27 police stations, 5 users, 200 tuk-tuks, and 100k+ location pings.
+Populates: 9 provinces, 25 districts, 27 police stations, 62 users (1 HQ, 9 provincial, 25 district, 27 station), 200 tuk-tuks (each with a device key), 8 days of patterned location history relative to *now*, speeding alerts and 2 geofences. **Re-run it shortly before your demo** so "last week" is really last week. On a free Atlas tier use `SEED_PING_INTERVAL_SEC=240` to keep the data small.
 
 ### 4. Run Locally
 
@@ -61,29 +61,36 @@ npm run dev            # Start with nodemon (development)
 npm run seed           # Seed database with sample data
 npm run simulate       # Run live ping simulator (Ctrl+C to stop)
 npm run export-data    # Export simulation data to JSON/CSV
-npm test               # Run test suite (35 tests)
+npm test               # Run test suite (needs MongoDB)
 npm run test:coverage  # Run tests with coverage report
 npm run lint           # Run ESLint (0 errors/warnings)
 ```
 
 ---
 
-## 🔑 Default Credentials
+## 🔑 Demo Credentials (created by `npm run seed`)
 
-| Role | Email | Password |
-|------|-------|----------|
-| HQ Admin | admin@police.lk | Password@123 |
-| WP Provincial Admin | wp.admin@police.lk | Password@123 |
-| CP Provincial Admin | cp.admin@police.lk | Password@123 |
-| Colombo Station Officer | colombo.officer@police.lk | Password@123 |
-| Kandy Station Officer | kandy.officer@police.lk | Password@123 |
+The seed password is `police123` unless you set `SEED_PASSWORD`. **Re-seed the deployed database with your own password** – never leave demo credentials on a public URL.
+
+| Level | Count | Email pattern | Example |
+|-------|-------|---------------|---------|
+| HQ admin | 1 | `admin@police.lk` | admin@police.lk |
+| Provincial admin | 9 (one per province) | `<province code>.admin@police.lk` | wp.admin@police.lk, sgp.admin@police.lk |
+| District officer | 25 (one per district) | `<district>.officer@police.lk` | colombo.officer@police.lk, nuwara-eliya.officer@police.lk |
+| Station officer | 27 (one per station) | `<station>.station@police.lk` | colombo-fort.station@police.lk |
+
+That is 62 accounts in total, all with the same demo password. The full list (email, role, province, district, station) is written to `simulation-data/demo-users.csv` each time you run the seed. District and station officers are both scoped to their district.
+
+There is **no public sign-up**: HQ admins create accounts via `POST /api/auth/register`.
+
+Tracking devices do not log in. Each vehicle has a `deviceId` + secret `deviceKey` (issued once when the vehicle is registered; `npm run seed` writes all 200 to the git-ignored `simulation-data/device-keys.json`).
 
 ### Login
 
 ```bash
 curl -X POST http://localhost:3000/api/auth/login \
   -H "Content-Type: application/json" \
-  -d '{"email":"admin@police.lk","password":"Password@123"}'
+  -d '{"email":"admin@police.lk","password":"police123"}'
 ```
 
 Use returned token as: `Authorization: Bearer <token>`
@@ -124,22 +131,35 @@ Use returned token as: `Authorization: Bearer <token>`
 - `PUT /:id` — Update (hq_admin, provincial_admin)
 - `DELETE /:id` — Delete (hq_admin only)
 
-### Tuk-Tuks — `/api/tuktuks`
+### Tuk-Tuks — `/api/tuktuks`  (all reads are jurisdiction-scoped; out-of-scope ids return 404)
 
-- `GET /` — List with filters (`?province=&district=&status=&search=&sort=&order=&page=&limit=`)
-- `GET /:id` — Get one
-- `GET /:id/location` — Last known position
-- `GET /:id/history` — Movement history (`?from=<ISO>&to=<ISO>&limit=500`)
-- `POST /` — Create (officer+)
-- `PUT /:id` — Update (officer+)
-- `DELETE /:id` — Delete (hq_admin only)
+- `GET /` — List (`?province=&district=&status=&search=&sort=&order=&page=&limit=`)
+- `POST /` — Register (officer+; province derived from district; **returns the device key once**)
+- `GET /:id` · `PUT /:id` · `PATCH /:id/status` · `DELETE /:id` (hq_admin, soft delete)
+- `POST /:id/device-key` — Rotate the device key
+- `GET /:id/location` — Last known position (+ age, online flag)
+- `GET /:id/history` — Raw pings (`?from=&to=&limit=`)
+- `GET /:id/route` — Route replay as GeoJSON LineString
+- `GET /:id/trips` — Trips, stops, distance, idle time, top speed
 
 ### Locations — `/api/locations`
 
-- `POST /ping` — Submit GPS ping (rate limited: 1000/15 min)
-- `GET /live` — Latest positions per vehicle (`?province=&district=`)
-- `GET /history` — Ping history (`?tukTukId=&from=&to=&province=&district=&page=&limit=`)
-- `GET /stats` — Fleet statistics (hq_admin, provincial_admin)
+- `POST /ping` — **Device**: submit one fix (headers `X-Device-Id`, `X-Device-Key`)
+- `POST /ping/batch` — **Device**: upload up to 100 buffered fixes after an outage
+- `GET /live` — Live positions with `online`/`moving` flags (`?province=&district=&online=&moving=&format=geojson`)
+- `GET /nearby` — Vehicles nearest to a point (`?lat=&lng=&radius=`)
+- `GET /search-area` — Investigation: who was inside this circle during this window (`?lat=&lng=&radius=&from=&to=`)
+- `GET /history` — Movement log (`?tukTukId=&province=&district=&from=&to=&page=&limit=`, max 31-day window)
+- `GET /stats` — Online/offline counts, pings today, open alerts (hq_admin, provincial_admin)
+
+### Alerts & Geofences
+
+- `GET /api/alerts` · `PATCH /api/alerts/:id/acknowledge` — speeding / geofence alerts raised automatically from pings
+- `GET|POST /api/geofences` · `DELETE /api/geofences/:id` — circular `restricted` (alert on entry) or `allowed` (alert on exit) zones
+
+### Audit
+
+- `GET /api/auth/audit-log` — who viewed which tracking data (hq_admin)
 
 ---
 
@@ -220,3 +240,29 @@ Import `TukTuk-Tracker.postman_collection.json` into Postman:
 - ✅ Swagger API documentation  
 - ✅ Live simulator + data export
 
+
+
+---
+
+## 🎬 Demo script
+
+```bash
+BASE=http://localhost:3000
+TOKEN=$(curl -s $BASE/api/auth/login -H 'Content-Type: application/json' \
+  -d '{"email":"admin@police.lk","password":"police123"}' | jq -r .data.token)
+
+# 1. Live view (GeoJSON, online vehicles only)
+curl -s "$BASE/api/locations/live?online=true&format=geojson" -H "Authorization: Bearer $TOKEN" | jq '.features | length'
+
+# 2. A device sends a fix (use a key from simulation-data/device-keys.json)
+curl -s $BASE/api/locations/ping -H 'Content-Type: application/json' \
+  -H "X-Device-Id: DEV-0030" -H "X-Device-Key: $(jq -r '."DEV-0030"' simulation-data/device-keys.json)" \
+  -d '{"latitude":6.9344,"longitude":79.8428,"speed":24}'
+
+# 3. Investigation: who was at Colombo Fort in the last 3 days?
+curl -s "$BASE/api/locations/search-area?lat=6.9344&lng=79.8428&radius=300&from=$(date -u -d '-3 days' +%FT%TZ)&to=$(date -u +%FT%TZ)" \
+  -H "Authorization: Bearer $TOKEN" | jq
+
+# 4. Continuous live simulation of all devices
+npm run simulate
+```

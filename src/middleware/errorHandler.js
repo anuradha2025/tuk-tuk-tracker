@@ -5,6 +5,8 @@
 export const errorHandler = (err, req, res, _next) => {
   let statusCode = err.statusCode || 500;
   let message = err.message || "Internal Server Error";
+  if (err.type === "entity.parse.failed") { statusCode = 400; message = "Malformed JSON body."; }
+  if (err.type === "entity.too.large") { statusCode = 413; message = "Request body too large."; }
 
   // Mongoose bad ObjectId
   if (err.name === "CastError") {
@@ -33,6 +35,9 @@ export const errorHandler = (err, req, res, _next) => {
   } else {
     console.error(`[ERROR] ${statusCode} - ${message}`);
   }
+
+  // never leak internals on 5xx in production
+  if (statusCode >= 500 && process.env.NODE_ENV === "production") message = "Internal Server Error";
 
   res.status(statusCode).json({
     success: false,

@@ -6,7 +6,7 @@ const options = {
     openapi: "3.0.0",
     info: {
       title: "Tuk-Tuk Tracker API",
-      version: "1.0.0",
+      version: "2.0.0",
       description:
         "Real-Time Three-Wheeler (Tuk-Tuk) Tracking & Movement Logging System for Sri Lanka Police. " +
         "Provides secure endpoints for vehicle registration, live location tracking, and historical movement analysis.",
@@ -28,6 +28,8 @@ const options = {
           bearerFormat: "JWT",
           description: "Enter JWT token obtained from /api/auth/login",
         },
+        DeviceId: { type: "apiKey", in: "header", name: "X-Device-Id", description: "Tracking device identifier" },
+        DeviceKey: { type: "apiKey", in: "header", name: "X-Device-Key", description: "Per-device secret issued at registration" },
       },
       schemas: {
         ErrorResponse: {

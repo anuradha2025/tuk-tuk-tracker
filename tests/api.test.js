@@ -30,6 +30,7 @@ let testDistrict;
 let otherDistrict;
 let testTukTuk;
 let outOfScopeTukTuk;
+let testDevice; // { deviceId, deviceKey } issued at registration
 
 const adminCreds = { email: "test.admin@police.lk", password: "TestPass@123" };
 const officerCreds = { email: "test.officer@police.lk", password: "TestPass@123" };
@@ -234,7 +235,7 @@ describe("Tuk-Tuks – /api/tuktuks", () => {
       .send({
         registrationNumber: "TP-TEST-0001",
         driverName: "Test Driver",
-        driverNIC: "200099900001V",
+        driverNIC: "200099900001",
         driverPhone: "0771234567",
         district: testDistrict._id,
         province: testProvince._id,
@@ -244,6 +245,9 @@ describe("Tuk-Tuks – /api/tuktuks", () => {
     expect(res.status).toBe(201);
     expect(res.body.data.registrationNumber).toBe("TP-TEST-0001");
     testTukTuk = res.body.data; // save for subsequent tests
+    testDevice = res.body.device;
+    expect(testDevice.deviceKey).toMatch(/^dk_/);
+    expect(res.body.data.deviceKeyHash).toBeUndefined(); // secret never leaves the server
   });
 
   test("POST / creates a second tuk-tuk outside officer district", async () => {
@@ -253,7 +257,7 @@ describe("Tuk-Tuks – /api/tuktuks", () => {
       .send({
         registrationNumber: "TP-OUT-0001",
         driverName: "Out Scope Driver",
-        driverNIC: "200099900099V",
+        driverNIC: "200099900099",
         driverPhone: "0771111111",
         district: otherDistrict._id,
         province: testProvince._id,
@@ -271,7 +275,7 @@ describe("Tuk-Tuks – /api/tuktuks", () => {
       .send({
         registrationNumber: "TP-TEST-0001",
         driverName: "Another Driver",
-        driverNIC: "200099900002V",
+        driverNIC: "200099900002",
         district: testDistrict._id,
         province: testProvince._id,
       });
@@ -333,37 +337,65 @@ describe("Tuk-Tuks – /api/tuktuks", () => {
 // 6. LOCATIONS
 // ─────────────────────────────────────────────────────────────────────────────
 describe("Locations – /api/locations", () => {
-  test("POST /ping records a GPS location", async () => {
+  const deviceHeaders = () => ({ "X-Device-Id": testDevice.deviceId, "X-Device-Key": testDevice.deviceKey });
+
+  test("POST /ping with a USER token is refused (devices use device keys) → 401", async () => {
     const res = await request(app)
       .post("/api/locations/ping")
       .set("Authorization", `Bearer ${adminToken}`)
+      .send({ latitude: 6.9271, longitude: 79.8612 });
+    expect(res.status).toBe(401);
+  });
+
+  test("POST /ping with a wrong device key → 401", async () => {
+    const res = await request(app)
+      .post("/api/locations/ping")
+      .set({ "X-Device-Id": testDevice.deviceId, "X-Device-Key": "dk_wrong" })
+      .send({ latitude: 6.9271, longitude: 79.8612 });
+    expect(res.status).toBe(401);
+  });
+
+  test("POST /ping records a GPS location (device auth)", async () => {
+    const res = await request(app)
+      .post("/api/locations/ping")
+      .set(deviceHeaders())
+      .send({ latitude: 6.9271, longitude: 79.8612, speed: 25.5, heading: 180, accuracy: 10 });
+    expect(res.status).toBe(201);
+    expect(res.body.data.id).toBeDefined();
+  });
+
+  test("POST /ping with missing / out-of-range fields → 422 (not 500)", async () => {
+    const res = await request(app).post("/api/locations/ping").set(deviceHeaders()).send({ latitude: 0, longitude: 0 });
+    expect(res.status).toBe(422);
+    expect(res.body.errors.length).toBeGreaterThan(0);
+  });
+
+  test("POST /ping with a future timestamp → 422", async () => {
+    const res = await request(app)
+      .post("/api/locations/ping")
+      .set(deviceHeaders())
+      .send({ latitude: 6.9, longitude: 79.8, timestamp: new Date(Date.now() + 3600e3).toISOString() });
+    expect(res.status).toBe(422);
+  });
+
+  test("POST /ping/batch uploads buffered fixes", async () => {
+    const t = Date.now();
+    const res = await request(app)
+      .post("/api/locations/ping/batch")
+      .set(deviceHeaders())
       .send({
-        tukTukId: testTukTuk._id,
-        latitude: 6.9271,
-        longitude: 79.8612,
-        speed: 25.5,
-        heading: 180,
-        accuracy: 10,
+        pings: [
+          { latitude: 6.9201, longitude: 79.8501, speed: 20, timestamp: new Date(t - 300e3).toISOString() },
+          { latitude: 6.9212, longitude: 79.8511, speed: 22, timestamp: new Date(t - 240e3).toISOString() },
+        ],
       });
     expect(res.status).toBe(201);
-    expect(res.body.data.latitude).toBe(6.9271);
+    expect(res.body.data.accepted).toBe(2);
   });
 
-  test("POST /ping with missing required fields → 500 (validation)", async () => {
-    const res = await request(app)
-      .post("/api/locations/ping")
-      .set("Authorization", `Bearer ${adminToken}`)
-      .send({ tukTukId: testTukTuk._id }); // missing lat/lng
-    expect(res.status).toBeGreaterThanOrEqual(400);
-  });
-
-  test("POST /ping for non-existent tuk-tuk → 404", async () => {
-    const fakeId = new mongoose.Types.ObjectId();
-    const res = await request(app)
-      .post("/api/locations/ping")
-      .set("Authorization", `Bearer ${adminToken}`)
-      .send({ tukTukId: fakeId, latitude: 7.0, longitude: 80.0 });
-    expect(res.status).toBe(404);
+  test("late (older) buffered fixes do not overwrite the newer last-known location", async () => {
+    const res = await request(app).get(`/api/tuktuks/${testTukTuk._id}/location`).set("Authorization", `Bearer ${adminToken}`);
+    expect(res.body.data.lastLocation.latitude).toBe(6.9271);
   });
 
   test("GET /:id/location after ping → returns location data", async () => {
