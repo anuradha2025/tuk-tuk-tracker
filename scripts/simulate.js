@@ -15,7 +15,7 @@ dotenv.config();
 const API_URL = process.env.API_URL || "http://localhost:3000";
 const EVERY_SEC = Number(process.env.PING_EVERY_SEC || 10);
 const ADMIN_EMAIL = process.env.SIM_EMAIL || "admin@police.lk";
-const ADMIN_PASSWORD = process.env.SIM_PASSWORD || process.env.SEED_PASSWORD || "police123";
+const ADMIN_PASSWORD = process.env.SIM_PASSWORD || process.env.SEED_PASSWORD || "1234";
 const keys = JSON.parse(fs.readFileSync("simulation-data/device-keys.json", "utf8"));
 
 const rand = (a, b) => Math.random() * (b - a) + a;

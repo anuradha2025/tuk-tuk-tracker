@@ -387,7 +387,7 @@ const seed = async () => {
 
   // ─── 4. Users ─────────────────────────────────────────────────────────────
   console.log("👤 Seeding users...");
-  const DEMO_PASSWORD = process.env.SEED_PASSWORD || "police123";
+  const DEMO_PASSWORD = process.env.SEED_PASSWORD || "1234";
   const hashedPassword = await bcrypt.hash(DEMO_PASSWORD, 12);
 
   // One account for every level of the hierarchy, so any province, district or station
