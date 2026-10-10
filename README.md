@@ -70,7 +70,7 @@ npm run lint           # Run ESLint (0 errors/warnings)
 
 ## 🔑 Demo Credentials (created by `npm run seed`)
 
-The seed password is `police123` unless you set `SEED_PASSWORD`. **Re-seed the deployed database with your own password** – never leave demo credentials on a public URL.
+The seed password is `1234` unless you set `SEED_PASSWORD`. **Re-seed the deployed database with your own password** – never leave demo credentials on a public URL.
 
 | Level | Count | Email pattern | Example |
 |-------|-------|---------------|---------|
@@ -90,7 +90,7 @@ Tracking devices do not log in. Each vehicle has a `deviceId` + secret `deviceKe
 ```bash
 curl -X POST http://localhost:3000/api/auth/login \
   -H "Content-Type: application/json" \
-  -d '{"email":"admin@police.lk","password":"police123"}'
+  -d '{"email":"admin@police.lk","password":"1234"}'
 ```
 
 Use returned token as: `Authorization: Bearer <token>`
@@ -249,7 +249,7 @@ Import `TukTuk-Tracker.postman_collection.json` into Postman:
 ```bash
 BASE=http://localhost:3000
 TOKEN=$(curl -s $BASE/api/auth/login -H 'Content-Type: application/json' \
-  -d '{"email":"admin@police.lk","password":"police123"}' | jq -r .data.token)
+  -d '{"email":"admin@police.lk","password":"1234"}' | jq -r .data.token)
 
 # 1. Live view (GeoJSON, online vehicles only)
 curl -s "$BASE/api/locations/live?online=true&format=geojson" -H "Authorization: Bearer $TOKEN" | jq '.features | length'
