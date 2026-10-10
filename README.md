@@ -40,7 +40,7 @@ cp .env.example .env
 npm run seed
 ```
 
-Populates: 9 provinces, 25 districts, 27 police stations, 5 users, 200 tuk-tuks (each with a device key), 8 days of patterned location history relative to *now*, speeding alerts and 2 geofences. **Re-run it shortly before your demo** so "last week" is really last week. On a free Atlas tier use `SEED_PING_INTERVAL_SEC=240` to keep the data small.
+Populates: 9 provinces, 25 districts, 27 police stations, 62 users (1 HQ, 9 provincial, 25 district, 27 station), 200 tuk-tuks (each with a device key), 8 days of patterned location history relative to *now*, speeding alerts and 2 geofences. **Re-run it shortly before your demo** so "last week" is really last week. On a free Atlas tier use `SEED_PING_INTERVAL_SEC=240` to keep the data small.
 
 ### 4. Run Locally
 
@@ -72,13 +72,14 @@ npm run lint           # Run ESLint (0 errors/warnings)
 
 The seed password is `police123` unless you set `SEED_PASSWORD`. **Re-seed the deployed database with your own password** – never leave demo credentials on a public URL.
 
-| Role | Email |
-|------|-------|
-| HQ Admin | admin@police.lk |
-| WP Provincial Admin | wp.admin@police.lk |
-| CP Provincial Admin | cp.admin@police.lk |
-| Colombo Station Officer | colombo.officer@police.lk |
-| Kandy Station Officer | kandy.officer@police.lk |
+| Level | Count | Email pattern | Example |
+|-------|-------|---------------|---------|
+| HQ admin | 1 | `admin@police.lk` | admin@police.lk |
+| Provincial admin | 9 (one per province) | `<province code>.admin@police.lk` | wp.admin@police.lk, sgp.admin@police.lk |
+| District officer | 25 (one per district) | `<district>.officer@police.lk` | colombo.officer@police.lk, nuwara-eliya.officer@police.lk |
+| Station officer | 27 (one per station) | `<station>.station@police.lk` | colombo-fort.station@police.lk |
+
+That is 62 accounts in total, all with the same demo password. The full list (email, role, province, district, station) is written to `simulation-data/demo-users.csv` each time you run the seed. District and station officers are both scoped to their district.
 
 There is **no public sign-up**: HQ admins create accounts via `POST /api/auth/register`.
 

@@ -390,51 +390,76 @@ const seed = async () => {
   const DEMO_PASSWORD = process.env.SEED_PASSWORD || "police123";
   const hashedPassword = await bcrypt.hash(DEMO_PASSWORD, 12);
 
+  // One account for every level of the hierarchy, so any province, district or station
+  // can be demonstrated (all share the same demo password):
+  //   1 HQ admin  +  1 admin per province  +  1 officer per district  +  1 officer per station
+  const slug = (str) =>
+    str.toLowerCase().replace(/ police station$/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const domain = "police.lk";
+
   const userDocs = [
-    {
-      name: "HQ Administrator",
-      email: "admin@police.lk",
-      password: hashedPassword,
-      role: "hq_admin",
-      isActive: true,
-    },
-    {
-      name: "Western Province Admin",
-      email: "wp.admin@police.lk",
-      password: hashedPassword,
-      role: "provincial_admin",
-      province: provinceMap["WP"]._id,
-      isActive: true,
-    },
-    {
-      name: "Central Province Admin",
-      email: "cp.admin@police.lk",
-      password: hashedPassword,
-      role: "provincial_admin",
-      province: provinceMap["CP"]._id,
-      isActive: true,
-    },
-    {
-      name: "Colombo Station Officer",
-      email: "colombo.officer@police.lk",
-      password: hashedPassword,
-      role: "station_officer",
-      province: provinceMap["WP"]._id,
-      district: districtMap["Colombo"]._id,
-      isActive: true,
-    },
-    {
-      name: "Kandy Station Officer",
-      email: "kandy.officer@police.lk",
-      password: hashedPassword,
-      role: "station_officer",
-      province: provinceMap["CP"]._id,
-      district: districtMap["Kandy"]._id,
-      isActive: true,
-    },
+    { name: "HQ Administrator", email: `admin@${domain}`, password: hashedPassword, role: "hq_admin", isActive: true },
   ];
 
+  // Provincial admins (wp.admin@, cp.admin@, sp.admin@, ... nwp.admin@, ncp.admin@, up.admin@, sgp.admin@)
+  for (const prov of provinces) {
+    userDocs.push({
+      name: `${prov.name} Admin`,
+      email: `${prov.code.toLowerCase()}.admin@${domain}`,
+      password: hashedPassword,
+      role: "provincial_admin",
+      province: prov._id,
+      isActive: true,
+    });
+  }
+
+  // District officers (colombo.officer@, kandy.officer@, jaffna.officer@, ...) – scoped to the whole district
+  for (const d of districts) {
+    userDocs.push({
+      name: `${d.name} District Officer`,
+      email: `${slug(d.name)}.officer@${domain}`,
+      password: hashedPassword,
+      role: "station_officer",
+      province: d.province,
+      district: d._id,
+      isActive: true,
+    });
+  }
+
+  // Station officers (colombo-fort.station@, wellawatte.station@, ...) – tied to one police station;
+  // data access is still scoped to the station's district.
+  for (const st of stations) {
+    const d = districts.find((x) => x._id.equals(st.district));
+    userDocs.push({
+      name: `${st.name.replace(/ Police Station$/, "")} Station Officer`,
+      email: `${slug(st.name)}.station@${domain}`,
+      password: hashedPassword,
+      role: "station_officer",
+      province: d.province,
+      district: d._id,
+      station: st._id,
+      isActive: true,
+    });
+  }
+
   await User.insertMany(userDocs);
+  console.log(`    \u2713 ${userDocs.length} users (1 HQ, ${provinces.length} provincial, ${districts.length} district officers, ${stations.length} station officers)`);
+
+  // Account directory for the demo / report appendix (no passwords in it)
+  const nameOf = (list, id) => (list.find((x) => id && x._id.equals(id)) || {}).name || "";
+  fs.mkdirSync("simulation-data", { recursive: true });
+  fs.writeFileSync(
+    "simulation-data/demo-users.csv",
+    ["email,name,role,province,district,station"]
+      .concat(
+        userDocs.map((u) =>
+          [u.email, u.name, u.role, nameOf(provinces, u.province), nameOf(districts, u.district), nameOf(stations, u.station)]
+            .map((v) => `"${v}"`)
+            .join(",")
+        )
+      )
+      .join("\n")
+  );
 
   // ─── 5. Tuk-Tuks (200 vehicles) ───────────────────────────────────────────
   console.log("🛺 Seeding 200 tuk-tuks...");
@@ -554,7 +579,10 @@ const seed = async () => {
   console.log("\n🔑 Demo logins (override the password with SEED_PASSWORD):");
   console.log(`  HQ Admin:  admin@police.lk / ${DEMO_PASSWORD}`);
   console.log(`  WP Admin:  wp.admin@police.lk / ${DEMO_PASSWORD}`);
-  console.log(`  Officer:   colombo.officer@police.lk / ${DEMO_PASSWORD}`);
+  console.log(`  District:  colombo.officer@police.lk / ${DEMO_PASSWORD}   (every district: <district>.officer@police.lk)`);
+  console.log(`  Station:   colombo-fort.station@police.lk / ${DEMO_PASSWORD}   (every station: <station>.station@police.lk)`);
+  console.log(`  Province:  sp.admin@police.lk, np.admin@police.lk ...                (every province: <code>.admin@police.lk)`);
+  console.log("  Full list: simulation-data/demo-users.csv");
   console.log("\n🔎 Investigation demo: GET /api/locations/search-area?lat=6.9344&lng=79.8428&radius=300&from=<ISO>&to=<ISO>");
 
   await mongoose.disconnect();
